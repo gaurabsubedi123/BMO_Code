@@ -1,0 +1,38 @@
+# ---- Data: the annotated corpus is NOT distributed. Never commit it. ----
+data/raw/*
+!data/raw/.gitkeep
+*.xlsx
+*.csv
+!results/*.csv
+*.xls
+
+# ---- Generated outputs and trained models (regenerate via run_pipeline.sh) ----
+outputs/
+models/
+demo/flagged/
+
+# ---- Logs ----
+*.log
+pipeline_run.log
+
+# ---- Drafts, abstracts, internal docs ----
+*.docx
+*.pdf
+DOCUMENTATION.md
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+.ipynb_checkpoints/
+note: results/*.csv are aggregate metrics and ARE committed (see docs/RESULTS.md)

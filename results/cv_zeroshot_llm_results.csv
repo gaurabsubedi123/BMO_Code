@@ -1,0 +1,4 @@
+,Precision,Recall,F1-Score,Accuracy,ROC-AUC
+BART Zero-Shot,0.7961,0.5658,0.5648,0.5658,0.8741
+Flan-T5 Few-Shot,0.6968,0.6116,0.6283,0.6116,0.6022
+BioGPT Zero-Shot,0.4943,0.7026,0.5803,0.7026,0.3936

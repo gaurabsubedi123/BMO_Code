@@ -1,0 +1,39 @@
+==========================================================================
+McNemar pairwise significance — poster run, all benchmarked systems
+==========================================================================
+
+A. OUT-OF-FOLD  (primary)   31 systems | 465 pairs | n=1,559 | Bonferroni alpha=1.075e-04
+   significant p<0.05: 368 | after Bonferroni: 287
+   Excludes the two feature-condition ensembles, which are formed at test
+   time and therefore have no out-of-fold predictions.
+
+B. HELD-OUT TEST            33 systems | 528 pairs | n=341 | Bonferroni alpha=9.470e-05
+   significant p<0.05: 213 | after Bonferroni: 157
+   UNDERPOWERED BY CONSTRUCTION: the leading systems make 3-6 errors each in
+   341 records, so discordant-pair counts are tiny and almost nothing can
+   reach significance. Absence of significance here is not evidence of
+   equivalence. Analysis A is the one to cite.
+
+--------------------------------------------------------------------------
+KEY COMPARISONS (out-of-fold)
+--------------------------------------------------------------------------
+Model 1                 Model 2                 b    c           p  verdict
+SVM (BioWordVec)        PubMedBERT             32   32   9.005e-01  ns
+SVM (BioWordVec)        BERT Ensemble          27   33   5.186e-01  ns
+SVM (BioWordVec)        BioLinkBERT            30   35   6.198e-01  ns
+LR (BioWordVec)         PubMedBERT             29   30   1.000e+00  ns
+SVM                     SVM (BioWordVec)       12   50   1.214e-06  *** Bonferroni  winner=SVM (BioWordVec)
+SVM (FastText)          SVM (BioWordVec)       13   47   1.215e-05  *** Bonferroni  winner=SVM (BioWordVec)
+Logistic Regression     PubMedBERT             20   50   4.403e-04  *  p<0.05  winner=PubMedBERT
+Logistic Regression     BERT Ensemble          16   52   1.407e-05  *** Bonferroni  winner=BERT Ensemble
+MLP Deep (BioWordVec)   PubMedBERT             23   50   2.118e-03  *  p<0.05  winner=PubMedBERT
+
+--------------------------------------------------------------------------
+SYSTEMS NOT DISTINGUISHABLE FROM THE BEST (out-of-fold, p>=0.05)
+--------------------------------------------------------------------------
+best by OOF accuracy: BERT Ensemble
+  Bio+ClinicalBERT                   p=0.058
+  PubMedBERT                         p=0.263
+  LR (BioWordVec)                    p=0.419
+  SVM (BioWordVec)                   p=0.519
+  BioLinkBERT                        p=1.000

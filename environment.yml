@@ -1,0 +1,25 @@
+name: biomarker-ad
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - torch==2.6.0+cu124 --index-url https://download.pytorch.org/whl/cu124
+    - transformers==5.3.0
+    - scikit-learn
+    - imbalanced-learn
+    - xgboost
+    - pandas
+    - numpy
+    - matplotlib
+    - seaborn
+    - openpyxl
+    - gradio
+    - sacremoses
+    - gensim
+    - shap
+    - catboost
+    - fasttext-wheel
+    - nvidia-cusparselt-cu12

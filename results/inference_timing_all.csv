@@ -1,0 +1,20 @@
+System,Tier,Load_s,Latency_ms_median,Latency_ms_IQR_low,Latency_ms_IQR_high,Throughput_rec_per_s,Corpus_1900_s,Note,Model_file_MB
+Logistic Regression (TF-IDF),Classical ML,0.05,0.295,0.285,0.306,57349.0,0.03, | timed under python3.11 / scikit-learn 1.7.2,0.1
+MLP Small (TF-IDF),Classical ML,0.02,0.308,0.3,0.324,46903.8,0.04, | timed under python3.11 / scikit-learn 1.7.2,
+Decision Tree (TF-IDF),Classical ML,0.02,0.358,0.346,0.381,30460.6,0.06, | timed under python3.11 / scikit-learn 1.7.2,
+MLP Deep (TF-IDF),Classical ML,0.03,0.394,0.38,0.415,29175.1,0.07, | timed under python3.11 / scikit-learn 1.7.2,
+SVM (TF-IDF),Classical ML,0.02,0.529,0.498,0.604,6106.6,0.31, | timed under python3.11 / scikit-learn 1.7.2,0.4
+XGBoost (TF-IDF),Classical ML,0.27,0.62,0.608,0.637,46611.5,0.04, | timed under python3.11 / scikit-learn 1.7.2,
+LR (BioWordVec),BioWordVec ML,0.01,0.818,0.782,0.954,5203.4,0.37,+55s one-off embedding load | timed under python3.11 / scikit-learn 1.7.2,0.1
+Decision Tree (BioWordVec),BioWordVec ML,0.02,0.882,0.83,1.047,4864.6,0.39,+55s one-off embedding load | timed under python3.11 / scikit-learn 1.7.2,
+MLP Small (BioWordVec),BioWordVec ML,0.01,0.9,0.866,1.06,4844.9,0.39,+55s one-off embedding load | timed under python3.11 / scikit-learn 1.7.2,
+MLP Deep (BioWordVec),BioWordVec ML,0.02,1.037,0.984,1.184,4357.1,0.44,+55s one-off embedding load | timed under python3.11 / scikit-learn 1.7.2,
+SVM (BioWordVec),BioWordVec ML,0.02,1.109,1.05,1.286,3266.5,0.58,+55s one-off embedding load | timed under python3.11 / scikit-learn 1.7.2,0.8
+XGBoost (BioWordVec),BioWordVec ML,0.01,1.202,1.148,1.353,5115.3,0.37,+55s one-off embedding load | timed under python3.11 / scikit-learn 1.7.2,
+Random Forest (TF-IDF),Classical ML,0.05,25.061,24.871,25.258,23430.1,0.08, | timed under python3.11 / scikit-learn 1.7.2,
+Random Forest (BioWordVec),BioWordVec ML,0.02,25.829,25.563,26.173,4415.6,0.43,+55s one-off embedding load | timed under python3.11 / scikit-learn 1.7.2,
+BERT-base,BERT fine-tuned,5.17,190.48,190.18,190.99,849.5,2.24,109M params; latency CPU 1-thread; throughput cuda(L40) batch32 | timed under python3.8 / torch 2.4.1,
+PubMedBERT,BERT fine-tuned,5.12,190.59,190.35,191.02,845.4,2.25,109M params; latency CPU 1-thread; throughput cuda(L40) batch32 | timed under python3.8 / torch 2.4.1,438.0
+Bio+ClinicalBERT,BERT fine-tuned,4.87,190.71,190.57,191.31,837.3,2.27,108M params; latency CPU 1-thread; throughput cuda(L40) batch32 | timed under python3.8 / torch 2.4.1,
+BioBERT,BERT fine-tuned,5.18,191.11,190.7,191.7,841.7,2.26,108M params; latency CPU 1-thread; throughput cuda(L40) batch32 | timed under python3.8 / torch 2.4.1,
+BioLinkBERT,BERT fine-tuned,4.42,192.21,192.05,192.44,836.8,2.27,108M params; latency CPU 1-thread; throughput cuda(L40) batch32 | timed under python3.8 / torch 2.4.1,433.0

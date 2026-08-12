@@ -1,0 +1,529 @@
+Model_1,Model_2,only_1_correct,only_2_correct,acc_1,acc_2,p_value,method,sig_uncorrected,sig_bonferroni,winner
+SVM (BioWordVec),BART Zero-Shot,227,2,0.9883,0.3284,6.105353324031496e-65,exact,True,True,SVM (BioWordVec)
+LR (BioWordVec),BART Zero-Shot,227,2,0.9883,0.3284,6.105353324031496e-65,exact,True,True,LR (BioWordVec)
+MLP Deep (BioWordVec),BART Zero-Shot,229,3,0.9912,0.3284,6.031485063104017e-64,exact,True,True,MLP Deep (BioWordVec)
+Classical Ensemble,BART Zero-Shot,228,4,0.9853,0.3284,3.4684989272507717e-62,exact,True,True,Classical Ensemble
+SVM (Enhanced),BART Zero-Shot,227,4,0.9824,0.3284,6.817921209446023e-62,exact,True,True,SVM (Enhanced)
+SVM,BART Zero-Shot,227,4,0.9824,0.3284,6.817921209446023e-62,exact,True,True,SVM
+XGBoost (BioWordVec),BART Zero-Shot,227,4,0.9824,0.3284,6.817921209446023e-62,exact,True,True,XGBoost (BioWordVec)
+MLP Deep,BART Zero-Shot,227,4,0.9824,0.3284,6.817921209446023e-62,exact,True,True,MLP Deep
+Logistic Regression,BART Zero-Shot,227,4,0.9824,0.3284,6.817921209446023e-62,exact,True,True,Logistic Regression
+BioBERT,BART Zero-Shot,229,5,0.9853,0.3284,4.146975138156077e-61,exact,True,True,BioBERT
+PubMedBERT,BART Zero-Shot,229,5,0.9853,0.3284,4.146975138156077e-61,exact,True,True,PubMedBERT
+BioLinkBERT,BART Zero-Shot,229,5,0.9853,0.3284,4.146975138156077e-61,exact,True,True,BioLinkBERT
+Bio+ClinicalBERT,BART Zero-Shot,229,5,0.9853,0.3284,4.146975138156077e-61,exact,True,True,Bio+ClinicalBERT
+BERT Ensemble,BART Zero-Shot,229,5,0.9853,0.3284,4.146975138156077e-61,exact,True,True,BERT Ensemble
+LR (Enhanced),BART Zero-Shot,227,5,0.9795,0.3284,1.5888169282111054e-60,exact,True,True,LR (Enhanced)
+MLP Small (Enhanced),BART Zero-Shot,229,6,0.9824,0.3284,8.157239689876482e-60,exact,True,True,MLP Small (Enhanced)
+BioWordVec Ensemble,BART Zero-Shot,229,6,0.9824,0.3284,8.157239689876482e-60,exact,True,True,BioWordVec Ensemble
+MLP Small,BART Zero-Shot,229,6,0.9824,0.3284,8.157239689876482e-60,exact,True,True,MLP Small
+MLP Small (BioWordVec),BART Zero-Shot,229,6,0.9824,0.3284,8.157239689876482e-60,exact,True,True,MLP Small (BioWordVec)
+Enhanced Ensemble,BART Zero-Shot,229,6,0.9824,0.3284,8.157239689876482e-60,exact,True,True,Enhanced Ensemble
+MLP Deep (Enhanced),BART Zero-Shot,229,6,0.9824,0.3284,8.157239689876482e-60,exact,True,True,MLP Deep (Enhanced)
+XGBoost,BART Zero-Shot,222,5,0.9648,0.3284,4.557343236502237e-59,exact,True,True,XGBoost
+BERT-base,BART Zero-Shot,229,7,0.9795,0.3284,1.3812134050232685e-58,exact,True,True,BERT-base
+Random Forest (BioWordVec),BART Zero-Shot,229,7,0.9795,0.3284,1.3812134050232685e-58,exact,True,True,Random Forest (BioWordVec)
+XGBoost (Enhanced),BART Zero-Shot,228,9,0.9707,0.3284,5.253531465138857e-56,exact,True,True,XGBoost (Enhanced)
+Random Forest,BART Zero-Shot,227,10,0.9648,0.3284,1.203484395036368e-54,exact,True,True,Random Forest
+SVM (BioWordVec),Flan-T5 Few-Shot,175,2,0.9883,0.4809,1.64479434542158e-49,exact,True,True,SVM (BioWordVec)
+LR (BioWordVec),Flan-T5 Few-Shot,175,2,0.9883,0.4809,1.64479434542158e-49,exact,True,True,LR (BioWordVec)
+Decision Tree (BioWordVec),BART Zero-Shot,219,13,0.9326,0.3284,1.980347615246542e-49,exact,True,True,Decision Tree (BioWordVec)
+Classical Ensemble,Flan-T5 Few-Shot,174,2,0.9853,0.4809,3.2526293663364165e-49,exact,True,True,Classical Ensemble
+SVM,Flan-T5 Few-Shot,173,2,0.9824,0.4809,6.431757703145298e-49,exact,True,True,SVM
+MLP Deep,Flan-T5 Few-Shot,173,2,0.9824,0.4809,6.431757703145298e-49,exact,True,True,MLP Deep
+SVM (Enhanced),Flan-T5 Few-Shot,173,2,0.9824,0.4809,6.431757703145298e-49,exact,True,True,SVM (Enhanced)
+Logistic Regression,Flan-T5 Few-Shot,173,2,0.9824,0.4809,6.431757703145298e-49,exact,True,True,Logistic Regression
+MLP Deep (BioWordVec),Flan-T5 Few-Shot,177,3,0.9912,0.4809,1.2687162527738467e-48,exact,True,True,MLP Deep (BioWordVec)
+BERT Ensemble,Flan-T5 Few-Shot,175,3,0.9853,0.4809,4.9075927462409255e-48,exact,True,True,BERT Ensemble
+PubMedBERT,Flan-T5 Few-Shot,175,3,0.9853,0.4809,4.9075927462409255e-48,exact,True,True,PubMedBERT
+BioBERT,Flan-T5 Few-Shot,175,3,0.9853,0.4809,4.9075927462409255e-48,exact,True,True,BioBERT
+Bio+ClinicalBERT,Flan-T5 Few-Shot,175,3,0.9853,0.4809,4.9075927462409255e-48,exact,True,True,Bio+ClinicalBERT
+Random Forest (Enhanced),BART Zero-Shot,229,18,0.9472,0.3284,9.298823597556065e-48,exact,True,True,Random Forest (Enhanced)
+LR (Enhanced),Flan-T5 Few-Shot,173,3,0.9795,0.4809,1.8976149179245744e-47,exact,True,True,LR (Enhanced)
+BioLinkBERT,Flan-T5 Few-Shot,176,4,0.9853,0.4809,5.646862238248631e-47,exact,True,True,BioLinkBERT
+MLP Deep (Enhanced),Flan-T5 Few-Shot,175,4,0.9824,0.4809,1.104418639315385e-46,exact,True,True,MLP Deep (Enhanced)
+BioWordVec Ensemble,Flan-T5 Few-Shot,175,4,0.9824,0.4809,1.104418639315385e-46,exact,True,True,BioWordVec Ensemble
+MLP Small (BioWordVec),Flan-T5 Few-Shot,175,4,0.9824,0.4809,1.104418639315385e-46,exact,True,True,MLP Small (BioWordVec)
+MLP Small,Flan-T5 Few-Shot,175,4,0.9824,0.4809,1.104418639315385e-46,exact,True,True,MLP Small
+Enhanced Ensemble,Flan-T5 Few-Shot,175,4,0.9824,0.4809,1.104418639315385e-46,exact,True,True,Enhanced Ensemble
+MLP Small (Enhanced),Flan-T5 Few-Shot,175,4,0.9824,0.4809,1.104418639315385e-46,exact,True,True,MLP Small (Enhanced)
+XGBoost (BioWordVec),Flan-T5 Few-Shot,176,5,0.9824,0.4809,1.0279869702654257e-45,exact,True,True,XGBoost (BioWordVec)
+Random Forest (BioWordVec),Flan-T5 Few-Shot,175,5,0.9795,0.4809,1.9995053181483654e-45,exact,True,True,Random Forest (BioWordVec)
+BERT-base,Flan-T5 Few-Shot,175,5,0.9795,0.4809,1.9995053181483654e-45,exact,True,True,BERT-base
+Decision Tree,BART Zero-Shot,191,10,0.8592,0.3284,1.5505781761136937e-44,exact,True,True,Decision Tree
+XGBoost,Flan-T5 Few-Shot,170,5,0.9648,0.4809,5.553488622610475e-44,exact,True,True,XGBoost
+Decision Tree (Enhanced),BART Zero-Shot,210,17,0.8944,0.3284,1.7303214371859345e-43,exact,True,True,Decision Tree (Enhanced)
+Random Forest,Flan-T5 Few-Shot,172,7,0.9648,0.4809,2.8212917776328895e-42,exact,True,True,Random Forest
+XGBoost (Enhanced),Flan-T5 Few-Shot,175,8,0.9707,0.4809,4.563834747682023e-42,exact,True,True,XGBoost (Enhanced)
+Random Forest (Enhanced),Flan-T5 Few-Shot,172,13,0.9472,0.4809,1.3669414414945156e-36,exact,True,True,Random Forest (Enhanced)
+Decision Tree (BioWordVec),Flan-T5 Few-Shot,168,14,0.9326,0.4809,1.0683766598224379e-34,exact,True,True,Decision Tree (BioWordVec)
+MLP Deep (BioWordVec),BioGPT Zero-Shot,106,0,0.9912,0.6804,2.465190328815662e-32,exact,True,True,MLP Deep (BioWordVec)
+PubMedBERT,BioGPT Zero-Shot,104,0,0.9853,0.6804,9.860761315262648e-32,exact,True,True,PubMedBERT
+BioLinkBERT,BioGPT Zero-Shot,104,0,0.9853,0.6804,9.860761315262648e-32,exact,True,True,BioLinkBERT
+BioBERT,BioGPT Zero-Shot,104,0,0.9853,0.6804,9.860761315262648e-32,exact,True,True,BioBERT
+Bio+ClinicalBERT,BioGPT Zero-Shot,104,0,0.9853,0.6804,9.860761315262648e-32,exact,True,True,Bio+ClinicalBERT
+BERT Ensemble,BioGPT Zero-Shot,104,0,0.9853,0.6804,9.860761315262648e-32,exact,True,True,BERT Ensemble
+MLP Deep (Enhanced),BioGPT Zero-Shot,103,0,0.9824,0.6804,1.9721522630525295e-31,exact,True,True,MLP Deep (Enhanced)
+Enhanced Ensemble,BioGPT Zero-Shot,103,0,0.9824,0.6804,1.9721522630525295e-31,exact,True,True,Enhanced Ensemble
+BioWordVec Ensemble,BioGPT Zero-Shot,103,0,0.9824,0.6804,1.9721522630525295e-31,exact,True,True,BioWordVec Ensemble
+MLP Small (BioWordVec),BioGPT Zero-Shot,103,0,0.9824,0.6804,1.9721522630525295e-31,exact,True,True,MLP Small (BioWordVec)
+MLP Small (Enhanced),BioGPT Zero-Shot,103,0,0.9824,0.6804,1.9721522630525295e-31,exact,True,True,MLP Small (Enhanced)
+MLP Small,BioGPT Zero-Shot,103,0,0.9824,0.6804,1.9721522630525295e-31,exact,True,True,MLP Small
+Random Forest (BioWordVec),BioGPT Zero-Shot,102,0,0.9795,0.6804,3.944304526105059e-31,exact,True,True,Random Forest (BioWordVec)
+BERT-base,BioGPT Zero-Shot,102,0,0.9795,0.6804,3.944304526105059e-31,exact,True,True,BERT-base
+Classical Ensemble,BioGPT Zero-Shot,105,1,0.9853,0.6804,2.6377536518327582e-30,exact,True,True,Classical Ensemble
+LR (BioWordVec),BioGPT Zero-Shot,107,2,0.9883,0.6804,1.8476601514473386e-29,exact,True,True,LR (BioWordVec)
+SVM (BioWordVec),BioGPT Zero-Shot,107,2,0.9883,0.6804,1.8476601514473386e-29,exact,True,True,SVM (BioWordVec)
+XGBoost (BioWordVec),BioGPT Zero-Shot,105,2,0.9824,0.6804,7.123167455112855e-29,exact,True,True,XGBoost (BioWordVec)
+MLP Deep,BioGPT Zero-Shot,105,2,0.9824,0.6804,7.123167455112855e-29,exact,True,True,MLP Deep
+SVM (Enhanced),BioGPT Zero-Shot,105,2,0.9824,0.6804,7.123167455112855e-29,exact,True,True,SVM (Enhanced)
+Logistic Regression,BioGPT Zero-Shot,105,2,0.9824,0.6804,7.123167455112855e-29,exact,True,True,Logistic Regression
+SVM,BioGPT Zero-Shot,105,2,0.9824,0.6804,7.123167455112855e-29,exact,True,True,SVM
+XGBoost (Enhanced),BioGPT Zero-Shot,100,1,0.9707,0.6804,8.04638123325432e-29,exact,True,True,XGBoost (Enhanced)
+LR (Enhanced),BioGPT Zero-Shot,104,2,0.9795,0.6804,1.3982559545042434e-28,exact,True,True,LR (Enhanced)
+Random Forest (Enhanced),BioGPT Zero-Shot,91,0,0.9472,0.6804,8.077935669463161e-28,exact,True,True,Random Forest (Enhanced)
+Random Forest,BioGPT Zero-Shot,99,2,0.9648,0.6804,4.064211383698653e-27,exact,True,True,Random Forest
+Decision Tree (Enhanced),Flan-T5 Few-Shot,168,27,0.8944,0.4809,1.1763306910540813e-23,asymptotic (continuity-corrected),True,True,Decision Tree (Enhanced)
+XGBoost,BioGPT Zero-Shot,104,7,0.9648,0.6804,2.8012475593516644e-23,exact,True,True,XGBoost
+Decision Tree,Flan-T5 Few-Shot,156,27,0.8592,0.4809,3.020153351157752e-21,asymptotic (continuity-corrected),True,True,Decision Tree
+Decision Tree (BioWordVec),BioGPT Zero-Shot,96,10,0.9326,0.6804,8.742830799570975e-19,exact,True,True,Decision Tree (BioWordVec)
+Decision Tree,MLP Deep (BioWordVec),0,45,0.8592,0.9912,5.684341886080802e-14,exact,True,True,MLP Deep (BioWordVec)
+Decision Tree (Enhanced),BioGPT Zero-Shot,92,19,0.8944,0.6804,1.123612188223784e-12,exact,True,True,Decision Tree (Enhanced)
+Decision Tree,SVM (BioWordVec),1,45,0.8592,0.9883,1.3358203432289883e-12,exact,True,True,SVM (BioWordVec)
+Decision Tree,LR (BioWordVec),1,45,0.8592,0.9883,1.3358203432289883e-12,exact,True,True,LR (BioWordVec)
+Decision Tree,BioLinkBERT,1,44,0.8592,0.9853,2.6147972675971687e-12,exact,True,True,BioLinkBERT
+Decision Tree,Bio+ClinicalBERT,2,45,0.8592,0.9853,1.6044054973463062e-11,exact,True,True,Bio+ClinicalBERT
+Decision Tree,BERT Ensemble,2,45,0.8592,0.9853,1.6044054973463062e-11,exact,True,True,BERT Ensemble
+Decision Tree,Classical Ensemble,2,45,0.8592,0.9853,1.6044054973463062e-11,exact,True,True,Classical Ensemble
+Decision Tree,PubMedBERT,2,45,0.8592,0.9853,1.6044054973463062e-11,exact,True,True,PubMedBERT
+Decision Tree,BERT-base,2,43,0.8592,0.9795,5.88897819397971e-11,exact,True,True,BERT-base
+Decision Tree,BioBERT,3,46,0.8592,0.9853,6.981082378842984e-11,exact,True,True,BioBERT
+BART Zero-Shot,BioGPT Zero-Shot,109,229,0.3284,0.6804,9.623721747468906e-11,asymptotic (continuity-corrected),True,True,BioGPT Zero-Shot
+Logistic Regression,Decision Tree,45,3,0.9824,0.8592,1.312585595769633e-10,exact,True,True,Logistic Regression
+Decision Tree,BioWordVec Ensemble,3,45,0.8592,0.9824,1.312585595769633e-10,exact,True,True,BioWordVec Ensemble
+Decision Tree,MLP Small (BioWordVec),3,45,0.8592,0.9824,1.312585595769633e-10,exact,True,True,MLP Small (BioWordVec)
+Decision Tree,XGBoost (BioWordVec),3,45,0.8592,0.9824,1.312585595769633e-10,exact,True,True,XGBoost (BioWordVec)
+Decision Tree,Enhanced Ensemble,3,45,0.8592,0.9824,1.312585595769633e-10,exact,True,True,Enhanced Ensemble
+Decision Tree,MLP Deep (Enhanced),3,45,0.8592,0.9824,1.312585595769633e-10,exact,True,True,MLP Deep (Enhanced)
+Decision Tree,MLP Small (Enhanced),3,45,0.8592,0.9824,1.312585595769633e-10,exact,True,True,MLP Small (Enhanced)
+Decision Tree,SVM (Enhanced),3,45,0.8592,0.9824,1.312585595769633e-10,exact,True,True,SVM (Enhanced)
+Decision Tree,MLP Deep,3,45,0.8592,0.9824,1.312585595769633e-10,exact,True,True,MLP Deep
+Decision Tree,MLP Small,3,45,0.8592,0.9824,1.312585595769633e-10,exact,True,True,MLP Small
+SVM,Decision Tree,45,3,0.9824,0.8592,1.312585595769633e-10,exact,True,True,SVM
+Decision Tree (Enhanced),MLP Deep (BioWordVec),0,33,0.8944,0.9912,2.3283064365386963e-10,exact,True,True,MLP Deep (BioWordVec)
+Decision Tree,LR (Enhanced),3,44,0.8592,0.9795,2.4647306418046355e-10,exact,True,True,LR (Enhanced)
+XGBoost,Decision Tree,37,1,0.9648,0.8592,2.837623469531536e-10,exact,True,True,XGBoost
+Decision Tree,Random Forest (BioWordVec),4,45,0.8592,0.9795,8.225455871979648e-10,exact,True,True,Random Forest (BioWordVec)
+Decision Tree (Enhanced),XGBoost (BioWordVec),1,31,0.8944,0.9824,1.5366822481155396e-08,exact,True,True,XGBoost (BioWordVec)
+Decision Tree (Enhanced),SVM (BioWordVec),2,34,0.8944,0.9883,1.941225491464138e-08,exact,True,True,SVM (BioWordVec)
+Decision Tree (Enhanced),LR (BioWordVec),2,34,0.8944,0.9883,1.941225491464138e-08,exact,True,True,LR (BioWordVec)
+Decision Tree,XGBoost (Enhanced),6,44,0.8592,0.9707,3.243740565039843e-08,exact,True,True,XGBoost (Enhanced)
+Decision Tree (Enhanced),BioBERT,2,33,0.8944,0.9853,3.6729034036397934e-08,exact,True,True,BioBERT
+Decision Tree (Enhanced),PubMedBERT,2,33,0.8944,0.9853,3.6729034036397934e-08,exact,True,True,PubMedBERT
+Decision Tree (Enhanced),Bio+ClinicalBERT,2,33,0.8944,0.9853,3.6729034036397934e-08,exact,True,True,Bio+ClinicalBERT
+Decision Tree (Enhanced),BERT Ensemble,2,33,0.8944,0.9853,3.6729034036397934e-08,exact,True,True,BERT Ensemble
+Decision Tree (Enhanced),BioLinkBERT,2,33,0.8944,0.9853,3.6729034036397934e-08,exact,True,True,BioLinkBERT
+Decision Tree (Enhanced),Enhanced Ensemble,2,32,0.8944,0.9824,6.938353180885315e-08,exact,True,True,Enhanced Ensemble
+Decision Tree (Enhanced),MLP Deep (Enhanced),2,32,0.8944,0.9824,6.938353180885315e-08,exact,True,True,MLP Deep (Enhanced)
+Decision Tree (Enhanced),MLP Small (BioWordVec),2,32,0.8944,0.9824,6.938353180885315e-08,exact,True,True,MLP Small (BioWordVec)
+Decision Tree (Enhanced),BioWordVec Ensemble,2,32,0.8944,0.9824,6.938353180885315e-08,exact,True,True,BioWordVec Ensemble
+Random Forest,Decision Tree,42,6,0.9648,0.8592,1.0087482138487759e-07,exact,True,True,Random Forest
+Classical Ensemble,Decision Tree (Enhanced),34,3,0.9853,0.8944,1.233129296451807e-07,exact,True,True,Classical Ensemble
+MLP Small,Decision Tree (Enhanced),33,3,0.9824,0.8944,2.2721360437572002e-07,exact,True,True,MLP Small
+Decision Tree (Enhanced),MLP Small (Enhanced),3,33,0.8944,0.9824,2.2721360437572002e-07,exact,True,True,MLP Small (Enhanced)
+Decision Tree,BioGPT Zero-Shot,99,38,0.8592,0.6804,2.9573339316475515e-07,asymptotic (continuity-corrected),True,True,Decision Tree
+Decision Tree (Enhanced),BERT-base,3,32,0.8944,0.9795,4.176981747150421e-07,exact,True,True,BERT-base
+Decision Tree (Enhanced),Random Forest (BioWordVec),3,32,0.8944,0.9795,4.176981747150421e-07,exact,True,True,Random Forest (BioWordVec)
+BART Zero-Shot,Flan-T5 Few-Shot,26,78,0.3284,0.4809,5.704512035254423e-07,asymptotic (continuity-corrected),True,True,Flan-T5 Few-Shot
+MLP Deep,Decision Tree (Enhanced),34,4,0.9824,0.8944,6.038535502739251e-07,exact,True,True,MLP Deep
+SVM,Decision Tree (Enhanced),34,4,0.9824,0.8944,6.038535502739251e-07,exact,True,True,SVM
+SVM (Enhanced),Decision Tree (Enhanced),34,4,0.9824,0.8944,6.038535502739251e-07,exact,True,True,SVM (Enhanced)
+Logistic Regression,Decision Tree (Enhanced),34,4,0.9824,0.8944,6.038535502739251e-07,exact,True,True,Logistic Regression
+LR (Enhanced),Decision Tree (Enhanced),33,4,0.9795,0.8944,1.0843941709026694e-06,exact,True,True,LR (Enhanced)
+XGBoost (Enhanced),Decision Tree (Enhanced),30,4,0.9707,0.8944,6.16488978266716e-06,exact,True,True,XGBoost (Enhanced)
+Decision Tree (BioWordVec),BioLinkBERT,0,18,0.9326,0.9853,7.62939453125e-06,exact,True,True,BioLinkBERT
+Decision Tree (BioWordVec),MLP Deep (BioWordVec),1,21,0.9326,0.9912,1.0967254638671875e-05,exact,True,True,MLP Deep (BioWordVec)
+Flan-T5 Few-Shot,BioGPT Zero-Shot,84,152,0.4809,0.6804,1.292750937952226e-05,asymptotic (continuity-corrected),True,True,BioGPT Zero-Shot
+Decision Tree (BioWordVec),PubMedBERT,1,19,0.9326,0.9853,4.00543212890625e-05,exact,True,True,PubMedBERT
+Decision Tree (BioWordVec),Bio+ClinicalBERT,1,19,0.9326,0.9853,4.00543212890625e-05,exact,True,True,Bio+ClinicalBERT
+Decision Tree (BioWordVec),BERT Ensemble,1,19,0.9326,0.9853,4.00543212890625e-05,exact,True,True,BERT Ensemble
+Classical Ensemble,Decision Tree (BioWordVec),19,1,0.9853,0.9326,4.00543212890625e-05,exact,True,True,Classical Ensemble
+Decision Tree,Decision Tree (BioWordVec),6,31,0.8592,0.9326,4.12575900554657e-05,exact,True,True,Decision Tree (BioWordVec)
+Random Forest (Enhanced),MLP Deep (BioWordVec),0,15,0.9472,0.9912,6.103515625e-05,exact,True,True,MLP Deep (BioWordVec)
+SVM (BioWordVec),Decision Tree (BioWordVec),21,2,0.9883,0.9326,6.604194641113281e-05,exact,True,True,SVM (BioWordVec)
+LR (BioWordVec),Decision Tree (BioWordVec),21,2,0.9883,0.9326,6.604194641113281e-05,exact,True,True,LR (BioWordVec)
+Enhanced Ensemble,Decision Tree (BioWordVec),18,1,0.9824,0.9326,7.62939453125e-05,exact,True,True,Enhanced Ensemble
+MLP Deep (Enhanced),Decision Tree (BioWordVec),18,1,0.9824,0.9326,7.62939453125e-05,exact,True,True,MLP Deep (Enhanced)
+Decision Tree (BioWordVec),MLP Small (BioWordVec),1,18,0.9326,0.9824,7.62939453125e-05,exact,True,True,MLP Small (BioWordVec)
+Decision Tree (BioWordVec),BioWordVec Ensemble,1,18,0.9326,0.9824,7.62939453125e-05,exact,True,True,BioWordVec Ensemble
+Random Forest,Decision Tree (Enhanced),31,7,0.9648,0.8944,0.00011616700794547796,exact,True,False,Random Forest
+Decision Tree (BioWordVec),BioBERT,2,20,0.9326,0.9853,0.00012111663818359375,exact,True,False,BioBERT
+Decision Tree,Random Forest (Enhanced),15,45,0.8592,0.9472,0.00013451408092849532,exact,True,False,Random Forest (Enhanced)
+Decision Tree (BioWordVec),BERT-base,1,17,0.9326,0.9795,0.00014495849609375,exact,True,False,BERT-base
+XGBoost,Decision Tree (Enhanced),32,8,0.9648,0.8944,0.0001821658297558315,exact,True,False,XGBoost
+SVM (Enhanced),Decision Tree (BioWordVec),19,2,0.9824,0.9326,0.00022125244140625,exact,True,False,SVM (Enhanced)
+Logistic Regression,Decision Tree (BioWordVec),19,2,0.9824,0.9326,0.00022125244140625,exact,True,False,Logistic Regression
+MLP Deep,Decision Tree (BioWordVec),19,2,0.9824,0.9326,0.00022125244140625,exact,True,False,MLP Deep
+MLP Small (Enhanced),Decision Tree (BioWordVec),19,2,0.9824,0.9326,0.00022125244140625,exact,True,False,MLP Small (Enhanced)
+MLP Small,Decision Tree (BioWordVec),19,2,0.9824,0.9326,0.00022125244140625,exact,True,False,MLP Small
+SVM,Decision Tree (BioWordVec),19,2,0.9824,0.9326,0.00022125244140625,exact,True,False,SVM
+Random Forest (Enhanced),BERT Ensemble,0,13,0.9472,0.9853,0.000244140625,exact,True,False,BERT Ensemble
+Random Forest (Enhanced),Bio+ClinicalBERT,0,13,0.9472,0.9853,0.000244140625,exact,True,False,Bio+ClinicalBERT
+Random Forest (Enhanced),PubMedBERT,0,13,0.9472,0.9853,0.000244140625,exact,True,False,PubMedBERT
+Random Forest (Enhanced),MLP Deep (Enhanced),0,12,0.9472,0.9824,0.00048828125,exact,True,False,MLP Deep (Enhanced)
+Random Forest (Enhanced),Enhanced Ensemble,0,12,0.9472,0.9824,0.00048828125,exact,True,False,Enhanced Ensemble
+Random Forest (Enhanced),MLP Small (BioWordVec),0,12,0.9472,0.9824,0.00048828125,exact,True,False,MLP Small (BioWordVec)
+XGBoost (BioWordVec),Decision Tree (BioWordVec),20,3,0.9824,0.9326,0.00048828125,exact,True,False,XGBoost (BioWordVec)
+Random Forest (Enhanced),BioWordVec Ensemble,0,12,0.9472,0.9824,0.00048828125,exact,True,False,BioWordVec Ensemble
+LR (Enhanced),Decision Tree (BioWordVec),19,3,0.9795,0.9326,0.0008554458618164062,exact,True,False,LR (Enhanced)
+Random Forest (BioWordVec),Decision Tree (BioWordVec),19,3,0.9795,0.9326,0.0008554458618164062,exact,True,False,Random Forest (BioWordVec)
+Classical Ensemble,Random Forest (Enhanced),14,1,0.9853,0.9472,0.0009765625,exact,True,False,Classical Ensemble
+Random Forest (Enhanced),BioBERT,1,14,0.9472,0.9853,0.0009765625,exact,True,False,BioBERT
+Random Forest (Enhanced),LR (BioWordVec),2,16,0.9472,0.9883,0.001312255859375,exact,True,False,LR (BioWordVec)
+Random Forest (Enhanced),SVM (BioWordVec),2,16,0.9472,0.9883,0.001312255859375,exact,True,False,SVM (BioWordVec)
+Random Forest (Enhanced),MLP Small (Enhanced),1,13,0.9472,0.9824,0.0018310546875,exact,True,False,MLP Small (Enhanced)
+MLP Small,Random Forest (Enhanced),13,1,0.9824,0.9472,0.0018310546875,exact,True,False,MLP Small
+XGBoost,Decision Tree (BioWordVec),12,1,0.9648,0.9326,0.00341796875,exact,True,False,XGBoost
+Random Forest,MLP Deep (BioWordVec),0,9,0.9648,0.9912,0.00390625,exact,True,False,MLP Deep (BioWordVec)
+MLP Deep,Random Forest (Enhanced),14,2,0.9824,0.9472,0.004180908203125,exact,True,False,MLP Deep
+Random Forest (Enhanced),XGBoost (BioWordVec),2,14,0.9472,0.9824,0.004180908203125,exact,True,False,XGBoost (BioWordVec)
+SVM,Random Forest (Enhanced),14,2,0.9824,0.9472,0.004180908203125,exact,True,False,SVM
+Logistic Regression,Random Forest (Enhanced),14,2,0.9824,0.9472,0.004180908203125,exact,True,False,Logistic Regression
+SVM (Enhanced),Random Forest (Enhanced),14,2,0.9824,0.9472,0.004180908203125,exact,True,False,SVM (Enhanced)
+Random Forest (Enhanced),BioLinkBERT,3,16,0.9472,0.9853,0.004425048828125,exact,True,False,BioLinkBERT
+XGBoost (Enhanced),Decision Tree (BioWordVec),16,3,0.9707,0.9326,0.004425048828125,exact,True,False,XGBoost (Enhanced)
+Random Forest (Enhanced),Decision Tree (Enhanced),29,11,0.9472,0.8944,0.006426576095691416,exact,True,False,Random Forest (Enhanced)
+Random Forest (Enhanced),BERT-base,2,13,0.9472,0.9795,0.00738525390625,exact,True,False,BERT-base
+Random Forest (Enhanced),Random Forest (BioWordVec),2,13,0.9472,0.9795,0.00738525390625,exact,True,False,Random Forest (BioWordVec)
+LR (Enhanced),Random Forest (Enhanced),13,2,0.9795,0.9472,0.00738525390625,exact,True,False,LR (Enhanced)
+XGBoost,MLP Deep (BioWordVec),1,10,0.9648,0.9912,0.01171875,exact,True,False,MLP Deep (BioWordVec)
+XGBoost (Enhanced),MLP Deep (BioWordVec),0,7,0.9707,0.9912,0.015625,exact,True,False,MLP Deep (BioWordVec)
+Random Forest,BioLinkBERT,0,7,0.9648,0.9853,0.015625,exact,True,False,BioLinkBERT
+Random Forest,Bio+ClinicalBERT,0,7,0.9648,0.9853,0.015625,exact,True,False,Bio+ClinicalBERT
+Random Forest,PubMedBERT,0,7,0.9648,0.9853,0.015625,exact,True,False,PubMedBERT
+Random Forest,Classical Ensemble,0,7,0.9648,0.9853,0.015625,exact,True,False,Classical Ensemble
+Random Forest,BERT Ensemble,0,7,0.9648,0.9853,0.015625,exact,True,False,BERT Ensemble
+Random Forest,Decision Tree (BioWordVec),15,4,0.9648,0.9326,0.0192108154296875,exact,True,False,Random Forest
+Random Forest (Enhanced),XGBoost (Enhanced),1,9,0.9472,0.9707,0.021484375,exact,True,False,XGBoost (Enhanced)
+Random Forest,LR (BioWordVec),1,9,0.9648,0.9883,0.021484375,exact,True,False,LR (BioWordVec)
+Random Forest,SVM (BioWordVec),1,9,0.9648,0.9883,0.021484375,exact,True,False,SVM (BioWordVec)
+Random Forest,MLP Small,0,6,0.9648,0.9824,0.03125,exact,True,False,MLP Small
+Random Forest,MLP Small (Enhanced),0,6,0.9648,0.9824,0.03125,exact,True,False,MLP Small (Enhanced)
+XGBoost,LR (BioWordVec),2,10,0.9648,0.9883,0.03857421875,exact,True,False,LR (BioWordVec)
+XGBoost,SVM (BioWordVec),2,10,0.9648,0.9883,0.03857421875,exact,True,False,SVM (BioWordVec)
+Random Forest,BioBERT,1,8,0.9648,0.9853,0.0390625,exact,True,False,BioBERT
+Decision Tree (Enhanced),Decision Tree (BioWordVec),14,27,0.8944,0.9326,0.05958388801809633,exact,False,False,Decision Tree (BioWordVec)
+Random Forest,BERT-base,0,5,0.9648,0.9795,0.0625,exact,False,False,BERT-base
+XGBoost (Enhanced),PubMedBERT,0,5,0.9707,0.9853,0.0625,exact,False,False,PubMedBERT
+XGBoost (Enhanced),Bio+ClinicalBERT,0,5,0.9707,0.9853,0.0625,exact,False,False,Bio+ClinicalBERT
+XGBoost (Enhanced),BERT Ensemble,0,5,0.9707,0.9853,0.0625,exact,False,False,BERT Ensemble
+XGBoost,BioLinkBERT,2,9,0.9648,0.9853,0.0654296875,exact,False,False,BioLinkBERT
+Random Forest,BioWordVec Ensemble,1,7,0.9648,0.9824,0.0703125,exact,False,False,BioWordVec Ensemble
+SVM,Random Forest,7,1,0.9824,0.9648,0.0703125,exact,False,False,SVM
+Random Forest,Enhanced Ensemble,1,7,0.9648,0.9824,0.0703125,exact,False,False,Enhanced Ensemble
+Random Forest,MLP Small (BioWordVec),1,7,0.9648,0.9824,0.0703125,exact,False,False,MLP Small (BioWordVec)
+Logistic Regression,Random Forest,7,1,0.9824,0.9648,0.0703125,exact,False,False,Logistic Regression
+Random Forest,SVM (Enhanced),1,7,0.9648,0.9824,0.0703125,exact,False,False,SVM (Enhanced)
+Random Forest,MLP Deep (Enhanced),1,7,0.9648,0.9824,0.0703125,exact,False,False,MLP Deep (Enhanced)
+Random Forest,MLP Deep,1,7,0.9648,0.9824,0.0703125,exact,False,False,MLP Deep
+XGBoost,BERT Ensemble,3,10,0.9648,0.9853,0.09228515625,exact,False,False,BERT Ensemble
+XGBoost,Classical Ensemble,3,10,0.9648,0.9853,0.09228515625,exact,False,False,Classical Ensemble
+XGBoost,PubMedBERT,3,10,0.9648,0.9853,0.09228515625,exact,False,False,PubMedBERT
+XGBoost,Bio+ClinicalBERT,3,10,0.9648,0.9853,0.09228515625,exact,False,False,Bio+ClinicalBERT
+XGBoost (Enhanced),SVM (BioWordVec),2,8,0.9707,0.9883,0.109375,exact,False,False,SVM (BioWordVec)
+XGBoost (Enhanced),LR (BioWordVec),2,8,0.9707,0.9883,0.109375,exact,False,False,LR (BioWordVec)
+XGBoost,BioBERT,4,11,0.9648,0.9853,0.11846923828124999,exact,False,False,BioBERT
+XGBoost (Enhanced),Enhanced Ensemble,0,4,0.9707,0.9824,0.125,exact,False,False,Enhanced Ensemble
+Classical Ensemble,XGBoost (Enhanced),6,1,0.9853,0.9707,0.125,exact,False,False,Classical Ensemble
+LR (Enhanced),MLP Deep (BioWordVec),0,4,0.9795,0.9912,0.125,exact,False,False,MLP Deep (BioWordVec)
+Random Forest,LR (Enhanced),1,6,0.9648,0.9795,0.125,exact,False,False,LR (Enhanced)
+Random Forest (BioWordVec),MLP Deep (BioWordVec),0,4,0.9795,0.9912,0.125,exact,False,False,MLP Deep (BioWordVec)
+XGBoost (Enhanced),MLP Small (BioWordVec),0,4,0.9707,0.9824,0.125,exact,False,False,MLP Small (BioWordVec)
+XGBoost (Enhanced),BioWordVec Ensemble,0,4,0.9707,0.9824,0.125,exact,False,False,BioWordVec Ensemble
+XGBoost (Enhanced),BioBERT,1,6,0.9707,0.9853,0.125,exact,False,False,BioBERT
+MLP Deep (BioWordVec),BERT-base,4,0,0.9912,0.9795,0.125,exact,False,False,MLP Deep (BioWordVec)
+XGBoost (Enhanced),MLP Deep (Enhanced),0,4,0.9707,0.9824,0.125,exact,False,False,MLP Deep (Enhanced)
+Random Forest,XGBoost (BioWordVec),3,9,0.9648,0.9824,0.14599609375,exact,False,False,XGBoost (BioWordVec)
+Decision Tree,Decision Tree (Enhanced),25,37,0.8592,0.8944,0.16241315102200482,asymptotic (continuity-corrected),False,False,Decision Tree (Enhanced)
+XGBoost,MLP Small,4,10,0.9648,0.9824,0.1795654296875,exact,False,False,MLP Small
+XGBoost,SVM (Enhanced),4,10,0.9648,0.9824,0.1795654296875,exact,False,False,SVM (Enhanced)
+Logistic Regression,XGBoost,10,4,0.9824,0.9648,0.1795654296875,exact,False,False,Logistic Regression
+XGBoost,MLP Small (Enhanced),4,10,0.9648,0.9824,0.1795654296875,exact,False,False,MLP Small (Enhanced)
+XGBoost,MLP Deep (Enhanced),4,10,0.9648,0.9824,0.1795654296875,exact,False,False,MLP Deep (Enhanced)
+SVM,XGBoost,10,4,0.9824,0.9648,0.1795654296875,exact,False,False,SVM
+XGBoost,BioWordVec Ensemble,4,10,0.9648,0.9824,0.1795654296875,exact,False,False,BioWordVec Ensemble
+XGBoost,MLP Deep,4,10,0.9648,0.9824,0.1795654296875,exact,False,False,MLP Deep
+XGBoost,MLP Small (BioWordVec),4,10,0.9648,0.9824,0.1795654296875,exact,False,False,MLP Small (BioWordVec)
+XGBoost,XGBoost (BioWordVec),4,10,0.9648,0.9824,0.1795654296875,exact,False,False,XGBoost (BioWordVec)
+XGBoost,Enhanced Ensemble,4,10,0.9648,0.9824,0.1795654296875,exact,False,False,Enhanced Ensemble
+Random Forest,Random Forest (BioWordVec),2,7,0.9648,0.9795,0.1796875,exact,False,False,Random Forest (BioWordVec)
+MLP Small,XGBoost (Enhanced),5,1,0.9824,0.9707,0.21875,exact,False,False,MLP Small
+XGBoost (Enhanced),MLP Small (Enhanced),1,5,0.9707,0.9824,0.21875,exact,False,False,MLP Small (Enhanced)
+XGBoost (Enhanced),BioLinkBERT,3,8,0.9707,0.9853,0.2265625,exact,False,False,BioLinkBERT
+Random Forest,Random Forest (Enhanced),12,6,0.9648,0.9472,0.237884521484375,exact,False,False,Random Forest
+MLP Small,MLP Deep (BioWordVec),0,3,0.9824,0.9912,0.25,exact,False,False,MLP Deep (BioWordVec)
+MLP Deep (Enhanced),MLP Deep (BioWordVec),0,3,0.9824,0.9912,0.25,exact,False,False,MLP Deep (BioWordVec)
+Enhanced Ensemble,MLP Deep (BioWordVec),0,3,0.9824,0.9912,0.25,exact,False,False,MLP Deep (BioWordVec)
+MLP Small (Enhanced),MLP Deep (BioWordVec),0,3,0.9824,0.9912,0.25,exact,False,False,MLP Deep (BioWordVec)
+MLP Deep (BioWordVec),BioWordVec Ensemble,3,0,0.9912,0.9824,0.25,exact,False,False,MLP Deep (BioWordVec)
+MLP Small (BioWordVec),MLP Deep (BioWordVec),0,3,0.9824,0.9912,0.25,exact,False,False,MLP Deep (BioWordVec)
+LR (Enhanced),LR (BioWordVec),0,3,0.9795,0.9883,0.25,exact,False,False,LR (BioWordVec)
+LR (Enhanced),SVM (BioWordVec),0,3,0.9795,0.9883,0.25,exact,False,False,SVM (BioWordVec)
+XGBoost (BioWordVec),MLP Deep (BioWordVec),0,3,0.9824,0.9912,0.25,exact,False,False,MLP Deep (BioWordVec)
+XGBoost (Enhanced),XGBoost (BioWordVec),2,6,0.9707,0.9824,0.2890625,exact,False,False,XGBoost (BioWordVec)
+Logistic Regression,XGBoost (Enhanced),6,2,0.9824,0.9707,0.2890625,exact,False,False,Logistic Regression
+MLP Deep,XGBoost (Enhanced),6,2,0.9824,0.9707,0.2890625,exact,False,False,MLP Deep
+SVM,XGBoost (Enhanced),6,2,0.9824,0.9707,0.2890625,exact,False,False,SVM
+SVM (Enhanced),XGBoost (Enhanced),6,2,0.9824,0.9707,0.2890625,exact,False,False,SVM (Enhanced)
+XGBoost,Random Forest (BioWordVec),5,10,0.9648,0.9795,0.30175781249999994,exact,False,False,Random Forest (BioWordVec)
+XGBoost,LR (Enhanced),5,10,0.9648,0.9795,0.30175781249999994,exact,False,False,LR (Enhanced)
+XGBoost,BERT-base,5,10,0.9648,0.9795,0.30175781249999994,exact,False,False,BERT-base
+XGBoost,Random Forest (Enhanced),16,10,0.9648,0.9472,0.32693958282470703,exact,False,False,XGBoost
+MLP Deep,MLP Deep (BioWordVec),1,4,0.9824,0.9912,0.375,exact,False,False,MLP Deep (BioWordVec)
+SVM,MLP Deep (BioWordVec),1,4,0.9824,0.9912,0.375,exact,False,False,MLP Deep (BioWordVec)
+SVM (Enhanced),MLP Deep (BioWordVec),1,4,0.9824,0.9912,0.375,exact,False,False,MLP Deep (BioWordVec)
+Logistic Regression,MLP Deep (BioWordVec),1,4,0.9824,0.9912,0.375,exact,False,False,MLP Deep (BioWordVec)
+Random Forest (Enhanced),Decision Tree (BioWordVec),16,11,0.9472,0.9326,0.44206833839416504,exact,False,False,Random Forest (Enhanced)
+XGBoost (Enhanced),BERT-base,2,5,0.9707,0.9795,0.453125,exact,False,False,BERT-base
+XGBoost (Enhanced),Random Forest (BioWordVec),2,5,0.9707,0.9795,0.453125,exact,False,False,Random Forest (BioWordVec)
+LR (Enhanced),XGBoost (Enhanced),5,2,0.9795,0.9707,0.453125,exact,False,False,LR (Enhanced)
+SVM (BioWordVec),BERT-base,5,2,0.9883,0.9795,0.453125,exact,False,False,SVM (BioWordVec)
+SVM (BioWordVec),Random Forest (BioWordVec),5,2,0.9883,0.9795,0.453125,exact,False,False,SVM (BioWordVec)
+LR (BioWordVec),Random Forest (BioWordVec),5,2,0.9883,0.9795,0.453125,exact,False,False,LR (BioWordVec)
+LR (BioWordVec),BERT-base,5,2,0.9883,0.9795,0.453125,exact,False,False,LR (BioWordVec)
+LR (Enhanced),BERT Ensemble,0,2,0.9795,0.9853,0.5,exact,False,False,BERT Ensemble
+Random Forest (BioWordVec),BERT Ensemble,0,2,0.9795,0.9853,0.5,exact,False,False,BERT Ensemble
+Random Forest (BioWordVec),Bio+ClinicalBERT,0,2,0.9795,0.9853,0.5,exact,False,False,Bio+ClinicalBERT
+MLP Deep (BioWordVec),PubMedBERT,2,0,0.9912,0.9853,0.5,exact,False,False,MLP Deep (BioWordVec)
+MLP Deep (BioWordVec),Bio+ClinicalBERT,2,0,0.9912,0.9853,0.5,exact,False,False,MLP Deep (BioWordVec)
+LR (Enhanced),PubMedBERT,0,2,0.9795,0.9853,0.5,exact,False,False,PubMedBERT
+BERT-base,PubMedBERT,0,2,0.9795,0.9853,0.5,exact,False,False,PubMedBERT
+BERT-base,Bio+ClinicalBERT,0,2,0.9795,0.9853,0.5,exact,False,False,Bio+ClinicalBERT
+BERT-base,BERT Ensemble,0,2,0.9795,0.9853,0.5,exact,False,False,BERT Ensemble
+Logistic Regression,LR (BioWordVec),0,2,0.9824,0.9883,0.5,exact,False,False,LR (BioWordVec)
+MLP Deep (BioWordVec),BERT Ensemble,2,0,0.9912,0.9853,0.5,exact,False,False,MLP Deep (BioWordVec)
+Logistic Regression,SVM (BioWordVec),0,2,0.9824,0.9883,0.5,exact,False,False,SVM (BioWordVec)
+SVM,SVM (BioWordVec),0,2,0.9824,0.9883,0.5,exact,False,False,SVM (BioWordVec)
+Random Forest (BioWordVec),PubMedBERT,0,2,0.9795,0.9853,0.5,exact,False,False,PubMedBERT
+SVM,LR (BioWordVec),0,2,0.9824,0.9883,0.5,exact,False,False,LR (BioWordVec)
+LR (Enhanced),Bio+ClinicalBERT,0,2,0.9795,0.9853,0.5,exact,False,False,Bio+ClinicalBERT
+Classical Ensemble,LR (Enhanced),2,0,0.9853,0.9795,0.5,exact,False,False,Classical Ensemble
+SVM (Enhanced),LR (BioWordVec),0,2,0.9824,0.9883,0.5,exact,False,False,LR (BioWordVec)
+SVM (Enhanced),SVM (BioWordVec),0,2,0.9824,0.9883,0.5,exact,False,False,SVM (BioWordVec)
+MLP Deep,LR (BioWordVec),0,2,0.9824,0.9883,0.5,exact,False,False,LR (BioWordVec)
+MLP Deep,SVM (BioWordVec),0,2,0.9824,0.9883,0.5,exact,False,False,SVM (BioWordVec)
+Classical Ensemble,Random Forest (BioWordVec),3,1,0.9853,0.9795,0.625,exact,False,False,Classical Ensemble
+Classical Ensemble,MLP Deep (BioWordVec),1,3,0.9853,0.9912,0.625,exact,False,False,MLP Deep (BioWordVec)
+SVM (BioWordVec),XGBoost (BioWordVec),3,1,0.9883,0.9824,0.625,exact,False,False,SVM (BioWordVec)
+Random Forest (BioWordVec),BioBERT,1,3,0.9795,0.9853,0.625,exact,False,False,BioBERT
+BERT-base,BioLinkBERT,1,3,0.9795,0.9853,0.625,exact,False,False,BioLinkBERT
+LR (BioWordVec),XGBoost (BioWordVec),3,1,0.9883,0.9824,0.625,exact,False,False,LR (BioWordVec)
+MLP Deep (BioWordVec),BioLinkBERT,3,1,0.9912,0.9853,0.625,exact,False,False,MLP Deep (BioWordVec)
+LR (Enhanced),BioBERT,1,3,0.9795,0.9853,0.625,exact,False,False,BioBERT
+MLP Deep (BioWordVec),BioBERT,3,1,0.9912,0.9853,0.625,exact,False,False,MLP Deep (BioWordVec)
+Classical Ensemble,BERT-base,3,1,0.9853,0.9795,0.625,exact,False,False,Classical Ensemble
+BERT-base,BioBERT,1,3,0.9795,0.9853,0.625,exact,False,False,BioBERT
+SVM (BioWordVec),BioWordVec Ensemble,4,2,0.9883,0.9824,0.6875,exact,False,False,SVM (BioWordVec)
+MLP Small (Enhanced),LR (BioWordVec),2,4,0.9824,0.9883,0.6875,exact,False,False,LR (BioWordVec)
+LR (BioWordVec),BioWordVec Ensemble,4,2,0.9883,0.9824,0.6875,exact,False,False,LR (BioWordVec)
+MLP Small,SVM (BioWordVec),2,4,0.9824,0.9883,0.6875,exact,False,False,SVM (BioWordVec)
+MLP Small (Enhanced),SVM (BioWordVec),2,4,0.9824,0.9883,0.6875,exact,False,False,SVM (BioWordVec)
+MLP Deep (Enhanced),SVM (BioWordVec),2,4,0.9824,0.9883,0.6875,exact,False,False,SVM (BioWordVec)
+MLP Deep (Enhanced),LR (BioWordVec),2,4,0.9824,0.9883,0.6875,exact,False,False,LR (BioWordVec)
+LR (BioWordVec),MLP Small (BioWordVec),4,2,0.9883,0.9824,0.6875,exact,False,False,LR (BioWordVec)
+Enhanced Ensemble,LR (BioWordVec),2,4,0.9824,0.9883,0.6875,exact,False,False,LR (BioWordVec)
+Enhanced Ensemble,SVM (BioWordVec),2,4,0.9824,0.9883,0.6875,exact,False,False,SVM (BioWordVec)
+SVM (BioWordVec),MLP Small (BioWordVec),4,2,0.9883,0.9824,0.6875,exact,False,False,SVM (BioWordVec)
+MLP Small,LR (BioWordVec),2,4,0.9824,0.9883,0.6875,exact,False,False,LR (BioWordVec)
+LR (Enhanced),BioLinkBERT,3,5,0.9795,0.9853,0.7265625,exact,False,False,BioLinkBERT
+Random Forest (BioWordVec),BioLinkBERT,3,5,0.9795,0.9853,0.7265625,exact,False,False,BioLinkBERT
+Random Forest,XGBoost (Enhanced),4,6,0.9648,0.9707,0.75390625,exact,False,False,XGBoost (Enhanced)
+XGBoost,XGBoost (Enhanced),8,10,0.9648,0.9707,0.8145294189453125,exact,False,False,XGBoost (Enhanced)
+LR (BioWordVec),BERT Ensemble,3,2,0.9883,0.9853,1.0,exact,False,False,LR (BioWordVec)
+XGBoost (BioWordVec),Bio+ClinicalBERT,2,3,0.9824,0.9853,1.0,exact,False,False,Bio+ClinicalBERT
+XGBoost (BioWordVec),BioLinkBERT,3,4,0.9824,0.9853,1.0,exact,False,False,BioLinkBERT
+BioLinkBERT,BERT Ensemble,3,3,0.9853,0.9853,1.0,exact,False,False,tie
+MLP Small (BioWordVec),BERT Ensemble,0,1,0.9824,0.9853,1.0,exact,False,False,BERT Ensemble
+LR (BioWordVec),Bio+ClinicalBERT,3,2,0.9883,0.9853,1.0,exact,False,False,LR (BioWordVec)
+LR (BioWordVec),PubMedBERT,3,2,0.9883,0.9853,1.0,exact,False,False,LR (BioWordVec)
+LR (BioWordVec),BioBERT,4,3,0.9883,0.9853,1.0,exact,False,False,LR (BioWordVec)
+XGBoost (BioWordVec),PubMedBERT,2,3,0.9824,0.9853,1.0,exact,False,False,PubMedBERT
+BioWordVec Ensemble,PubMedBERT,0,1,0.9824,0.9853,1.0,exact,False,False,PubMedBERT
+XGBoost (BioWordVec),BERT-base,4,3,0.9824,0.9795,1.0,exact,False,False,XGBoost (BioWordVec)
+LR (BioWordVec),MLP Deep (BioWordVec),1,2,0.9883,0.9912,1.0,exact,False,False,MLP Deep (BioWordVec)
+BioWordVec Ensemble,Bio+ClinicalBERT,0,1,0.9824,0.9853,1.0,exact,False,False,Bio+ClinicalBERT
+BioWordVec Ensemble,BioLinkBERT,3,4,0.9824,0.9853,1.0,exact,False,False,BioLinkBERT
+Random Forest (BioWordVec),XGBoost (BioWordVec),3,4,0.9795,0.9824,1.0,exact,False,False,XGBoost (BioWordVec)
+LR (BioWordVec),SVM (BioWordVec),0,0,0.9883,0.9883,1.0,no discordant pairs,False,False,tie
+BioWordVec Ensemble,BERT Ensemble,0,1,0.9824,0.9853,1.0,exact,False,False,BERT Ensemble
+LR (BioWordVec),BioLinkBERT,3,2,0.9883,0.9853,1.0,exact,False,False,LR (BioWordVec)
+XGBoost (BioWordVec),BioBERT,3,4,0.9824,0.9853,1.0,exact,False,False,BioBERT
+SVM (BioWordVec),BioBERT,4,3,0.9883,0.9853,1.0,exact,False,False,SVM (BioWordVec)
+BioWordVec Ensemble,BioBERT,1,2,0.9824,0.9853,1.0,exact,False,False,BioBERT
+MLP Small (BioWordVec),BioLinkBERT,3,4,0.9824,0.9853,1.0,exact,False,False,BioLinkBERT
+MLP Small (BioWordVec),Bio+ClinicalBERT,0,1,0.9824,0.9853,1.0,exact,False,False,Bio+ClinicalBERT
+MLP Small (BioWordVec),PubMedBERT,0,1,0.9824,0.9853,1.0,exact,False,False,PubMedBERT
+MLP Small (BioWordVec),BioBERT,1,2,0.9824,0.9853,1.0,exact,False,False,BioBERT
+MLP Small (BioWordVec),BERT-base,2,1,0.9824,0.9795,1.0,exact,False,False,MLP Small (BioWordVec)
+MLP Small (BioWordVec),BioWordVec Ensemble,0,0,0.9824,0.9824,1.0,no discordant pairs,False,False,tie
+Random Forest (BioWordVec),BERT-base,2,2,0.9795,0.9795,1.0,exact,False,False,tie
+XGBoost (BioWordVec),MLP Small (BioWordVec),2,2,0.9824,0.9824,1.0,exact,False,False,tie
+Random Forest (BioWordVec),MLP Small (BioWordVec),1,2,0.9795,0.9824,1.0,exact,False,False,MLP Small (BioWordVec)
+BioBERT,Bio+ClinicalBERT,1,1,0.9853,0.9853,1.0,exact,False,False,tie
+BioBERT,BioLinkBERT,4,4,0.9853,0.9853,1.0,exact,False,False,tie
+Random Forest (BioWordVec),BioWordVec Ensemble,1,2,0.9795,0.9824,1.0,exact,False,False,BioWordVec Ensemble
+BioBERT,BERT Ensemble,1,1,0.9853,0.9853,1.0,exact,False,False,tie
+PubMedBERT,Bio+ClinicalBERT,0,0,0.9853,0.9853,1.0,no discordant pairs,False,False,tie
+PubMedBERT,BioLinkBERT,3,3,0.9853,0.9853,1.0,exact,False,False,tie
+PubMedBERT,BERT Ensemble,0,0,0.9853,0.9853,1.0,no discordant pairs,False,False,tie
+Bio+ClinicalBERT,BioLinkBERT,3,3,0.9853,0.9853,1.0,exact,False,False,tie
+SVM (BioWordVec),BERT Ensemble,3,2,0.9883,0.9853,1.0,exact,False,False,SVM (BioWordVec)
+SVM (BioWordVec),BioLinkBERT,3,2,0.9883,0.9853,1.0,exact,False,False,SVM (BioWordVec)
+SVM (BioWordVec),Bio+ClinicalBERT,3,2,0.9883,0.9853,1.0,exact,False,False,SVM (BioWordVec)
+SVM (BioWordVec),PubMedBERT,3,2,0.9883,0.9853,1.0,exact,False,False,SVM (BioWordVec)
+XGBoost (BioWordVec),BioWordVec Ensemble,2,2,0.9824,0.9824,1.0,exact,False,False,tie
+SVM (BioWordVec),MLP Deep (BioWordVec),1,2,0.9883,0.9912,1.0,exact,False,False,MLP Deep (BioWordVec)
+BioWordVec Ensemble,BERT-base,2,1,0.9824,0.9795,1.0,exact,False,False,BioWordVec Ensemble
+Bio+ClinicalBERT,BERT Ensemble,0,0,0.9853,0.9853,1.0,no discordant pairs,False,False,tie
+XGBoost (BioWordVec),BERT Ensemble,2,3,0.9824,0.9853,1.0,exact,False,False,BERT Ensemble
+BioBERT,PubMedBERT,1,1,0.9853,0.9853,1.0,exact,False,False,tie
+Logistic Regression,SVM,0,0,0.9824,0.9824,1.0,no discordant pairs,False,False,tie
+Enhanced Ensemble,BioLinkBERT,3,4,0.9824,0.9853,1.0,exact,False,False,BioLinkBERT
+SVM,BERT Ensemble,1,2,0.9824,0.9853,1.0,exact,False,False,BERT Ensemble
+Random Forest,XGBoost,9,9,0.9648,0.9648,1.0,exact,False,False,tie
+MLP Small,MLP Deep,2,2,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Small,Classical Ensemble,1,2,0.9824,0.9853,1.0,exact,False,False,Classical Ensemble
+MLP Small,LR (Enhanced),2,1,0.9824,0.9795,1.0,exact,False,False,MLP Small
+MLP Small,SVM (Enhanced),2,2,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Small,MLP Small (Enhanced),0,0,0.9824,0.9824,1.0,no discordant pairs,False,False,tie
+MLP Small,MLP Deep (Enhanced),1,1,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Small,Enhanced Ensemble,1,1,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Small,Random Forest (BioWordVec),2,1,0.9824,0.9795,1.0,exact,False,False,MLP Small
+MLP Small,XGBoost (BioWordVec),3,3,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Small,MLP Small (BioWordVec),1,1,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Small,BioWordVec Ensemble,1,1,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Small,BERT-base,2,1,0.9824,0.9795,1.0,exact,False,False,MLP Small
+MLP Small,BioBERT,1,2,0.9824,0.9853,1.0,exact,False,False,BioBERT
+MLP Small,PubMedBERT,0,1,0.9824,0.9853,1.0,exact,False,False,PubMedBERT
+MLP Small,Bio+ClinicalBERT,0,1,0.9824,0.9853,1.0,exact,False,False,Bio+ClinicalBERT
+MLP Deep,BioBERT,2,3,0.9824,0.9853,1.0,exact,False,False,BioBERT
+MLP Deep,BERT-base,3,2,0.9824,0.9795,1.0,exact,False,False,MLP Deep
+MLP Deep,BioWordVec Ensemble,2,2,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Deep,MLP Small (BioWordVec),2,2,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Deep,XGBoost (BioWordVec),3,3,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Deep,Random Forest (BioWordVec),3,2,0.9824,0.9795,1.0,exact,False,False,MLP Deep
+SVM,BioLinkBERT,3,4,0.9824,0.9853,1.0,exact,False,False,BioLinkBERT
+MLP Deep,Enhanced Ensemble,2,2,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Deep,MLP Small (Enhanced),2,2,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Deep,SVM (Enhanced),0,0,0.9824,0.9824,1.0,no discordant pairs,False,False,tie
+MLP Deep,LR (Enhanced),1,0,0.9824,0.9795,1.0,exact,False,False,MLP Deep
+MLP Deep,Classical Ensemble,0,1,0.9824,0.9853,1.0,exact,False,False,Classical Ensemble
+MLP Small,BERT Ensemble,0,1,0.9824,0.9853,1.0,exact,False,False,BERT Ensemble
+MLP Small,BioLinkBERT,3,4,0.9824,0.9853,1.0,exact,False,False,BioLinkBERT
+MLP Deep,MLP Deep (Enhanced),2,2,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Deep,PubMedBERT,1,2,0.9824,0.9853,1.0,exact,False,False,PubMedBERT
+SVM,Bio+ClinicalBERT,1,2,0.9824,0.9853,1.0,exact,False,False,Bio+ClinicalBERT
+SVM,BioBERT,2,3,0.9824,0.9853,1.0,exact,False,False,BioBERT
+Logistic Regression,MLP Small,2,2,0.9824,0.9824,1.0,exact,False,False,tie
+Logistic Regression,MLP Deep,0,0,0.9824,0.9824,1.0,no discordant pairs,False,False,tie
+Logistic Regression,Classical Ensemble,0,1,0.9824,0.9853,1.0,exact,False,False,Classical Ensemble
+Logistic Regression,LR (Enhanced),1,0,0.9824,0.9795,1.0,exact,False,False,Logistic Regression
+Logistic Regression,SVM (Enhanced),0,0,0.9824,0.9824,1.0,no discordant pairs,False,False,tie
+Logistic Regression,MLP Small (Enhanced),2,2,0.9824,0.9824,1.0,exact,False,False,tie
+Logistic Regression,MLP Deep (Enhanced),2,2,0.9824,0.9824,1.0,exact,False,False,tie
+Logistic Regression,Enhanced Ensemble,2,2,0.9824,0.9824,1.0,exact,False,False,tie
+Logistic Regression,Random Forest (BioWordVec),3,2,0.9824,0.9795,1.0,exact,False,False,Logistic Regression
+Logistic Regression,XGBoost (BioWordVec),3,3,0.9824,0.9824,1.0,exact,False,False,tie
+Logistic Regression,MLP Small (BioWordVec),2,2,0.9824,0.9824,1.0,exact,False,False,tie
+Logistic Regression,BioWordVec Ensemble,2,2,0.9824,0.9824,1.0,exact,False,False,tie
+Logistic Regression,BERT-base,3,2,0.9824,0.9795,1.0,exact,False,False,Logistic Regression
+Logistic Regression,BioBERT,2,3,0.9824,0.9853,1.0,exact,False,False,BioBERT
+Logistic Regression,PubMedBERT,1,2,0.9824,0.9853,1.0,exact,False,False,PubMedBERT
+Logistic Regression,Bio+ClinicalBERT,1,2,0.9824,0.9853,1.0,exact,False,False,Bio+ClinicalBERT
+Logistic Regression,BioLinkBERT,3,4,0.9824,0.9853,1.0,exact,False,False,BioLinkBERT
+SVM,BERT-base,3,2,0.9824,0.9795,1.0,exact,False,False,SVM
+SVM,BioWordVec Ensemble,2,2,0.9824,0.9824,1.0,exact,False,False,tie
+SVM,MLP Small (BioWordVec),2,2,0.9824,0.9824,1.0,exact,False,False,tie
+SVM,XGBoost (BioWordVec),3,3,0.9824,0.9824,1.0,exact,False,False,tie
+SVM,Random Forest (BioWordVec),3,2,0.9824,0.9795,1.0,exact,False,False,SVM
+SVM,Enhanced Ensemble,2,2,0.9824,0.9824,1.0,exact,False,False,tie
+SVM,PubMedBERT,1,2,0.9824,0.9853,1.0,exact,False,False,PubMedBERT
+SVM,MLP Deep (Enhanced),2,2,0.9824,0.9824,1.0,exact,False,False,tie
+SVM,SVM (Enhanced),0,0,0.9824,0.9824,1.0,no discordant pairs,False,False,tie
+SVM,LR (Enhanced),1,0,0.9824,0.9795,1.0,exact,False,False,SVM
+SVM,Classical Ensemble,0,1,0.9824,0.9853,1.0,exact,False,False,Classical Ensemble
+SVM,MLP Deep,0,0,0.9824,0.9824,1.0,no discordant pairs,False,False,tie
+SVM,MLP Small,2,2,0.9824,0.9824,1.0,exact,False,False,tie
+Logistic Regression,BERT Ensemble,1,2,0.9824,0.9853,1.0,exact,False,False,BERT Ensemble
+SVM,MLP Small (Enhanced),2,2,0.9824,0.9824,1.0,exact,False,False,tie
+Enhanced Ensemble,BERT Ensemble,0,1,0.9824,0.9853,1.0,exact,False,False,BERT Ensemble
+MLP Deep,Bio+ClinicalBERT,1,2,0.9824,0.9853,1.0,exact,False,False,Bio+ClinicalBERT
+MLP Deep,BERT Ensemble,1,2,0.9824,0.9853,1.0,exact,False,False,BERT Ensemble
+MLP Small (Enhanced),MLP Deep (Enhanced),1,1,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Small (Enhanced),Enhanced Ensemble,1,1,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Small (Enhanced),Random Forest (BioWordVec),2,1,0.9824,0.9795,1.0,exact,False,False,MLP Small (Enhanced)
+MLP Small (Enhanced),XGBoost (BioWordVec),3,3,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Small (Enhanced),MLP Small (BioWordVec),1,1,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Small (Enhanced),BioWordVec Ensemble,1,1,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Small (Enhanced),BERT-base,2,1,0.9824,0.9795,1.0,exact,False,False,MLP Small (Enhanced)
+MLP Small (Enhanced),BioBERT,1,2,0.9824,0.9853,1.0,exact,False,False,BioBERT
+MLP Small (Enhanced),PubMedBERT,0,1,0.9824,0.9853,1.0,exact,False,False,PubMedBERT
+MLP Small (Enhanced),Bio+ClinicalBERT,0,1,0.9824,0.9853,1.0,exact,False,False,Bio+ClinicalBERT
+MLP Small (Enhanced),BioLinkBERT,3,4,0.9824,0.9853,1.0,exact,False,False,BioLinkBERT
+MLP Small (Enhanced),BERT Ensemble,0,1,0.9824,0.9853,1.0,exact,False,False,BERT Ensemble
+MLP Deep (Enhanced),Enhanced Ensemble,0,0,0.9824,0.9824,1.0,no discordant pairs,False,False,tie
+MLP Deep (Enhanced),Random Forest (BioWordVec),2,1,0.9824,0.9795,1.0,exact,False,False,MLP Deep (Enhanced)
+MLP Deep (Enhanced),XGBoost (BioWordVec),2,2,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Deep (Enhanced),MLP Small (BioWordVec),0,0,0.9824,0.9824,1.0,no discordant pairs,False,False,tie
+MLP Deep (Enhanced),BioWordVec Ensemble,0,0,0.9824,0.9824,1.0,no discordant pairs,False,False,tie
+Enhanced Ensemble,Bio+ClinicalBERT,0,1,0.9824,0.9853,1.0,exact,False,False,Bio+ClinicalBERT
+Enhanced Ensemble,PubMedBERT,0,1,0.9824,0.9853,1.0,exact,False,False,PubMedBERT
+Enhanced Ensemble,BioBERT,1,2,0.9824,0.9853,1.0,exact,False,False,BioBERT
+Enhanced Ensemble,BERT-base,2,1,0.9824,0.9795,1.0,exact,False,False,Enhanced Ensemble
+Enhanced Ensemble,BioWordVec Ensemble,0,0,0.9824,0.9824,1.0,no discordant pairs,False,False,tie
+Enhanced Ensemble,MLP Small (BioWordVec),0,0,0.9824,0.9824,1.0,no discordant pairs,False,False,tie
+SVM (Enhanced),BERT Ensemble,1,2,0.9824,0.9853,1.0,exact,False,False,BERT Ensemble
+Enhanced Ensemble,XGBoost (BioWordVec),2,2,0.9824,0.9824,1.0,exact,False,False,tie
+MLP Deep (Enhanced),BERT Ensemble,0,1,0.9824,0.9853,1.0,exact,False,False,BERT Ensemble
+MLP Deep (Enhanced),BioLinkBERT,3,4,0.9824,0.9853,1.0,exact,False,False,BioLinkBERT
+MLP Deep (Enhanced),Bio+ClinicalBERT,0,1,0.9824,0.9853,1.0,exact,False,False,Bio+ClinicalBERT
+MLP Deep (Enhanced),PubMedBERT,0,1,0.9824,0.9853,1.0,exact,False,False,PubMedBERT
+MLP Deep (Enhanced),BioBERT,1,2,0.9824,0.9853,1.0,exact,False,False,BioBERT
+MLP Deep (Enhanced),BERT-base,2,1,0.9824,0.9795,1.0,exact,False,False,MLP Deep (Enhanced)
+Enhanced Ensemble,Random Forest (BioWordVec),2,1,0.9824,0.9795,1.0,exact,False,False,Enhanced Ensemble
+MLP Deep,BioLinkBERT,3,4,0.9824,0.9853,1.0,exact,False,False,BioLinkBERT
+SVM (Enhanced),BioLinkBERT,3,4,0.9824,0.9853,1.0,exact,False,False,BioLinkBERT
+SVM (Enhanced),PubMedBERT,1,2,0.9824,0.9853,1.0,exact,False,False,PubMedBERT
+Classical Ensemble,SVM (Enhanced),1,0,0.9853,0.9824,1.0,exact,False,False,Classical Ensemble
+Classical Ensemble,MLP Small (Enhanced),2,1,0.9853,0.9824,1.0,exact,False,False,Classical Ensemble
+Classical Ensemble,MLP Deep (Enhanced),2,1,0.9853,0.9824,1.0,exact,False,False,Classical Ensemble
+Classical Ensemble,Enhanced Ensemble,2,1,0.9853,0.9824,1.0,exact,False,False,Classical Ensemble
+Classical Ensemble,LR (BioWordVec),1,2,0.9853,0.9883,1.0,exact,False,False,LR (BioWordVec)
+Classical Ensemble,SVM (BioWordVec),1,2,0.9853,0.9883,1.0,exact,False,False,SVM (BioWordVec)
+Classical Ensemble,XGBoost (BioWordVec),4,3,0.9853,0.9824,1.0,exact,False,False,Classical Ensemble
+Classical Ensemble,MLP Small (BioWordVec),2,1,0.9853,0.9824,1.0,exact,False,False,Classical Ensemble
+Classical Ensemble,BioWordVec Ensemble,2,1,0.9853,0.9824,1.0,exact,False,False,Classical Ensemble
+Classical Ensemble,BioBERT,2,2,0.9853,0.9853,1.0,exact,False,False,tie
+Classical Ensemble,PubMedBERT,1,1,0.9853,0.9853,1.0,exact,False,False,tie
+Classical Ensemble,Bio+ClinicalBERT,1,1,0.9853,0.9853,1.0,exact,False,False,tie
+Classical Ensemble,BioLinkBERT,3,3,0.9853,0.9853,1.0,exact,False,False,tie
+Classical Ensemble,BERT Ensemble,1,1,0.9853,0.9853,1.0,exact,False,False,tie
+LR (Enhanced),SVM (Enhanced),0,1,0.9795,0.9824,1.0,exact,False,False,SVM (Enhanced)
+LR (Enhanced),MLP Small (Enhanced),1,2,0.9795,0.9824,1.0,exact,False,False,MLP Small (Enhanced)
+LR (Enhanced),MLP Deep (Enhanced),1,2,0.9795,0.9824,1.0,exact,False,False,MLP Deep (Enhanced)
+SVM (Enhanced),BioBERT,2,3,0.9824,0.9853,1.0,exact,False,False,BioBERT
+SVM (Enhanced),BERT-base,3,2,0.9824,0.9795,1.0,exact,False,False,SVM (Enhanced)
+SVM (Enhanced),BioWordVec Ensemble,2,2,0.9824,0.9824,1.0,exact,False,False,tie
+SVM (Enhanced),XGBoost (BioWordVec),3,3,0.9824,0.9824,1.0,exact,False,False,tie
+SVM (Enhanced),Random Forest (BioWordVec),3,2,0.9824,0.9795,1.0,exact,False,False,SVM (Enhanced)
+SVM (Enhanced),Enhanced Ensemble,2,2,0.9824,0.9824,1.0,exact,False,False,tie
+SVM (Enhanced),Bio+ClinicalBERT,1,2,0.9824,0.9853,1.0,exact,False,False,Bio+ClinicalBERT
+SVM (Enhanced),MLP Deep (Enhanced),2,2,0.9824,0.9824,1.0,exact,False,False,tie
+LR (Enhanced),BERT-base,2,2,0.9795,0.9795,1.0,exact,False,False,tie
+LR (Enhanced),BioWordVec Ensemble,1,2,0.9795,0.9824,1.0,exact,False,False,BioWordVec Ensemble
+LR (Enhanced),MLP Small (BioWordVec),1,2,0.9795,0.9824,1.0,exact,False,False,MLP Small (BioWordVec)
+LR (Enhanced),XGBoost (BioWordVec),2,3,0.9795,0.9824,1.0,exact,False,False,XGBoost (BioWordVec)
+LR (Enhanced),Random Forest (BioWordVec),2,2,0.9795,0.9795,1.0,exact,False,False,tie
+LR (Enhanced),Enhanced Ensemble,1,2,0.9795,0.9824,1.0,exact,False,False,Enhanced Ensemble
+SVM (Enhanced),MLP Small (Enhanced),2,2,0.9824,0.9824,1.0,exact,False,False,tie
+SVM (Enhanced),MLP Small (BioWordVec),2,2,0.9824,0.9824,1.0,exact,False,False,tie

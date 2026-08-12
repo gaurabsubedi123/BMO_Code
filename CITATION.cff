@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "Biomarker or Not: automated detection of biomarker outcome measures in Alzheimer's disease clinical trial text"
+authors:
+  - family-names: Subedi
+    given-names: Gaurab
+  - family-names: Leisgang Osse
+    given-names: Amanda
+  - family-names: Hooyman
+    given-names: Andrew
+  - family-names: Zhou
+    given-names: Yadi
+  - family-names: Kinney
+    given-names: Jefferson W.
+  - family-names: Cheng
+    given-names: Feixiong
+  - family-names: Cummings
+    given-names: Jeffrey L.
+  - family-names: Fonseca
+    given-names: Jorge
+license: MIT
+repository-code: "https://github.com/ORG/bmo-biomarker-classification"
+abstract: >-
+  Code accompanying a benchmark of 33 systems for classifying whether a
+  registered clinical trial outcome measure concerns an Alzheimer's disease
+  biomarker.

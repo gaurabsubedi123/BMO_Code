@@ -1,0 +1,466 @@
+Model_1,Model_2,only_1_correct,only_2_correct,acc_1,acc_2,p_value,method,sig_uncorrected,sig_bonferroni,winner
+BERT Ensemble,BART Zero-Shot,674,27,0.9699,0.5548,1.7489323729003457e-131,asymptotic (continuity-corrected),True,True,BERT Ensemble
+BioLinkBERT,BART Zero-Shot,673,27,0.9692,0.5548,2.877022263909647e-131,asymptotic (continuity-corrected),True,True,BioLinkBERT
+PubMedBERT,BART Zero-Shot,672,31,0.966,0.5548,9.967054041515091e-129,asymptotic (continuity-corrected),True,True,PubMedBERT
+LR (BioWordVec),BART Zero-Shot,672,32,0.9654,0.5548,3.7477598286829315e-128,asymptotic (continuity-corrected),True,True,LR (BioWordVec)
+SVM (BioWordVec),BART Zero-Shot,676,35,0.966,0.5548,2.6581970522717888e-127,asymptotic (continuity-corrected),True,True,SVM (BioWordVec)
+Bio+ClinicalBERT,BART Zero-Shot,662,30,0.9602,0.5548,3.798811501309617e-127,asymptotic (continuity-corrected),True,True,Bio+ClinicalBERT
+BioBERT,BART Zero-Shot,669,41,0.9577,0.5548,1.9700709275186706e-122,asymptotic (continuity-corrected),True,True,BioBERT
+MLP Small (BioWordVec),BART Zero-Shot,667,42,0.9557,0.5548,1.8884665194722925e-121,asymptotic (continuity-corrected),True,True,MLP Small (BioWordVec)
+MLP Deep (BioWordVec),BART Zero-Shot,650,36,0.9487,0.5548,3.8502984262237695e-121,asymptotic (continuity-corrected),True,True,MLP Deep (BioWordVec)
+Logistic Regression,BART Zero-Shot,652,41,0.9468,0.5548,8.728717709173614e-119,asymptotic (continuity-corrected),True,True,Logistic Regression
+BERT-base,BART Zero-Shot,637,40,0.9378,0.5548,4.03551924037353e-116,asymptotic (continuity-corrected),True,True,BERT-base
+XGBoost (BioWordVec),BART Zero-Shot,645,44,0.9403,0.5548,1.2117853023888e-115,asymptotic (continuity-corrected),True,True,XGBoost (BioWordVec)
+BERT Ensemble,Flan-T5 Few-Shot,597,26,0.9699,0.6036,1.98736314698414e-115,asymptotic (continuity-corrected),True,True,BERT Ensemble
+BioLinkBERT,Flan-T5 Few-Shot,596,26,0.9692,0.6036,3.2678534740945696e-115,asymptotic (continuity-corrected),True,True,BioLinkBERT
+SVM (FastText),BART Zero-Shot,658,51,0.9442,0.5548,1.1739466790538166e-114,asymptotic (continuity-corrected),True,True,SVM (FastText)
+LR (BioWordVec),Flan-T5 Few-Shot,591,27,0.9654,0.6036,1.4872628972011976e-113,asymptotic (continuity-corrected),True,True,LR (BioWordVec)
+PubMedBERT,Flan-T5 Few-Shot,594,29,0.966,0.6036,4.72493670760545e-113,asymptotic (continuity-corrected),True,True,PubMedBERT
+Classical Ensemble,BART Zero-Shot,649,51,0.9384,0.5548,9.680713262293136e-113,asymptotic (continuity-corrected),True,True,Classical Ensemble
+SVM,BART Zero-Shot,658,55,0.9416,0.5548,1.500820621924066e-112,asymptotic (continuity-corrected),True,True,SVM
+SVM (BioWordVec),Flan-T5 Few-Shot,596,31,0.966,0.6036,2.416027900156302e-112,asymptotic (continuity-corrected),True,True,SVM (BioWordVec)
+MLP Small,BART Zero-Shot,666,59,0.9442,0.5548,3.6030238467564447e-112,asymptotic (continuity-corrected),True,True,MLP Small
+MLP Deep (FastText),BART Zero-Shot,658,56,0.941,0.5548,4.986537567678856e-112,asymptotic (continuity-corrected),True,True,MLP Deep (FastText)
+LR (FastText),BART Zero-Shot,639,49,0.9333,0.5548,1.1329547177827183e-111,asymptotic (continuity-corrected),True,True,LR (FastText)
+MLP Small (FastText),BART Zero-Shot,656,57,0.9391,0.5548,4.375962055152992e-111,asymptotic (continuity-corrected),True,True,MLP Small (FastText)
+Random Forest (BioWordVec),BART Zero-Shot,671,66,0.9429,0.5548,1.1630141172041872e-109,asymptotic (continuity-corrected),True,True,Random Forest (BioWordVec)
+BioBERT,Flan-T5 Few-Shot,588,36,0.9577,0.6036,8.066035847151162e-108,asymptotic (continuity-corrected),True,True,BioBERT
+Bio+ClinicalBERT,Flan-T5 Few-Shot,596,40,0.9602,0.6036,2.4580581822196486e-107,asymptotic (continuity-corrected),True,True,Bio+ClinicalBERT
+MLP Small (BioWordVec),Flan-T5 Few-Shot,590,41,0.9557,0.6036,1.6522454049187426e-105,asymptotic (continuity-corrected),True,True,MLP Small (BioWordVec)
+MLP Deep,BART Zero-Shot,658,72,0.9307,0.5548,5.842518564220002e-104,asymptotic (continuity-corrected),True,True,MLP Deep
+Logistic Regression,Flan-T5 Few-Shot,577,42,0.9468,0.6036,3.4327441890561698e-102,asymptotic (continuity-corrected),True,True,Logistic Regression
+XGBoost (FastText),BART Zero-Shot,630,64,0.9179,0.5548,4.859536068256731e-102,asymptotic (continuity-corrected),True,True,XGBoost (FastText)
+BERT Ensemble,BioGPT Zero-Shot,428,19,0.9699,0.7075,7.286395114920124e-102,exact,True,True,BERT Ensemble
+BioLinkBERT,BioGPT Zero-Shot,428,20,0.9692,0.7075,8.180657925089443e-101,exact,True,True,BioLinkBERT
+Random Forest (BioWordVec),Flan-T5 Few-Shot,573,44,0.9429,0.6036,2.871666097208772e-100,asymptotic (continuity-corrected),True,True,Random Forest (BioWordVec)
+MLP Small,Flan-T5 Few-Shot,577,46,0.9442,0.6036,4.634350099533777e-100,asymptotic (continuity-corrected),True,True,MLP Small
+MLP Deep (BioWordVec),Flan-T5 Few-Shot,589,51,0.9487,0.6036,5.403060180561287e-100,asymptotic (continuity-corrected),True,True,MLP Deep (BioWordVec)
+SVM (FastText),Flan-T5 Few-Shot,579,48,0.9442,0.6036,1.9587755028931335e-99,asymptotic (continuity-corrected),True,True,SVM (FastText)
+PubMedBERT,BioGPT Zero-Shot,424,21,0.966,0.7075,1.1579186018937112e-98,exact,True,True,PubMedBERT
+SVM,Flan-T5 Few-Shot,577,50,0.9416,0.6036,5.729897186099334e-98,asymptotic (continuity-corrected),True,True,SVM
+XGBoost,BART Zero-Shot,599,60,0.9006,0.5548,1.602723209132746e-97,asymptotic (continuity-corrected),True,True,XGBoost
+MLP Small (FastText),Flan-T5 Few-Shot,572,49,0.9391,0.6036,1.9924998999212498e-97,asymptotic (continuity-corrected),True,True,MLP Small (FastText)
+SVM (BioWordVec),BioGPT Zero-Shot,426,23,0.966,0.7075,3.182796546497945e-97,exact,True,True,SVM (BioWordVec)
+MLP Deep (FastText),Flan-T5 Few-Shot,578,52,0.941,0.6036,3.789187123853072e-97,asymptotic (continuity-corrected),True,True,MLP Deep (FastText)
+Classical Ensemble,Flan-T5 Few-Shot,572,50,0.9384,0.6036,6.574795058621098e-97,asymptotic (continuity-corrected),True,True,Classical Ensemble
+XGBoost (BioWordVec),Flan-T5 Few-Shot,581,56,0.9403,0.6036,9.623433658660917e-96,asymptotic (continuity-corrected),True,True,XGBoost (BioWordVec)
+LR (FastText),Flan-T5 Few-Shot,567,53,0.9333,0.6036,2.602271150084836e-94,asymptotic (continuity-corrected),True,True,LR (FastText)
+MLP Small (BioWordVec),BioGPT Zero-Shot,410,23,0.9557,0.7075,8.880556519428125e-93,exact,True,True,MLP Small (BioWordVec)
+Random Forest,BART Zero-Shot,598,71,0.8929,0.5548,6.134728848959446e-92,asymptotic (continuity-corrected),True,True,Random Forest
+BERT-base,Flan-T5 Few-Shot,588,67,0.9378,0.6036,8.898693144675267e-92,asymptotic (continuity-corrected),True,True,BERT-base
+MLP Deep,Flan-T5 Few-Shot,570,60,0.9307,0.6036,1.9691572698439412e-91,asymptotic (continuity-corrected),True,True,MLP Deep
+Random Forest (BioWordVec),BioGPT Zero-Shot,386,19,0.9429,0.7075,4.7424855879330436e-90,exact,True,True,Random Forest (BioWordVec)
+Random Forest (FastText),BART Zero-Shot,652,108,0.9038,0.5548,2.3023033776707624e-86,asymptotic (continuity-corrected),True,True,Random Forest (FastText)
+XGBoost (FastText),Flan-T5 Few-Shot,562,72,0.9179,0.6036,5.161122704591798e-84,asymptotic (continuity-corrected),True,True,XGBoost (FastText)
+LR (BioWordVec),BioGPT Zero-Shot,428,26,0.9654,0.7075,5.19191247525368e-79,asymptotic (continuity-corrected),True,True,LR (BioWordVec)
+Random Forest (FastText),Flan-T5 Few-Shot,551,83,0.9038,0.6036,8.632984664801257e-77,asymptotic (continuity-corrected),True,True,Random Forest (FastText)
+BioBERT,BioGPT Zero-Shot,415,25,0.9577,0.7075,8.975513288913804e-77,asymptotic (continuity-corrected),True,True,BioBERT
+Decision Tree,BART Zero-Shot,524,71,0.8454,0.5548,1.178625823288882e-76,asymptotic (continuity-corrected),True,True,Decision Tree
+Bio+ClinicalBERT,BioGPT Zero-Shot,425,31,0.9602,0.7075,1.222163661414453e-75,asymptotic (continuity-corrected),True,True,Bio+ClinicalBERT
+XGBoost,Flan-T5 Few-Shot,549,86,0.9006,0.6036,4.438175140682311e-75,asymptotic (continuity-corrected),True,True,XGBoost
+Decision Tree (FastText),BART Zero-Shot,598,110,0.8679,0.5548,7.892032069067682e-75,asymptotic (continuity-corrected),True,True,Decision Tree (FastText)
+MLP Small,BioGPT Zero-Shot,394,25,0.9442,0.7075,2.898805736360354e-72,asymptotic (continuity-corrected),True,True,MLP Small
+Random Forest,Flan-T5 Few-Shot,541,90,0.8929,0.6036,9.134519565835615e-72,asymptotic (continuity-corrected),True,True,Random Forest
+Decision Tree (BioWordVec),BART Zero-Shot,591,118,0.8582,0.5548,2.6261840724793348e-70,asymptotic (continuity-corrected),True,True,Decision Tree (BioWordVec)
+MLP Deep (FastText),BioGPT Zero-Shot,397,33,0.941,0.7075,1.302753649753228e-68,asymptotic (continuity-corrected),True,True,MLP Deep (FastText)
+Logistic Regression,BioGPT Zero-Shot,413,40,0.9468,0.7075,2.1045005950867746e-68,asymptotic (continuity-corrected),True,True,Logistic Regression
+MLP Deep (BioWordVec),BioGPT Zero-Shot,419,43,0.9487,0.7075,3.6547736843087034e-68,asymptotic (continuity-corrected),True,True,MLP Deep (BioWordVec)
+MLP Small (FastText),BioGPT Zero-Shot,396,35,0.9391,0.7075,2.3234046656809465e-67,asymptotic (continuity-corrected),True,True,MLP Small (FastText)
+SVM (FastText),BioGPT Zero-Shot,415,46,0.9442,0.7075,7.533585548160807e-66,asymptotic (continuity-corrected),True,True,SVM (FastText)
+SVM,BioGPT Zero-Shot,411,46,0.9416,0.7075,5.1613941730501e-65,asymptotic (continuity-corrected),True,True,SVM
+XGBoost (BioWordVec),BioGPT Zero-Shot,410,47,0.9403,0.7075,2.5414001449220127e-64,asymptotic (continuity-corrected),True,True,XGBoost (BioWordVec)
+MLP Deep,BioGPT Zero-Shot,385,37,0.9307,0.7075,5.179279744574186e-64,asymptotic (continuity-corrected),True,True,MLP Deep
+Classical Ensemble,BioGPT Zero-Shot,414,54,0.9384,0.7075,7.602075002787585e-62,asymptotic (continuity-corrected),True,True,Classical Ensemble
+BERT-base,BioGPT Zero-Shot,413,54,0.9378,0.7075,1.2218462803436857e-61,asymptotic (continuity-corrected),True,True,BERT-base
+Decision Tree (FastText),Flan-T5 Few-Shot,528,116,0.8679,0.6036,5.41062060252736e-59,asymptotic (continuity-corrected),True,True,Decision Tree (FastText)
+LR (FastText),BioGPT Zero-Shot,415,63,0.9333,0.7075,5.328028939888053e-58,asymptotic (continuity-corrected),True,True,LR (FastText)
+Random Forest (FastText),BioGPT Zero-Shot,344,38,0.9038,0.7075,6.714376604887705e-55,asymptotic (continuity-corrected),True,True,Random Forest (FastText)
+Decision Tree (BioWordVec),Flan-T5 Few-Shot,533,136,0.8582,0.6036,6.531790469802711e-53,asymptotic (continuity-corrected),True,True,Decision Tree (BioWordVec)
+XGBoost (FastText),BioGPT Zero-Shot,393,65,0.9179,0.7075,1.044098104959416e-52,asymptotic (continuity-corrected),True,True,XGBoost (FastText)
+Decision Tree,Flan-T5 Few-Shot,510,133,0.8454,0.6036,9.657818250708717e-50,asymptotic (continuity-corrected),True,True,Decision Tree
+Decision Tree (BioWordVec),BERT Ensemble,9,183,0.8582,0.9699,2.705254279130327e-43,exact,True,True,BERT Ensemble
+Decision Tree,BERT Ensemble,19,213,0.8454,0.9699,1.0775204413672669e-42,exact,True,True,BERT Ensemble
+Decision Tree,BioLinkBERT,22,215,0.8454,0.9692,5.758132321624173e-41,exact,True,True,BioLinkBERT
+Decision Tree,PubMedBERT,20,208,0.8454,0.966,1.2867424300851342e-40,exact,True,True,PubMedBERT
+Decision Tree (BioWordVec),BioLinkBERT,13,186,0.8582,0.9692,2.208314504110827e-40,exact,True,True,BioLinkBERT
+XGBoost,BioGPT Zero-Shot,410,109,0.9006,0.7075,1.3315033282950687e-39,asymptotic (continuity-corrected),True,True,XGBoost
+Decision Tree,LR (BioWordVec),23,210,0.8454,0.9654,5.754659331046973e-39,exact,True,True,LR (BioWordVec)
+Decision Tree,SVM (BioWordVec),24,212,0.8454,0.966,8.731280991760004e-39,exact,True,True,SVM (BioWordVec)
+Decision Tree,Bio+ClinicalBERT,19,198,0.8454,0.9602,9.463983111461046e-39,exact,True,True,Bio+ClinicalBERT
+Decision Tree (BioWordVec),PubMedBERT,15,183,0.8582,0.966,6.778189452767974e-38,exact,True,True,PubMedBERT
+SVM (BioWordVec),Decision Tree (BioWordVec),184,16,0.966,0.8582,2.303221098810145e-37,exact,True,True,SVM (BioWordVec)
+LR (BioWordVec),Decision Tree (BioWordVec),186,19,0.9654,0.8582,1.2607947609293116e-35,exact,True,True,LR (BioWordVec)
+Random Forest,BioGPT Zero-Shot,416,127,0.8929,0.7075,4.341186620544869e-35,asymptotic (continuity-corrected),True,True,Random Forest
+Decision Tree (FastText),BERT Ensemble,19,178,0.8679,0.9699,1.4686052574336295e-33,exact,True,True,BERT Ensemble
+Decision Tree (BioWordVec),Bio+ClinicalBERT,21,180,0.8582,0.9602,1.0862758964368336e-32,exact,True,True,Bio+ClinicalBERT
+Decision Tree (FastText),PubMedBERT,18,171,0.8679,0.966,1.8240209950594614e-32,exact,True,True,PubMedBERT
+Decision Tree (BioWordVec),BioBERT,20,175,0.8582,0.9577,4.2533785903815133e-32,exact,True,True,BioBERT
+Decision Tree (FastText),BioLinkBERT,23,181,0.8679,0.9692,1.254781684981774e-31,exact,True,True,BioLinkBERT
+Decision Tree (FastText),LR (BioWordVec),21,173,0.8679,0.9654,6.3757200474430965e-31,exact,True,True,LR (BioWordVec)
+Decision Tree (FastText),BioGPT Zero-Shot,365,115,0.8679,0.7075,6.229083395522301e-30,asymptotic (continuity-corrected),True,True,Decision Tree (FastText)
+Decision Tree (BioWordVec),MLP Small (BioWordVec),24,176,0.8582,0.9557,9.237398300715988e-30,exact,True,True,MLP Small (BioWordVec)
+Decision Tree,BioBERT,32,207,0.8454,0.9577,2.1851766848630468e-29,asymptotic (continuity-corrected),True,True,BioBERT
+Decision Tree,MLP Small (BioWordVec),34,206,0.8454,0.9557,2.505407685579817e-28,asymptotic (continuity-corrected),True,True,MLP Small (BioWordVec)
+Decision Tree,MLP Deep (BioWordVec),29,190,0.8454,0.9487,3.0267838184566018e-27,asymptotic (continuity-corrected),True,True,MLP Deep (BioWordVec)
+Logistic Regression,Decision Tree,188,30,0.9468,0.8454,2.0841528495059718e-26,asymptotic (continuity-corrected),True,True,Logistic Regression
+Decision Tree (FastText),SVM (BioWordVec),28,181,0.8679,0.966,7.441930856809574e-26,asymptotic (continuity-corrected),True,True,SVM (BioWordVec)
+Decision Tree (BioWordVec),BioGPT Zero-Shot,366,131,0.8582,0.7075,8.97996972633335e-26,asymptotic (continuity-corrected),True,True,Decision Tree (BioWordVec)
+Random Forest,BERT Ensemble,15,135,0.8929,0.9699,2.5548753585057904e-25,exact,True,True,BERT Ensemble
+Decision Tree,SVM (FastText),34,188,0.8454,0.9442,9.752222600234268e-25,asymptotic (continuity-corrected),True,True,SVM (FastText)
+Decision Tree,Classical Ensemble,27,172,0.8454,0.9384,1.8279784401557708e-24,asymptotic (continuity-corrected),True,True,Classical Ensemble
+Random Forest,LR (BioWordVec),13,126,0.8929,0.9654,2.078980042287324e-24,exact,True,True,LR (BioWordVec)
+XGBoost (BioWordVec),Decision Tree (BioWordVec),152,24,0.9403,0.8582,6.0142623008524104e-24,exact,True,True,XGBoost (BioWordVec)
+Decision Tree (BioWordVec),MLP Deep (BioWordVec),26,167,0.8582,0.9487,6.952740727950545e-24,asymptotic (continuity-corrected),True,True,MLP Deep (BioWordVec)
+Random Forest,SVM (BioWordVec),15,129,0.8929,0.966,8.639531001652006e-24,exact,True,True,SVM (BioWordVec)
+SVM,Decision Tree,188,38,0.9416,0.8454,3.716556416593158e-23,asymptotic (continuity-corrected),True,True,SVM
+Random Forest,BioLinkBERT,20,139,0.8929,0.9692,4.0157731101098577e-23,exact,True,True,BioLinkBERT
+Decision Tree,BERT-base,33,177,0.8454,0.9378,5.73312883878274e-23,asymptotic (continuity-corrected),True,True,BERT-base
+Decision Tree (FastText),Bio+ClinicalBERT,33,177,0.8679,0.9602,5.73312883878274e-23,asymptotic (continuity-corrected),True,True,Bio+ClinicalBERT
+XGBoost,BERT Ensemble,14,122,0.9006,0.9699,1.0997594280179854e-22,exact,True,True,BERT Ensemble
+Decision Tree,MLP Small,46,200,0.8454,0.9442,1.7573275610921323e-22,asymptotic (continuity-corrected),True,True,MLP Small
+XGBoost,BioLinkBERT,14,121,0.9006,0.9692,1.9751293229358004e-22,exact,True,True,BioLinkBERT
+Decision Tree (FastText),BioBERT,32,172,0.8679,0.9577,2.2033552822325814e-22,asymptotic (continuity-corrected),True,True,BioBERT
+Decision Tree,XGBoost (BioWordVec),41,189,0.8454,0.9403,3.232405102423218e-22,asymptotic (continuity-corrected),True,True,XGBoost (BioWordVec)
+Decision Tree (FastText),MLP Small (BioWordVec),31,168,0.8679,0.9557,5.377547629397214e-22,asymptotic (continuity-corrected),True,True,MLP Small (BioWordVec)
+Random Forest,PubMedBERT,20,134,0.8929,0.966,6.540692496507491e-22,exact,True,True,PubMedBERT
+Logistic Regression,Decision Tree (BioWordVec),171,33,0.9468,0.8582,8.646204339759995e-22,asymptotic (continuity-corrected),True,True,Logistic Regression
+Decision Tree,MLP Deep (FastText),45,194,0.8454,0.941,1.0352250327364005e-21,asymptotic (continuity-corrected),True,True,MLP Deep (FastText)
+Decision Tree,LR (FastText),34,171,0.8454,0.9333,2.1262473771681796e-21,asymptotic (continuity-corrected),True,True,LR (FastText)
+Random Forest (BioWordVec),Decision Tree (BioWordVec),162,30,0.9429,0.8582,3.2577949060810896e-21,asymptotic (continuity-corrected),True,True,Random Forest (BioWordVec)
+SVM (FastText),Decision Tree (BioWordVec),166,32,0.9442,0.8582,3.3274021433618954e-21,asymptotic (continuity-corrected),True,True,SVM (FastText)
+Decision Tree,MLP Small (FastText),46,192,0.8454,0.9391,5.510817851338026e-21,asymptotic (continuity-corrected),True,True,MLP Small (FastText)
+Decision Tree,Random Forest (BioWordVec),54,206,0.8454,0.9429,7.632265980324182e-21,asymptotic (continuity-corrected),True,True,Random Forest (BioWordVec)
+MLP Small,Decision Tree (BioWordVec),168,34,0.9442,0.8582,8.137771220042374e-21,asymptotic (continuity-corrected),True,True,MLP Small
+Random Forest,Bio+ClinicalBERT,17,122,0.8929,0.9602,9.101483713432627e-21,exact,True,True,Bio+ClinicalBERT
+Random Forest (FastText),BERT Ensemble,17,120,0.9038,0.9699,2.8089715684024895e-20,exact,True,True,BERT Ensemble
+SVM,Decision Tree (BioWordVec),164,34,0.9416,0.8582,4.835288369272568e-20,asymptotic (continuity-corrected),True,True,SVM
+XGBoost,PubMedBERT,18,120,0.9006,0.966,1.087064198398728e-19,exact,True,True,PubMedBERT
+Random Forest (FastText),PubMedBERT,15,112,0.9038,0.966,1.5787915213027008e-19,exact,True,True,PubMedBERT
+MLP Deep (FastText),Decision Tree (BioWordVec),165,36,0.941,0.8582,1.7416203629643198e-19,asymptotic (continuity-corrected),True,True,MLP Deep (FastText)
+XGBoost,SVM (BioWordVec),19,121,0.9006,0.966,2.319120802043693e-19,exact,True,True,SVM (BioWordVec)
+Random Forest (FastText),Bio+ClinicalBERT,10,98,0.9038,0.9602,2.6510752046570397e-19,exact,True,True,Bio+ClinicalBERT
+Classical Ensemble,Decision Tree (BioWordVec),161,36,0.9384,0.8582,1.0042633688322356e-18,asymptotic (continuity-corrected),True,True,Classical Ensemble
+Logistic Regression,Decision Tree (FastText),157,34,0.9468,0.8679,1.0693600677822442e-18,asymptotic (continuity-corrected),True,True,Logistic Regression
+XGBoost,Bio+ClinicalBERT,15,108,0.9006,0.9602,1.5264374114027041e-18,exact,True,True,Bio+ClinicalBERT
+Random Forest,BioBERT,21,122,0.8929,0.9577,1.6486511560052312e-18,exact,True,True,BioBERT
+Random Forest (FastText),SVM (BioWordVec),18,115,0.9038,0.966,1.722969191074559e-18,exact,True,True,SVM (BioWordVec)
+Random Forest (FastText),BioLinkBERT,22,124,0.9038,0.9692,1.8841215441688126e-18,exact,True,True,BioLinkBERT
+Random Forest,MLP Small (BioWordVec),19,117,0.8929,0.9557,2.0689342554664887e-18,exact,True,True,MLP Small (BioWordVec)
+Decision Tree (BioWordVec),BERT-base,37,161,0.8582,0.9378,2.3058732390672786e-18,asymptotic (continuity-corrected),True,True,BERT-base
+Random Forest (FastText),LR (BioWordVec),18,114,0.9038,0.9654,2.984204132384485e-18,exact,True,True,LR (BioWordVec)
+XGBoost,LR (BioWordVec),22,123,0.9006,0.9654,3.205794045474075e-18,exact,True,True,LR (BioWordVec)
+MLP Small (FastText),Decision Tree (BioWordVec),167,41,0.9391,0.8582,4.429133083207802e-18,asymptotic (continuity-corrected),True,True,MLP Small (FastText)
+Decision Tree (FastText),MLP Deep (BioWordVec),41,167,0.8679,0.9487,4.429133083207802e-18,asymptotic (continuity-corrected),True,True,MLP Deep (BioWordVec)
+Decision Tree,MLP Deep,52,185,0.8454,0.9307,9.967273281388896e-18,asymptotic (continuity-corrected),True,True,MLP Deep
+Random Forest (FastText),MLP Small (BioWordVec),10,91,0.9038,0.9557,1.6977475366916752e-17,exact,True,True,MLP Small (BioWordVec)
+Logistic Regression,Random Forest,96,12,0.9468,0.8929,1.957749983491244e-17,exact,True,True,Logistic Regression
+Decision Tree,BioGPT Zero-Shot,431,216,0.8454,0.7075,3.9894615502662243e-17,asymptotic (continuity-corrected),True,True,Decision Tree
+LR (FastText),Decision Tree (BioWordVec),156,39,0.9333,0.8582,9.82077427747976e-17,asymptotic (continuity-corrected),True,True,LR (FastText)
+Decision Tree (FastText),Random Forest (BioWordVec),43,160,0.8679,0.9429,3.900755472954015e-16,asymptotic (continuity-corrected),True,True,Random Forest (BioWordVec)
+Random Forest,MLP Deep (BioWordVec),18,105,0.8929,0.9487,3.9641704747498244e-16,exact,True,True,MLP Deep (BioWordVec)
+MLP Small,Decision Tree (FastText),168,49,0.9442,0.8679,1.1437133170307703e-15,asymptotic (continuity-corrected),True,True,MLP Small
+Decision Tree (FastText),XGBoost (BioWordVec),44,157,0.8679,0.9403,2.7919245505914246e-15,asymptotic (continuity-corrected),True,True,XGBoost (BioWordVec)
+Decision Tree (FastText),MLP Deep (FastText),47,161,0.8679,0.941,4.6831958461948056e-15,asymptotic (continuity-corrected),True,True,MLP Deep (FastText)
+XGBoost (FastText),BERT Ensemble,17,98,0.9179,0.9699,5.056827098324028e-15,exact,True,True,BERT Ensemble
+SVM (FastText),Decision Tree (FastText),174,55,0.9442,0.8679,6.30659078581658e-15,asymptotic (continuity-corrected),True,True,SVM (FastText)
+MLP Deep,Decision Tree (BioWordVec),160,47,0.9307,0.8582,6.996834309906528e-15,asymptotic (continuity-corrected),True,True,MLP Deep
+Decision Tree (FastText),MLP Small (FastText),46,157,0.8679,0.9391,1.1588655382447203e-14,asymptotic (continuity-corrected),True,True,MLP Small (FastText)
+Classical Ensemble,Decision Tree (FastText),158,48,0.9384,0.8679,3.0924606013324605e-14,asymptotic (continuity-corrected),True,True,Classical Ensemble
+Random Forest (FastText),BioBERT,23,107,0.9038,0.9577,3.7937066234622226e-14,exact,True,True,BioBERT
+Random Forest,Classical Ensemble,13,84,0.8929,0.9384,6.926172041503277e-14,exact,True,True,Classical Ensemble
+Decision Tree (FastText),BERT-base,50,159,0.8679,0.9378,7.98808295664168e-14,asymptotic (continuity-corrected),True,True,BERT-base
+SVM,Decision Tree (FastText),174,59,0.9416,0.8679,8.118297641394515e-14,asymptotic (continuity-corrected),True,True,SVM
+XGBoost,BioBERT,25,114,0.9006,0.9577,8.389472369953626e-14,asymptotic (continuity-corrected),True,True,BioBERT
+XGBoost (FastText),PubMedBERT,17,92,0.9179,0.966,1.2265535543318507e-13,exact,True,True,PubMedBERT
+Decision Tree,XGBoost (FastText),61,174,0.8454,0.9179,2.750598739955525e-13,asymptotic (continuity-corrected),True,True,XGBoost (FastText)
+Random Forest,SVM (FastText),24,104,0.8929,0.9442,4.578290964993516e-13,exact,True,True,SVM (FastText)
+XGBoost (FastText),BioLinkBERT,24,104,0.9179,0.9692,4.578290964993516e-13,exact,True,True,BioLinkBERT
+XGBoost,MLP Small (BioWordVec),26,112,0.9006,0.9557,4.632005881846485e-13,asymptotic (continuity-corrected),True,True,MLP Small (BioWordVec)
+XGBoost (FastText),Bio+ClinicalBERT,12,78,0.9179,0.9602,5.202430003083186e-13,exact,True,True,Bio+ClinicalBERT
+XGBoost (FastText),LR (BioWordVec),20,94,0.9179,0.9654,1.1680094670975612e-12,exact,True,True,LR (BioWordVec)
+BART Zero-Shot,BioGPT Zero-Shot,439,677,0.5548,0.7075,1.2990501554368737e-12,asymptotic (continuity-corrected),True,True,BioGPT Zero-Shot
+XGBoost (FastText),SVM (BioWordVec),24,99,0.9179,0.966,5.16594993191355e-12,exact,True,True,SVM (BioWordVec)
+Logistic Regression,XGBoost,94,22,0.9468,0.9006,8.656167708687345e-12,exact,True,True,Logistic Regression
+LR (FastText),Decision Tree (FastText),162,60,0.9333,0.8679,1.2128203634778379e-11,asymptotic (continuity-corrected),True,True,LR (FastText)
+Random Forest,MLP Small,28,108,0.8929,0.9442,1.2510161423396608e-11,asymptotic (continuity-corrected),True,True,MLP Small
+XGBoost,Decision Tree,122,36,0.9006,0.8454,1.3587726774285156e-11,asymptotic (continuity-corrected),True,True,XGBoost
+Random Forest,MLP Deep (FastText),25,100,0.8929,0.941,3.6222140085907476e-11,asymptotic (continuity-corrected),True,True,MLP Deep (FastText)
+XGBoost,MLP Deep (BioWordVec),26,101,0.9006,0.9487,5.153303078221434e-11,asymptotic (continuity-corrected),True,True,MLP Deep (BioWordVec)
+Random Forest (FastText),Random Forest (BioWordVec),15,76,0.9038,0.9429,5.477140413468489e-11,exact,True,True,Random Forest (BioWordVec)
+Random Forest (FastText),MLP Deep (BioWordVec),24,94,0.9038,0.9487,5.560432964003839e-11,exact,True,True,MLP Deep (BioWordVec)
+Random Forest,LR (FastText),17,80,0.8929,0.9333,6.007962189879819e-11,exact,True,True,LR (FastText)
+SVM,Random Forest,104,28,0.9416,0.8929,6.669281515622686e-11,asymptotic (continuity-corrected),True,True,SVM
+Random Forest,MLP Small (FastText),25,97,0.8929,0.9391,1.292614587740957e-10,asymptotic (continuity-corrected),True,True,MLP Small (FastText)
+MLP Deep,Decision Tree (FastText),163,65,0.9307,0.8679,1.3275496756084328e-10,asymptotic (continuity-corrected),True,True,MLP Deep
+XGBoost (FastText),Decision Tree (BioWordVec),152,59,0.9179,0.8582,2.395972959680929e-10,asymptotic (continuity-corrected),True,True,XGBoost (FastText)
+MLP Deep,SVM (BioWordVec),13,68,0.9307,0.966,3.8083949050165733e-10,exact,True,True,SVM (BioWordVec)
+XGBoost (FastText),MLP Small (BioWordVec),17,76,0.9179,0.9557,4.446306937765536e-10,exact,True,True,MLP Small (BioWordVec)
+LR (FastText),SVM (BioWordVec),10,61,0.9333,0.966,4.6446053760977124e-10,exact,True,True,SVM (BioWordVec)
+MLP Deep,BERT Ensemble,20,81,0.9307,0.9699,6.93092578965037e-10,exact,True,True,BERT Ensemble
+Random Forest,BERT-base,28,98,0.8929,0.9378,7.895786760411931e-10,asymptotic (continuity-corrected),True,True,BERT-base
+LR (FastText),LR (BioWordVec),10,60,0.9333,0.9654,8.004823399455647e-10,exact,True,True,LR (BioWordVec)
+Logistic Regression,Random Forest (FastText),92,25,0.9468,0.9038,1.0494479655941658e-09,asymptotic (continuity-corrected),True,True,Logistic Regression
+Random Forest,XGBoost (BioWordVec),35,109,0.8929,0.9403,1.1770927027888456e-09,asymptotic (continuity-corrected),True,True,XGBoost (BioWordVec)
+Random Forest,Random Forest (BioWordVec),42,120,0.8929,0.9429,1.4512360055041072e-09,asymptotic (continuity-corrected),True,True,Random Forest (BioWordVec)
+MLP Deep,LR (BioWordVec),15,69,0.9307,0.9654,1.938192405161976e-09,exact,True,True,LR (BioWordVec)
+MLP Deep,BioLinkBERT,22,82,0.9307,0.9692,2.5683019697996157e-09,exact,True,True,BioLinkBERT
+LR (FastText),BERT Ensemble,20,77,0.9333,0.9699,4.590760083258195e-09,exact,True,True,BERT Ensemble
+MLP Small,Random Forest (FastText),89,26,0.9442,0.9038,7.4024360041221445e-09,asymptotic (continuity-corrected),True,True,MLP Small
+Flan-T5 Few-Shot,BioGPT Zero-Shot,313,475,0.6036,0.7075,9.728963875820428e-09,asymptotic (continuity-corrected),True,True,BioGPT Zero-Shot
+XGBoost (FastText),BioBERT,26,88,0.9179,0.9577,1.10888551477318e-08,asymptotic (continuity-corrected),True,True,BioBERT
+Random Forest,Decision Tree,119,45,0.8929,0.8454,1.195670909257772e-08,asymptotic (continuity-corrected),True,True,Random Forest
+SVM (FastText),Random Forest (FastText),91,28,0.9442,0.9038,1.3194204055172498e-08,asymptotic (continuity-corrected),True,True,SVM (FastText)
+Random Forest (FastText),MLP Deep (FastText),24,82,0.9038,0.941,1.3368189650340283e-08,exact,True,True,MLP Deep (FastText)
+BERT-base,BERT Ensemble,15,65,0.9378,0.9699,1.411466840981396e-08,exact,True,True,BERT Ensemble
+XGBoost,SVM (FastText),36,104,0.9006,0.9442,1.4915423974833008e-08,asymptotic (continuity-corrected),True,True,SVM (FastText)
+XGBoost (BioWordVec),BERT Ensemble,12,58,0.9403,0.9699,2.2489162308892232e-08,exact,True,True,BERT Ensemble
+MLP Deep,PubMedBERT,22,77,0.9307,0.966,2.4928338709270455e-08,exact,True,True,PubMedBERT
+XGBoost,MLP Small,39,107,0.9006,0.9442,2.9402229621162613e-08,asymptotic (continuity-corrected),True,True,MLP Small
+Random Forest (FastText),MLP Small (FastText),24,79,0.9038,0.9391,4.980762968257179e-08,exact,True,True,MLP Small (FastText)
+XGBoost (FastText),Decision Tree (FastText),139,61,0.9179,0.8679,5.188629341047252e-08,asymptotic (continuity-corrected),True,True,XGBoost (FastText)
+Classical Ensemble,BERT Ensemble,17,66,0.9384,0.9699,5.6029313850528654e-08,exact,True,True,BERT Ensemble
+MLP Small (FastText),BERT Ensemble,16,64,0.9391,0.9699,5.8713304145961997e-08,exact,True,True,BERT Ensemble
+XGBoost,MLP Deep (FastText),34,97,0.9006,0.941,6.06191499961883e-08,asymptotic (continuity-corrected),True,True,MLP Deep (FastText)
+MLP Deep (FastText),BERT Ensemble,14,59,0.941,0.9699,1.0136448982171495e-07,exact,True,True,BERT Ensemble
+XGBoost,Classical Ensemble,30,89,0.9006,0.9384,1.0557828968794691e-07,asymptotic (continuity-corrected),True,True,Classical Ensemble
+Decision Tree,Random Forest (FastText),98,189,0.8454,0.9038,1.0811241945610055e-07,asymptotic (continuity-corrected),True,True,Random Forest (FastText)
+XGBoost,Random Forest (BioWordVec),42,108,0.9006,0.9429,1.1130505569040589e-07,asymptotic (continuity-corrected),True,True,Random Forest (BioWordVec)
+LR (FastText),BioLinkBERT,26,82,0.9333,0.9692,1.2073636392029817e-07,asymptotic (continuity-corrected),True,True,BioLinkBERT
+Classical Ensemble,BioLinkBERT,18,66,0.9384,0.9692,1.3328736909323258e-07,exact,True,True,BioLinkBERT
+Classical Ensemble,SVM (BioWordVec),13,56,0.9384,0.966,1.6837633430122172e-07,exact,True,True,SVM (BioWordVec)
+SVM,XGBoost,106,42,0.9416,0.9006,2.235954532422544e-07,asymptotic (continuity-corrected),True,True,SVM
+BERT-base,BioLinkBERT,21,70,0.9378,0.9692,2.509086976240059e-07,exact,True,True,BioLinkBERT
+Classical Ensemble,LR (BioWordVec),13,55,0.9384,0.9654,2.7465771122682156e-07,exact,True,True,LR (BioWordVec)
+Random Forest (BioWordVec),BERT Ensemble,13,55,0.9429,0.9699,2.7465771122682156e-07,exact,True,True,BERT Ensemble
+XGBoost,MLP Small (FastText),36,96,0.9006,0.9391,2.817080119519299e-07,asymptotic (continuity-corrected),True,True,MLP Small (FastText)
+MLP Small (FastText),BioLinkBERT,19,66,0.9391,0.9692,3.040683333139466e-07,exact,True,True,BioLinkBERT
+XGBoost,XGBoost (BioWordVec),40,102,0.9006,0.9403,3.0714972600986535e-07,asymptotic (continuity-corrected),True,True,XGBoost (BioWordVec)
+Random Forest,MLP Deep,35,94,0.8929,0.9307,3.2798059100342257e-07,asymptotic (continuity-corrected),True,True,MLP Deep
+SVM,Random Forest (FastText),95,36,0.9416,0.9038,4.0310937265959066e-07,asymptotic (continuity-corrected),True,True,SVM
+Random Forest (FastText),XGBoost (BioWordVec),33,90,0.9038,0.9403,4.4331597637922013e-07,asymptotic (continuity-corrected),True,True,XGBoost (BioWordVec)
+XGBoost,BERT-base,35,93,0.9006,0.9378,4.700878390332872e-07,asymptotic (continuity-corrected),True,True,BERT-base
+XGBoost (BioWordVec),BioLinkBERT,18,63,0.9403,0.9692,5.204403564731414e-07,exact,True,True,BioLinkBERT
+MLP Deep (FastText),BioLinkBERT,17,61,0.941,0.9692,5.663739625418237e-07,exact,True,True,BioLinkBERT
+MLP Deep,MLP Small (BioWordVec),12,51,0.9307,0.9557,7.459722282164659e-07,exact,True,True,MLP Small (BioWordVec)
+LR (FastText),PubMedBERT,26,77,0.9333,0.966,8.365294421002608e-07,asymptotic (continuity-corrected),True,True,PubMedBERT
+SVM,SVM (BioWordVec),12,50,0.9416,0.966,1.2143807700186297e-06,exact,True,True,SVM (BioWordVec)
+MLP Deep,Bio+ClinicalBERT,22,68,0.9307,0.9602,1.249258128763103e-06,exact,True,True,Bio+ClinicalBERT
+Random Forest (FastText),Decision Tree (BioWordVec),141,70,0.9038,0.8582,1.4428046803301135e-06,asymptotic (continuity-corrected),True,True,Random Forest (FastText)
+MLP Small,BERT Ensemble,15,55,0.9442,0.9699,1.652519847797991e-06,exact,True,True,BERT Ensemble
+MLP Small (FastText),SVM (BioWordVec),18,60,0.9391,0.966,1.9730209111390334e-06,exact,True,True,SVM (BioWordVec)
+BERT-base,PubMedBERT,21,65,0.9378,0.966,2.1531788923465577e-06,exact,True,True,PubMedBERT
+MLP Small (FastText),LR (BioWordVec),17,58,0.9391,0.9654,2.1823279653758543e-06,exact,True,True,LR (BioWordVec)
+Random Forest (BioWordVec),BioLinkBERT,17,58,0.9429,0.9692,2.1823279653758543e-06,exact,True,True,BioLinkBERT
+Random Forest (FastText),BERT-base,34,87,0.9038,0.9378,2.2755553669514238e-06,asymptotic (continuity-corrected),True,True,BERT-base
+Classical Ensemble,PubMedBERT,21,64,0.9384,0.966,3.276470353441135e-06,exact,True,True,PubMedBERT
+XGBoost (BioWordVec),PubMedBERT,17,57,0.9403,0.966,3.3971668169915183e-06,exact,True,True,PubMedBERT
+LR (FastText),Bio+ClinicalBERT,20,62,0.9333,0.9602,3.714641593828418e-06,exact,True,True,Bio+ClinicalBERT
+XGBoost,LR (FastText),33,84,0.9006,0.9333,3.7913982245590622e-06,asymptotic (continuity-corrected),True,True,LR (FastText)
+SVM (BioWordVec),BERT-base,67,23,0.966,0.9378,3.7950491781678e-06,exact,True,True,SVM (BioWordVec)
+Classical Ensemble,Random Forest (FastText),93,39,0.9384,0.9038,3.967877451649115e-06,asymptotic (continuity-corrected),True,True,Classical Ensemble
+LR (BioWordVec),BERT-base,65,22,0.9654,0.9378,4.348703111758687e-06,exact,True,True,LR (BioWordVec)
+MLP Small (FastText),PubMedBERT,21,63,0.9391,0.966,4.968015141912969e-06,exact,True,True,PubMedBERT
+XGBoost (FastText),MLP Deep (BioWordVec),29,77,0.9179,0.9487,4.993906506374889e-06,asymptotic (continuity-corrected),True,True,MLP Deep (BioWordVec)
+SVM (BioWordVec),XGBoost (BioWordVec),59,19,0.966,0.9403,6.41506390670917e-06,exact,True,True,SVM (BioWordVec)
+LR (BioWordVec),XGBoost (BioWordVec),57,18,0.9654,0.9403,7.244156513774457e-06,exact,True,True,LR (BioWordVec)
+MLP Deep,BioBERT,23,65,0.9307,0.9577,8.50110761369032e-06,exact,True,True,BioBERT
+MLP Deep (FastText),PubMedBERT,19,58,0.941,0.966,9.77507078797376e-06,exact,True,True,PubMedBERT
+MLP Deep (FastText),SVM (BioWordVec),19,58,0.941,0.966,9.77507078797376e-06,exact,True,True,SVM (BioWordVec)
+BERT-base,Bio+ClinicalBERT,14,49,0.9378,0.9602,1.1123023000449022e-05,exact,True,True,Bio+ClinicalBERT
+SVM (FastText),SVM (BioWordVec),13,47,0.9442,0.966,1.2146708022957309e-05,exact,True,True,SVM (BioWordVec)
+SVM,BERT Ensemble,27,71,0.9416,0.9699,1.4013092407915143e-05,asymptotic (continuity-corrected),True,True,BERT Ensemble
+Logistic Regression,BERT Ensemble,16,52,0.9468,0.9699,1.4074155775977473e-05,exact,True,True,BERT Ensemble
+Random Forest (BioWordVec),PubMedBERT,17,53,0.9429,0.966,1.919969240032143e-05,exact,True,True,PubMedBERT
+Logistic Regression,XGBoost (FastText),76,31,0.9468,0.9179,2.1032282052256596e-05,asymptotic (continuity-corrected),True,True,Logistic Regression
+XGBoost,Decision Tree (BioWordVec),150,84,0.9006,0.8582,2.1455166215630754e-05,asymptotic (continuity-corrected),True,True,XGBoost
+MLP Small,BioLinkBERT,22,61,0.9442,0.9692,2.1806574627155318e-05,exact,True,True,BioLinkBERT
+SVM,LR (BioWordVec),19,56,0.9416,0.9654,2.2429642158970264e-05,exact,True,True,LR (BioWordVec)
+SVM,BioLinkBERT,28,71,0.9416,0.9692,2.4304960694778984e-05,asymptotic (continuity-corrected),True,True,BioLinkBERT
+MLP Small (FastText),MLP Small (BioWordVec),6,32,0.9391,0.9557,2.4342560209333897e-05,exact,True,True,MLP Small (BioWordVec)
+LR (FastText),MLP Small (BioWordVec),17,52,0.9333,0.9557,2.9304321745456655e-05,exact,True,True,MLP Small (BioWordVec)
+MLP Deep (FastText),LR (BioWordVec),23,61,0.941,0.9654,4.0771265506603356e-05,exact,True,True,LR (BioWordVec)
+LR (FastText),Random Forest (FastText),84,38,0.9333,0.9038,4.61909303883088e-05,asymptotic (continuity-corrected),True,True,LR (FastText)
+Logistic Regression,BioLinkBERT,19,54,0.9468,0.9692,5.0622659111780655e-05,exact,True,True,BioLinkBERT
+LR (FastText),BioBERT,24,62,0.9333,0.9577,5.083654201844156e-05,exact,True,True,BioBERT
+SVM (FastText),BERT Ensemble,27,67,0.9442,0.9699,5.7573173124313556e-05,asymptotic (continuity-corrected),True,True,BERT Ensemble
+MLP Small,SVM (BioWordVec),18,52,0.9442,0.966,5.849547318695842e-05,exact,True,True,SVM (BioWordVec)
+LR (BioWordVec),Random Forest (BioWordVec),56,21,0.9654,0.9429,8.215921903007378e-05,exact,True,True,LR (BioWordVec)
+SVM (FastText),BioLinkBERT,28,67,0.9442,0.9692,9.670342062694128e-05,asymptotic (continuity-corrected),True,True,BioLinkBERT
+MLP Small,PubMedBERT,21,55,0.9442,0.966,0.0001206291159979032,exact,True,False,PubMedBERT
+SVM (FastText),LR (BioWordVec),20,53,0.9442,0.9654,0.00014163707253552724,exact,True,False,LR (BioWordVec)
+BERT-base,BioBERT,17,48,0.9378,0.9577,0.00015210657584807538,exact,True,False,BioBERT
+Random Forest (FastText),Decision Tree (FastText),134,78,0.9038,0.8679,0.00015846423767497714,asymptotic (continuity-corrected),True,False,Random Forest (FastText)
+SVM,PubMedBERT,29,67,0.9416,0.966,0.00015917737576161007,asymptotic (continuity-corrected),True,False,PubMedBERT
+SVM (BioWordVec),Random Forest (BioWordVec),61,25,0.966,0.9429,0.00016055603247938356,asymptotic (continuity-corrected),True,False,SVM (BioWordVec)
+MLP Small (FastText),Bio+ClinicalBERT,21,54,0.9391,0.9602,0.00017630923003028777,exact,True,False,Bio+ClinicalBERT
+XGBoost,MLP Deep,52,99,0.9006,0.9307,0.0001815274225352017,asymptotic (continuity-corrected),True,False,MLP Deep
+Classical Ensemble,Bio+ClinicalBERT,23,57,0.9384,0.9602,0.0001831165641297511,exact,True,False,Bio+ClinicalBERT
+SVM (FastText),XGBoost (FastText),78,37,0.9442,0.9179,0.0001914651547310934,asymptotic (continuity-corrected),True,False,SVM (FastText)
+Logistic Regression,LR (BioWordVec),15,44,0.9468,0.9654,0.00020372185740785698,exact,True,False,LR (BioWordVec)
+MLP Deep (BioWordVec),BERT Ensemble,22,55,0.9487,0.9699,0.00021680385841747662,exact,True,False,BERT Ensemble
+Logistic Regression,SVM (BioWordVec),17,47,0.9468,0.966,0.0002268823828832806,exact,True,False,SVM (BioWordVec)
+MLP Deep,Random Forest (FastText),84,42,0.9307,0.9038,0.00025962847995775846,asymptotic (continuity-corrected),True,False,MLP Deep
+MLP Small,LR (BioWordVec),23,56,0.9442,0.9654,0.000263636776465269,exact,True,False,LR (BioWordVec)
+XGBoost (FastText),Random Forest (BioWordVec),36,75,0.9179,0.9429,0.00030999595216558545,asymptotic (continuity-corrected),True,False,Random Forest (BioWordVec)
+MLP Small,XGBoost (FastText),82,41,0.9442,0.9179,0.0003101414891824457,asymptotic (continuity-corrected),True,False,MLP Small
+MLP Small,MLP Deep,27,6,0.9442,0.9307,0.0003240634687244892,exact,True,False,MLP Small
+Classical Ensemble,MLP Small (BioWordVec),14,41,0.9384,0.9557,0.00035528111863147854,exact,True,False,MLP Small (BioWordVec)
+MLP Deep (FastText),MLP Small (BioWordVec),9,32,0.941,0.9557,0.000430857042374555,exact,True,False,MLP Small (BioWordVec)
+Logistic Regression,PubMedBERT,20,50,0.9468,0.966,0.00044028500651396835,exact,True,False,PubMedBERT
+Random Forest,Decision Tree (BioWordVec),142,88,0.8929,0.8582,0.0004745655290427348,asymptotic (continuity-corrected),True,False,Random Forest
+MLP Small (BioWordVec),BERT-base,45,17,0.9557,0.9378,0.0004970915863810334,exact,True,False,MLP Small (BioWordVec)
+SVM (FastText),PubMedBERT,28,62,0.9442,0.966,0.0005042182294490053,asymptotic (continuity-corrected),True,False,PubMedBERT
+MLP Small (FastText),BioBERT,19,48,0.9391,0.9577,0.000521612756811516,exact,True,False,BioBERT
+BioBERT,BERT Ensemble,5,24,0.9577,0.9699,0.0005461126565933228,exact,True,False,BERT Ensemble
+MLP Deep,MLP Deep (BioWordVec),18,46,0.9307,0.9487,0.0006173782640671298,exact,True,False,MLP Deep (BioWordVec)
+MLP Deep (BioWordVec),BioLinkBERT,25,57,0.9487,0.9692,0.0006184816465136642,asymptotic (continuity-corrected),True,False,BioLinkBERT
+Logistic Regression,MLP Deep,38,13,0.9468,0.9307,0.0006210434562277101,exact,True,False,Logistic Regression
+MLP Deep (FastText),Bio+ClinicalBERT,23,53,0.941,0.9602,0.0007645817391550476,exact,True,False,Bio+ClinicalBERT
+XGBoost (BioWordVec),Bio+ClinicalBERT,25,56,0.9403,0.9602,0.0008581206663936758,asymptotic (continuity-corrected),True,False,Bio+ClinicalBERT
+SVM (BioWordVec),MLP Deep (BioWordVec),45,18,0.966,0.9487,0.0008980471786680215,exact,True,False,SVM (BioWordVec)
+Classical Ensemble,BioBERT,24,54,0.9384,0.9577,0.0009010035205219422,exact,True,False,BioBERT
+XGBoost,Decision Tree (FastText),141,90,0.9006,0.8679,0.0010027341309322177,asymptotic (continuity-corrected),True,False,XGBoost
+SVM,XGBoost (FastText),79,42,0.9416,0.9179,0.0010651520025723284,asymptotic (continuity-corrected),True,False,SVM
+LR (BioWordVec),MLP Deep (BioWordVec),44,18,0.9654,0.9487,0.0012990027709550095,exact,True,False,LR (BioWordVec)
+XGBoost (BioWordVec),BioBERT,20,47,0.9403,0.9577,0.0013071686857635996,exact,True,False,BioBERT
+XGBoost (FastText),MLP Deep (FastText),42,78,0.9179,0.941,0.0013980746412115498,asymptotic (continuity-corrected),True,False,MLP Deep (FastText)
+XGBoost (FastText),XGBoost (BioWordVec),42,77,0.9179,0.9403,0.00182841129392492,asymptotic (continuity-corrected),True,False,XGBoost (BioWordVec)
+MLP Deep (FastText),BioBERT,20,46,0.941,0.9577,0.0018582303075658085,exact,True,False,BioBERT
+SVM,Bio+ClinicalBERT,27,56,0.9416,0.9602,0.00211635115004815,asymptotic (continuity-corrected),True,False,Bio+ClinicalBERT
+Random Forest (BioWordVec),Bio+ClinicalBERT,23,50,0.9429,0.9602,0.0021181727464006325,exact,True,False,Bio+ClinicalBERT
+MLP Deep (BioWordVec),PubMedBERT,23,50,0.9487,0.966,0.0021181727464006325,exact,True,False,PubMedBERT
+XGBoost (FastText),MLP Small (FastText),39,72,0.9179,0.9391,0.0023870332864212875,asymptotic (continuity-corrected),True,False,MLP Small (FastText)
+LR (FastText),MLP Deep (BioWordVec),18,42,0.9333,0.9487,0.002670436282807066,exact,True,False,MLP Deep (BioWordVec)
+XGBoost (FastText),BERT-base,35,66,0.9179,0.9378,0.002834749080259389,asymptotic (continuity-corrected),True,False,BERT-base
+Random Forest,XGBoost (FastText),63,102,0.8929,0.9179,0.0030934493227611783,asymptotic (continuity-corrected),True,False,XGBoost (FastText)
+MLP Small,Bio+ClinicalBERT,24,49,0.9442,0.9602,0.004626293921895512,exact,True,False,Bio+ClinicalBERT
+Classical Ensemble,XGBoost (FastText),76,44,0.9384,0.9179,0.004656257247125864,asymptotic (continuity-corrected),True,False,Classical Ensemble
+SVM (FastText),Bio+ClinicalBERT,25,50,0.9442,0.9602,0.005583616806378756,asymptotic (continuity-corrected),True,False,Bio+ClinicalBERT
+MLP Small (BioWordVec),BERT Ensemble,19,41,0.9557,0.9699,0.0062176026593266705,exact,True,False,BERT Ensemble
+BART Zero-Shot,Flan-T5 Few-Shot,338,414,0.5548,0.6036,0.006238622868307472,asymptotic (continuity-corrected),True,False,Flan-T5 Few-Shot
+Logistic Regression,LR (FastText),38,17,0.9468,0.9333,0.006455803109956635,exact,True,False,Logistic Regression
+Random Forest (BioWordVec),MLP Small (BioWordVec),15,35,0.9429,0.9557,0.006600447966810918,exact,True,False,MLP Small (BioWordVec)
+Random Forest (BioWordVec),BioBERT,22,45,0.9429,0.9577,0.006741447363103123,exact,True,False,BioBERT
+XGBoost (BioWordVec),MLP Small (BioWordVec),25,49,0.9403,0.9557,0.007502049219659612,asymptotic (continuity-corrected),True,False,MLP Small (BioWordVec)
+SVM,MLP Small (BioWordVec),21,43,0.9416,0.9557,0.008146902228698568,exact,True,False,MLP Small (BioWordVec)
+SVM,BioBERT,31,56,0.9416,0.9577,0.010080079357191301,asymptotic (continuity-corrected),True,False,BioBERT
+Logistic Regression,Classical Ensemble,18,5,0.9468,0.9384,0.010622024536132812,exact,True,False,Logistic Regression
+MLP Small,BioBERT,21,42,0.9442,0.9577,0.011141407415305074,exact,True,False,BioBERT
+BioBERT,BioLinkBERT,14,32,0.9577,0.9692,0.011351591436778108,exact,True,False,BioLinkBERT
+Logistic Regression,Bio+ClinicalBERT,22,43,0.9468,0.9602,0.012502546136489844,exact,True,False,Bio+ClinicalBERT
+Random Forest,Decision Tree (FastText),137,98,0.8929,0.8679,0.013180795127643575,asymptotic (continuity-corrected),True,False,Random Forest
+MLP Small (BioWordVec),BioLinkBERT,23,44,0.9557,0.9692,0.013933875024287785,exact,True,False,BioLinkBERT
+MLP Deep,SVM (FastText),24,45,0.9307,0.9442,0.015432297453701269,exact,True,False,SVM (FastText)
+LR (FastText),SVM (FastText),14,31,0.9333,0.9442,0.016094360031274842,exact,True,False,SVM (FastText)
+MLP Small,MLP Small (BioWordVec),18,36,0.9442,0.9557,0.01983432672806828,exact,True,False,MLP Small (BioWordVec)
+SVM (FastText),MLP Small (BioWordVec),19,37,0.9442,0.9557,0.022241389472860106,exact,True,False,MLP Small (BioWordVec)
+MLP Deep (BioWordVec),Bio+ClinicalBERT,21,39,0.9487,0.9602,0.027340133868077935,exact,True,False,Bio+ClinicalBERT
+SVM (FastText),BioBERT,31,52,0.9442,0.9577,0.028143145896261552,asymptotic (continuity-corrected),True,False,BioBERT
+Random Forest (FastText),XGBoost (FastText),36,58,0.9038,0.9179,0.030312362447326973,asymptotic (continuity-corrected),True,False,XGBoost (FastText)
+LR (FastText),XGBoost (FastText),69,45,0.9333,0.9179,0.03122861694852948,asymptotic (continuity-corrected),True,False,LR (FastText)
+XGBoost,XGBoost (FastText),60,87,0.9006,0.9179,0.03199733937639159,asymptotic (continuity-corrected),True,False,XGBoost (FastText)
+Logistic Regression,MLP Small (FastText),20,8,0.9468,0.9391,0.03569813817739487,exact,True,False,Logistic Regression
+MLP Deep (BioWordVec),BERT-base,38,21,0.9487,0.9378,0.036343179957053884,exact,True,False,MLP Deep (BioWordVec)
+MLP Deep,MLP Deep (FastText),18,34,0.9307,0.941,0.03648340000835981,exact,True,False,MLP Deep (FastText)
+Logistic Regression,MLP Small (BioWordVec),13,27,0.9468,0.9557,0.03847730828420026,exact,True,False,MLP Small (BioWordVec)
+Logistic Regression,BioBERT,22,39,0.9468,0.9577,0.03961701489849968,exact,True,False,BioBERT
+MLP Deep,Random Forest (BioWordVec),31,50,0.9307,0.9429,0.04550026389635857,asymptotic (continuity-corrected),True,False,Random Forest (BioWordVec)
+SVM,MLP Deep,41,24,0.9416,0.9307,0.0463534743329112,exact,True,False,SVM
+Decision Tree,Decision Tree (FastText),130,165,0.8454,0.8679,0.0477533812909879,asymptotic (continuity-corrected),True,False,Decision Tree (FastText)
+Classical Ensemble,MLP Deep (BioWordVec),22,38,0.9384,0.9487,0.051893895928921435,exact,False,False,MLP Deep (BioWordVec)
+MLP Small (BioWordVec),PubMedBERT,23,39,0.9557,0.966,0.05589722669971112,exact,False,False,PubMedBERT
+SVM (BioWordVec),MLP Small (BioWordVec),39,23,0.966,0.9557,0.05589722669971112,exact,False,False,SVM (BioWordVec)
+MLP Small,LR (FastText),44,27,0.9442,0.9333,0.05758411507287605,asymptotic (continuity-corrected),False,False,MLP Small
+Bio+ClinicalBERT,BERT Ensemble,20,35,0.9602,0.9699,0.05806414679240905,exact,False,False,BERT Ensemble
+MLP Small (FastText),MLP Deep (BioWordVec),20,35,0.9391,0.9487,0.05806414679240905,exact,False,False,MLP Deep (BioWordVec)
+LR (BioWordVec),MLP Small (BioWordVec),36,21,0.9654,0.9557,0.06273668035582848,exact,False,False,LR (BioWordVec)
+MLP Deep,MLP Small (FastText),16,29,0.9307,0.9391,0.07245426016254441,exact,False,False,MLP Small (FastText)
+BioBERT,PubMedBERT,16,29,0.9577,0.966,0.07245426016254441,exact,False,False,PubMedBERT
+SVM,LR (FastText),30,17,0.9416,0.9333,0.07894069368148846,exact,False,False,SVM
+MLP Deep (BioWordVec),BioBERT,25,39,0.9487,0.9577,0.10416255883043908,asymptotic (continuity-corrected),False,False,BioBERT
+MLP Deep,XGBoost (FastText),79,59,0.9307,0.9179,0.10579468200135302,asymptotic (continuity-corrected),False,False,MLP Deep
+Logistic Regression,BERT-base,41,27,0.9468,0.9378,0.11491486452557433,asymptotic (continuity-corrected),False,False,Logistic Regression
+MLP Deep (FastText),MLP Deep (BioWordVec),19,31,0.941,0.9487,0.11892045255943628,exact,False,False,MLP Deep (BioWordVec)
+Bio+ClinicalBERT,BioLinkBERT,29,43,0.9602,0.9692,0.1255064714374697,asymptotic (continuity-corrected),False,False,BioLinkBERT
+XGBoost (BioWordVec),MLP Deep (BioWordVec),25,38,0.9403,0.9487,0.13057001811573693,asymptotic (continuity-corrected),False,False,MLP Deep (BioWordVec)
+SVM (BioWordVec),BioBERT,38,25,0.966,0.9577,0.13057001811573693,asymptotic (continuity-corrected),False,False,SVM (BioWordVec)
+MLP Deep,XGBoost (BioWordVec),36,51,0.9307,0.9403,0.13336654179268176,asymptotic (continuity-corrected),False,False,XGBoost (BioWordVec)
+MLP Deep,Classical Ensemble,22,34,0.9307,0.9384,0.1408954235984807,exact,False,False,Classical Ensemble
+LR (FastText),Random Forest (BioWordVec),38,53,0.9333,0.9429,0.14221324193638837,asymptotic (continuity-corrected),False,False,Random Forest (BioWordVec)
+LR (BioWordVec),BioBERT,36,24,0.9654,0.9577,0.1550019040032606,exact,False,False,LR (BioWordVec)
+MLP Small (BioWordVec),MLP Deep (BioWordVec),31,20,0.9557,0.9487,0.16077960181198847,exact,False,False,MLP Small (BioWordVec)
+Logistic Regression,MLP Deep (FastText),22,13,0.9468,0.941,0.175465248990804,exact,False,False,Logistic Regression
+LR (FastText),MLP Deep (FastText),29,41,0.9333,0.941,0.18859344218175958,asymptotic (continuity-corrected),False,False,MLP Deep (FastText)
+Classical Ensemble,SVM (FastText),17,26,0.9384,0.9442,0.2220528201560228,exact,False,False,SVM (FastText)
+SVM,MLP Deep (BioWordVec),31,42,0.9416,0.9487,0.24183542123690713,asymptotic (continuity-corrected),False,False,MLP Deep (BioWordVec)
+Random Forest,Random Forest (FastText),86,103,0.8929,0.9038,0.24449341940913016,asymptotic (continuity-corrected),False,False,Random Forest (FastText)
+Decision Tree,Decision Tree (BioWordVec),133,153,0.8454,0.8582,0.26122793740866834,asymptotic (continuity-corrected),False,False,Decision Tree (BioWordVec)
+PubMedBERT,BERT Ensemble,7,13,0.966,0.9699,0.26317596435546875,exact,False,False,BERT Ensemble
+LR (FastText),XGBoost (BioWordVec),35,46,0.9333,0.9403,0.2665205258050076,asymptotic (continuity-corrected),False,False,XGBoost (BioWordVec)
+MLP Small,MLP Small (FastText),24,16,0.9442,0.9391,0.26818725105476915,exact,False,False,MLP Small
+MLP Deep,BERT-base,36,47,0.9307,0.9378,0.27236058332597374,asymptotic (continuity-corrected),False,False,BERT-base
+Logistic Regression,XGBoost (BioWordVec),41,31,0.9468,0.9403,0.2888443663464818,asymptotic (continuity-corrected),False,False,Logistic Regression
+MLP Small,BERT-base,41,31,0.9442,0.9378,0.2888443663464818,asymptotic (continuity-corrected),False,False,MLP Small
+Random Forest,XGBoost,51,63,0.8929,0.9006,0.3028952953364375,asymptotic (continuity-corrected),False,False,XGBoost
+PubMedBERT,Bio+ClinicalBERT,35,26,0.966,0.9602,0.30569594024383845,asymptotic (continuity-corrected),False,False,PubMedBERT
+MLP Small,Classical Ensemble,35,26,0.9442,0.9384,0.30569594024383845,asymptotic (continuity-corrected),False,False,MLP Small
+Classical Ensemble,LR (FastText),29,21,0.9384,0.9333,0.3222363203575469,exact,False,False,Classical Ensemble
+SVM (FastText),BERT-base,47,37,0.9442,0.9378,0.3261094520204862,asymptotic (continuity-corrected),False,False,SVM (FastText)
+LR (FastText),MLP Small (FastText),31,40,0.9333,0.9391,0.3424043343095255,asymptotic (continuity-corrected),False,False,MLP Small (FastText)
+Logistic Regression,SVM,32,24,0.9468,0.9416,0.34968195298368476,exact,False,False,Logistic Regression
+Random Forest (BioWordVec),MLP Deep (BioWordVec),33,42,0.9429,0.9487,0.3556110610952391,asymptotic (continuity-corrected),False,False,MLP Deep (BioWordVec)
+SVM (FastText),MLP Small (FastText),34,26,0.9442,0.9391,0.3661565601940605,asymptotic (continuity-corrected),False,False,SVM (FastText)
+SVM (BioWordVec),Bio+ClinicalBERT,44,35,0.966,0.9602,0.36808282925395097,asymptotic (continuity-corrected),False,False,SVM (BioWordVec)
+MLP Small,MLP Deep (BioWordVec),23,30,0.9442,0.9487,0.4101027163746913,exact,False,False,MLP Deep (BioWordVec)
+LR (BioWordVec),Bio+ClinicalBERT,41,33,0.9654,0.9602,0.41579765496293264,asymptotic (continuity-corrected),False,False,LR (BioWordVec)
+LR (BioWordVec),BERT Ensemble,24,31,0.9654,0.9699,0.4187541882690154,exact,False,False,BERT Ensemble
+Random Forest (BioWordVec),BERT-base,42,34,0.9429,0.9378,0.42200070503759224,asymptotic (continuity-corrected),False,False,Random Forest (BioWordVec)
+Decision Tree (FastText),Decision Tree (BioWordVec),161,146,0.8679,0.8582,0.42427753733835893,asymptotic (continuity-corrected),False,False,Decision Tree (FastText)
+MLP Small (BioWordVec),Bio+ClinicalBERT,25,32,0.9557,0.9602,0.42677673653298365,asymptotic (continuity-corrected),False,False,Bio+ClinicalBERT
+SVM,SVM (FastText),6,10,0.9416,0.9442,0.454498291015625,exact,False,False,SVM (FastText)
+SVM (FastText),MLP Deep (BioWordVec),29,36,0.9442,0.9487,0.4567504024231692,asymptotic (continuity-corrected),False,False,MLP Deep (BioWordVec)
+LR (FastText),BERT-base,36,43,0.9333,0.9378,0.49964225765235615,asymptotic (continuity-corrected),False,False,BERT-base
+PubMedBERT,BioLinkBERT,16,21,0.966,0.9692,0.5113757815852296,exact,False,False,BioLinkBERT
+SVM (BioWordVec),BERT Ensemble,27,33,0.966,0.9699,0.5186050164287255,asymptotic (continuity-corrected),False,False,BERT Ensemble
+Classical Ensemble,Random Forest (BioWordVec),40,47,0.9384,0.9429,0.5200505273047948,asymptotic (continuity-corrected),False,False,Random Forest (BioWordVec)
+MLP Small,MLP Deep (FastText),22,17,0.9442,0.941,0.5223973804968411,exact,False,False,MLP Small
+LR (BioWordVec),BioLinkBERT,30,36,0.9654,0.9692,0.5382526579885007,asymptotic (continuity-corrected),False,False,BioLinkBERT
+SVM,Classical Ensemble,24,19,0.9416,0.9384,0.542384011856484,exact,False,False,SVM
+MLP Small (FastText),Random Forest (BioWordVec),31,37,0.9391,0.9429,0.544289624429402,asymptotic (continuity-corrected),False,False,Random Forest (BioWordVec)
+Logistic Regression,Random Forest (BioWordVec),38,32,0.9468,0.9429,0.5500973172303969,asymptotic (continuity-corrected),False,False,Logistic Regression
+MLP Small,XGBoost (BioWordVec),40,34,0.9442,0.9403,0.5610799295856819,asymptotic (continuity-corrected),False,False,MLP Small
+SVM,BERT-base,48,42,0.9416,0.9378,0.5981614526835279,asymptotic (continuity-corrected),False,False,SVM
+SVM (FastText),XGBoost (BioWordVec),49,43,0.9442,0.9403,0.6021675277481958,asymptotic (continuity-corrected),False,False,SVM (FastText)
+SVM (FastText),MLP Deep (FastText),32,27,0.9442,0.941,0.602537006105314,asymptotic (continuity-corrected),False,False,SVM (FastText)
+SVM (BioWordVec),BioLinkBERT,30,35,0.966,0.9692,0.6197963884941329,asymptotic (continuity-corrected),False,False,BioLinkBERT
+MLP Deep (FastText),BERT-base,38,33,0.941,0.9378,0.6349917907446543,asymptotic (continuity-corrected),False,False,MLP Deep (FastText)
+Logistic Regression,MLP Small,23,19,0.9468,0.9442,0.6439689563703723,exact,False,False,Logistic Regression
+Classical Ensemble,MLP Deep (FastText),20,24,0.9384,0.941,0.651587827208914,exact,False,False,MLP Deep (FastText)
+Logistic Regression,SVM (FastText),30,26,0.9468,0.9442,0.6884997410966341,asymptotic (continuity-corrected),False,False,Logistic Regression
+MLP Small (FastText),MLP Deep (FastText),12,15,0.9391,0.941,0.7011080384254456,exact,False,False,MLP Deep (FastText)
+BioBERT,Bio+ClinicalBERT,29,33,0.9577,0.9602,0.7032029658251817,asymptotic (continuity-corrected),False,False,Bio+ClinicalBERT
+SVM,MLP Small,31,35,0.9416,0.9442,0.71192315069219,asymptotic (continuity-corrected),False,False,MLP Small
+Random Forest (BioWordVec),XGBoost (BioWordVec),35,31,0.9429,0.9403,0.71192315069219,asymptotic (continuity-corrected),False,False,Random Forest (BioWordVec)
+SVM,MLP Small (FastText),35,31,0.9416,0.9391,0.71192315069219,asymptotic (continuity-corrected),False,False,SVM
+MLP Deep,LR (FastText),33,37,0.9307,0.9333,0.7199178531944465,asymptotic (continuity-corrected),False,False,LR (FastText)
+XGBoost (BioWordVec),BERT-base,37,33,0.9403,0.9378,0.7199178531944465,asymptotic (continuity-corrected),False,False,XGBoost (BioWordVec)
+XGBoost,Random Forest (FastText),85,90,0.9006,0.9038,0.7623688184698398,asymptotic (continuity-corrected),False,False,Random Forest (FastText)
+Logistic Regression,MLP Deep (BioWordVec),22,25,0.9468,0.9487,0.7708669945730263,exact,False,False,MLP Deep (BioWordVec)
+MLP Small (BioWordVec),BioBERT,27,30,0.9557,0.9577,0.7910815129207817,asymptotic (continuity-corrected),False,False,BioBERT
+MLP Deep (FastText),Random Forest (BioWordVec),30,33,0.941,0.9429,0.8010593708697096,asymptotic (continuity-corrected),False,False,Random Forest (BioWordVec)
+Classical Ensemble,XGBoost (BioWordVec),45,48,0.9384,0.9403,0.8357050269952793,asymptotic (continuity-corrected),False,False,XGBoost (BioWordVec)
+SVM (BioWordVec),PubMedBERT,32,32,0.966,0.966,0.9005235503397742,asymptotic (continuity-corrected),False,False,tie
+MLP Small,SVM (FastText),34,34,0.9442,0.9442,0.9034789137192296,asymptotic (continuity-corrected),False,False,tie
+MLP Small,Random Forest (BioWordVec),35,33,0.9442,0.9429,0.9034789137192296,asymptotic (continuity-corrected),False,False,MLP Small
+MLP Small (FastText),BERT-base,37,35,0.9391,0.9378,0.9061856157549283,asymptotic (continuity-corrected),False,False,MLP Small (FastText)
+MLP Small (FastText),XGBoost (BioWordVec),39,41,0.9391,0.9403,0.910979292510634,asymptotic (continuity-corrected),False,False,XGBoost (BioWordVec)
+SVM (FastText),Random Forest (BioWordVec),43,41,0.9442,0.9429,0.9131160800723743,asymptotic (continuity-corrected),False,False,SVM (FastText)
+SVM,Random Forest (BioWordVec),44,46,0.9416,0.9429,0.9160510722818964,asymptotic (continuity-corrected),False,False,Random Forest (BioWordVec)
+SVM,XGBoost (BioWordVec),49,47,0.9416,0.9403,0.9187074054282889,asymptotic (continuity-corrected),False,False,SVM
+Classical Ensemble,MLP Small (FastText),20,21,0.9384,0.9391,1.0,exact,False,False,MLP Small (FastText)
+BioLinkBERT,BERT Ensemble,10,11,0.9692,0.9699,1.0,exact,False,False,BERT Ensemble
+MLP Deep (FastText),XGBoost (BioWordVec),39,38,0.941,0.9403,1.0,asymptotic (continuity-corrected),False,False,MLP Deep (FastText)
+SVM,MLP Deep (FastText),33,32,0.9416,0.941,1.0,asymptotic (continuity-corrected),False,False,SVM
+LR (BioWordVec),PubMedBERT,29,30,0.9654,0.966,1.0,asymptotic (continuity-corrected),False,False,PubMedBERT
+LR (BioWordVec),SVM (BioWordVec),16,17,0.9654,0.966,1.0,exact,False,False,SVM (BioWordVec)
+Classical Ensemble,BERT-base,41,40,0.9384,0.9378,1.0,asymptotic (continuity-corrected),False,False,Classical Ensemble
