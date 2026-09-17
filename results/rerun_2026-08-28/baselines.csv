@@ -1,0 +1,3 @@
+System,Tier,weighted_f1,biomarker_f1,precision,recall,accuracy,TN,FP,FN,TP,errors,n,wf1_lo,wf1_hi,bf1_lo,bf1_hi,Note
+Keyword rule (AT(N) terms),Baseline,0.915801,0.872247,0.838983,0.908257,0.914956,213,19,10,99,29,341,0.886088,0.944762,0.821053,0.915262,training-free; deterministic given the corpus
+Majority class,Baseline,0.550931,0.0,0.0,0.0,0.680352,232,0,109,0,109,341,0.487616,0.616343,0.0,0.0,training-free; deterministic given the corpus
