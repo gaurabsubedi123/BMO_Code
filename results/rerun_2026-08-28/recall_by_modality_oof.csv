@@ -1,0 +1,10 @@
+Modality,biomarker_records,pct_of_biomarker_class,mean_recall,min_recall,max_recall,mean_false_negatives,pct_of_all_false_negatives,n_encoders
+Imaging (PET),49,10.77,0.9898,0.9592,1.0,0.5,1.6,8
+Microbiome / stool,6,1.32,0.9792,0.8333,1.0,0.12,0.4,8
+Fluid (exosomal),5,1.1,0.975,0.8,1.0,0.12,0.4,8
+Fluid,266,58.46,0.9742,0.9586,0.985,6.88,22.0,8
+Imaging (MRI/MRS),81,17.8,0.946,0.9136,0.963,4.38,14.0,8
+Pharmacokinetic / immunogenicity,1,0.22,0.875,0.0,1.0,0.12,0.4,8
+Neurophysiology,26,5.71,0.8221,0.5385,1.0,4.62,14.8,8
+Digital,20,4.4,0.3188,0.15,0.55,13.62,43.6,8
+Clinical / behavioural,1,0.22,0.125,0.0,1.0,0.88,2.8,8

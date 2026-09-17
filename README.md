@@ -361,6 +361,7 @@ that produce the deployment-cost figures.
 
 | Script | Purpose |
 |---|---|
+| `recall_by_modality.py` | **Current.** Recall on the biomarker class broken down by measurement modality, using the taxonomy from `01_dataset_and_corpus`. Defaults to out-of-fold predictions over the training partition, because the held-out partition has too few positives per modality to estimate recall (digital assessments have one). Produces `results/rerun_2026-08-28/recall_by_modality_oof.csv`. |
 | `baselines.py` | **Current.** Recomputes the two reference baselines on the held-out partition: the training-free 46-term AT(N) keyword rule and the majority-class floor. Both are deterministic given the corpus, with bootstrap intervals matching `07_consolidated_evaluation`. Produces `results/rerun_2026-08-28/baselines.csv`. |
 | `benchmark_rerun.py` | **Current.** Inference timing for the re-run checkpoints and the exported bundles: single-thread CPU latency (median of 200 held-out records, best of three sweeps), a full 341-record CPU pass, and a batch-32 GPU pass. Produces `results/rerun_2026-08-28/inference_timing_rerun.csv`, which is the source for the manuscript's cost table. |
 | `significance_all_systems.py` | Superseded. McNemar across the 31 poster-run systems with out-of-fold predictions (465 pairs), plus a 33-system test-set variant, uncorrected. Standalone: needs only numpy/scipy/pandas/matplotlib. |
