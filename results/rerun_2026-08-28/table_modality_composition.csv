@@ -1,0 +1,11 @@
+Modality,Records,Biomarker,Trials,Annotations,% of corpus,% of biomarkers
+Clinical / behavioural,1337,1,209,48,70.4,0.2
+Fluid,344,344,111,231,18.1,61.0
+Imaging --- MRI/MRS,89,89,43,26,4.7,15.8
+Imaging --- PET,67,67,45,9,3.5,11.9
+Neurophysiology,27,27,10,10,1.4,4.8
+Digital,21,21,13,12,1.1,3.7
+Microbiome / stool,6,6,3,4,0.3,1.1
+Fluid --- exosomal,5,5,1,5,0.3,0.9
+Imaging --- retinal (OCT),3,3,1,2,0.2,0.5
+Pharmacokinetic / immunogenicity,1,1,1,1,0.1,0.2

@@ -1,0 +1,41 @@
+System,Tier,errors,FP,FN,unique_errors
+BioLinkBERT,Transformer,1,0,1,0
+BiomedBERT-large,Transformer,2,2,0,0
+BERT-base,Transformer,3,1,2,0
+Bio+ClinicalBERT,Transformer,3,0,3,0
+DeBERTa-v3,Transformer,3,0,3,0
+BioWordVec | Logistic Regression,BioWordVec,4,2,2,0
+BioWordVec | SVM,BioWordVec,4,2,2,0
+SciBERT,Transformer,4,3,1,0
+FastText | MLP Small,FastText,5,1,4,0
+PubMedBERT,Transformer,5,1,4,0
+ModernBERT,Transformer,5,1,4,0
+BioWordVec | Random Forest,BioWordVec,5,0,5,0
+Classical | Logistic Regression,Transformer,6,2,4,0
+Classical | MLP Small,Transformer,6,1,5,0
+BioWordVec | MLP Small,BioWordVec,6,2,4,0
+FastText | Logistic Regression,FastText,6,2,4,0
+FastText | SVM,FastText,6,2,4,0
+Classical | SVM,Transformer,6,1,5,0
+BioWordVec | MLP Deep,BioWordVec,6,0,6,0
+BioBERT,Transformer,7,2,5,0
+FastText | MLP Deep,FastText,7,1,6,0
+BioWordVec | XGBoost,BioWordVec,7,3,4,0
+Qwen2.5-7B-Instruct (tuned threshold),Prompt-based,8,0,8,0
+FastText | XGBoost,FastText,9,2,7,0
+Classical | MLP Deep,Transformer,12,8,4,0
+BioWordVec | Decision Tree,BioWordVec,14,7,7,0
+Qwen2.5-7B-Instruct,Prompt-based,14,0,14,0
+Classical | Random Forest,Transformer,15,7,8,0
+Classical | XGBoost,Transformer,15,7,8,0
+FastText | Random Forest,FastText,16,2,14,0
+BART zero-shot,Prompt-based,16,2,14,0
+BART zero-shot (tuned threshold),Prompt-based,16,2,14,0
+OpenBioLLM-8B (tuned threshold),Prompt-based,20,13,7,1
+FastText | Decision Tree,FastText,31,11,20,3
+Classical | Decision Tree,Transformer,41,32,9,7
+Flan-T5,Prompt-based,74,23,51,1
+Flan-T5 (tuned threshold),Prompt-based,75,29,46,2
+BioGPT zero-shot,Prompt-based,104,56,48,17
+OpenBioLLM-8B,Prompt-based,135,135,0,45
+BioGPT zero-shot (tuned threshold),Prompt-based,143,129,14,13

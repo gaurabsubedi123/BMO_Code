@@ -1,0 +1,5 @@
+Model,n_seeds,errors_mean,errors_sd,errors_min,errors_max,wf1_mean,wf1_sd
+BiomedBERT-large,5,3.8,1.6432,2,5,0.9888,0.0048
+ModernBERT,5,5.0,1.5811,3,7,0.9853,0.0047
+DeBERTa-v3,5,5.8,1.3038,4,7,0.9829,0.0038
+Bio+ClinicalBERT,5,6.2,3.1937,4,11,0.9818,0.0093

@@ -1,0 +1,41 @@
+System,Tier,weighted_f1,biomarker_f1,auc,precision,recall,TN,FP,FN,TP,errors
+BioLinkBERT,Transformer,0.997,0.995,1.0,1.0,0.991,232,0,1,108,1
+BiomedBERT-large,Transformer,0.994,0.991,0.999,0.982,1.0,230,2,0,109,2
+BERT-base,Transformer,0.991,0.986,0.999,0.991,0.982,231,1,2,107,3
+DeBERTa-v3,Transformer,0.991,0.986,0.998,1.0,0.972,232,0,3,106,3
+Bio+ClinicalBERT,Transformer,0.991,0.986,0.999,1.0,0.972,232,0,3,106,3
+SciBERT,Transformer,0.988,0.982,1.0,0.973,0.991,229,3,1,108,4
+BioWordVec + SVM,BioWordVec,0.988,0.982,0.999,0.982,0.982,230,2,2,107,4
+BioWordVec + Logistic Regression,BioWordVec,0.988,0.982,0.999,0.982,0.982,230,2,2,107,4
+PubMedBERT,Transformer,0.985,0.977,0.999,0.991,0.963,231,1,4,105,5
+FastText + MLP Small,FastText,0.985,0.977,0.995,0.991,0.963,231,1,4,105,5
+ModernBERT,Transformer,0.985,0.977,0.997,0.991,0.963,231,1,4,105,5
+BioWordVec + Random Forest,BioWordVec,0.985,0.977,0.993,1.0,0.954,232,0,5,104,5
+FastText + Logistic Regression,FastText,0.982,0.972,0.995,0.981,0.963,230,2,4,105,6
+FastText + SVM,FastText,0.982,0.972,0.994,0.981,0.963,230,2,4,105,6
+BioWordVec + MLP Small,BioWordVec,0.982,0.972,0.997,0.981,0.963,230,2,4,105,6
+TF-IDF + Logistic Regression,Classical,0.982,0.972,0.994,0.981,0.963,230,2,4,105,6
+TF-IDF + MLP Small,Classical,0.982,0.972,0.994,0.99,0.954,231,1,5,104,6
+TF-IDF + SVM,Classical,0.982,0.972,0.993,0.99,0.954,231,1,5,104,6
+BioWordVec + MLP Deep,BioWordVec,0.982,0.972,0.999,1.0,0.945,232,0,6,103,6
+BioWordVec + XGBoost,BioWordVec,0.979,0.968,0.999,0.972,0.963,229,3,4,105,7
+BioBERT,Transformer,0.979,0.967,0.994,0.981,0.954,230,2,5,104,7
+FastText + MLP Deep,FastText,0.979,0.967,0.997,0.99,0.945,231,1,6,103,7
+Qwen2.5-7B-Instruct (tuned threshold),Prompt-based,0.976,0.962,0.999,1.0,0.927,232,0,8,101,8
+FastText + XGBoost,FastText,0.973,0.958,0.991,0.981,0.936,230,2,7,102,9
+TF-IDF + MLP Deep,Classical,0.965,0.946,0.994,0.929,0.963,224,8,4,105,12
+BioWordVec + Decision Tree,BioWordVec,0.959,0.936,0.933,0.936,0.936,225,7,7,102,14
+Qwen2.5-7B-Instruct,Prompt-based,0.958,0.931,0.999,1.0,0.872,232,0,14,95,14
+TF-IDF + Random Forest,Classical,0.956,0.931,0.984,0.935,0.927,225,7,8,101,15
+TF-IDF + XGBoost,Classical,0.956,0.931,0.978,0.935,0.927,225,7,8,101,15
+BART zero-shot (tuned threshold),Prompt-based,0.952,0.922,0.963,0.979,0.872,230,2,14,95,16
+FastText + Random Forest,FastText,0.952,0.922,0.988,0.979,0.872,230,2,14,95,16
+BART zero-shot,Prompt-based,0.952,0.922,0.963,0.979,0.872,230,2,14,95,16
+OpenBioLLM-8B (tuned threshold),Prompt-based,0.942,0.911,0.986,0.887,0.936,219,13,7,102,20
+FastText + Decision Tree,FastText,0.908,0.852,0.883,0.89,0.817,221,11,20,89,31
+TF-IDF + Decision Tree,Classical,0.882,0.83,0.882,0.758,0.917,200,32,9,100,41
+Flan-T5 (tuned threshold),Prompt-based,0.775,0.627,0.858,0.685,0.578,203,29,46,63,75
+Flan-T5,Prompt-based,0.773,0.611,0.858,0.716,0.532,209,23,51,58,74
+BioGPT zero-shot,Prompt-based,0.698,0.54,0.722,0.521,0.56,176,56,48,61,104
+OpenBioLLM-8B,Prompt-based,0.599,0.618,0.986,0.447,1.0,97,135,0,109,135
+BioGPT zero-shot (tuned threshold),Prompt-based,0.584,0.571,0.722,0.424,0.872,103,129,14,95,143

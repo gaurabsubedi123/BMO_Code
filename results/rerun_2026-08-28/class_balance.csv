@@ -1,0 +1,4 @@
+Partition,n,positive,positive_rate
+Full corpus,1900,564,0.2968
+Train,1559,455,0.2919
+Test,341,109,0.3196

@@ -19,8 +19,8 @@ authors:
   - family-names: Fonseca
     given-names: Jorge
 license: MIT
-repository-code: "https://github.com/ORG/bmo-biomarker-classification"
+repository-code: "https://github.com/gaurabsubedi123/BMO_Code"
 abstract: >-
-  Code accompanying a benchmark of 33 systems for classifying whether a
+  Code accompanying a benchmark of 40 systems for classifying whether a
   registered clinical trial outcome measure concerns an Alzheimer's disease
   biomarker.

@@ -1,0 +1,8 @@
+Model,Classical,FastText,BioWordVec,BioWordVec - Classical,FastText - Classical
+Decision Tree,0.882,0.908,0.959,0.077,0.026
+Logistic Regression,0.982,0.982,0.988,0.006,0.0
+MLP Deep,0.965,0.979,0.982,0.017,0.014
+MLP Small,0.982,0.985,0.982,0.0,0.003
+Random Forest,0.956,0.952,0.985,0.029,-0.004
+SVM,0.982,0.982,0.988,0.006,0.0
+XGBoost,0.956,0.973,0.979,0.023,0.017

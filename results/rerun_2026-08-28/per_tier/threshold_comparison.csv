@@ -1,0 +1,6 @@
+index,AUC,errors @0.5,errors @tuned,threshold,weighted_f1 @0.5,weighted_f1 @tuned,errors_saved
+Qwen2.5-7B-Instruct,0.9986,14,8,0.01,0.9581,0.9763,6
+BART zero-shot,0.9627,16,16,0.485,0.9523,0.9523,0
+OpenBioLLM-8B,0.9858,135,20,0.78,0.5986,0.9418,115
+Flan-T5,0.8578,74,75,0.485,0.7732,0.7746,-1
+BioGPT zero-shot,0.7222,104,143,0.45,0.6977,0.584,-39

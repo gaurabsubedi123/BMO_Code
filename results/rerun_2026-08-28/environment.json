@@ -1,0 +1,19 @@
+{
+  "python": "3.11.14",
+  "platform": "Linux-6.8.0-107-generic-x86_64-with-glibc2.39",
+  "cpu_count": 128,
+  "torch": "2.6.0+cu124",
+  "torch_cuda": "12.4",
+  "cuda_available": true,
+  "n_gpu": 2,
+  "gpus": [
+    "0, NVIDIA L40, 46068 MiB, 580.126.16",
+    "1, NVIDIA L40, 46068 MiB, 580.126.16"
+  ],
+  "transformers": "4.57.1",
+  "scikit_learn": "1.7.2",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "scipy": "1.17.1",
+  "xgboost": "3.2.0"
+}

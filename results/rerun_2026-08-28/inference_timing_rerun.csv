@@ -1,0 +1,12 @@
+System,Tier,Params_M,Artefact_MB,Load_s,Latency_ms_median,Latency_ms_IQR_low,Latency_ms_IQR_high,Corpus_341_cpu_s,Corpus_341_gpu_s,Note
+TF-IDF + Logistic Regression,Classical,,0.548,0.07,0.566,0.553,0.591,0.008,,CPU 1 thread
+TF-IDF + SVM,Classical,,0.783,0.01,0.926,0.874,0.991,0.067,,CPU 1 thread
+TF-IDF + Random Forest,Classical,,3.209,0.11,5.894,5.843,5.957,0.019,,CPU 1 thread
+TF-IDF + XGBoost,Classical,,0.77,0.14,0.948,0.93,0.99,0.015,,CPU 1 thread
+TF-IDF + Decision Tree,Classical,,0.524,0.01,0.611,0.599,0.633,0.008,,CPU 1 thread
+TF-IDF + MLP Small,Classical,,3.614,0.02,0.592,0.576,0.617,0.008,,CPU 1 thread
+TF-IDF + MLP Deep,Classical,,6.886,0.01,0.605,0.589,0.631,0.008,,CPU 1 thread
+BioLinkBERT,Transformer,108.2,433.926,1.55,189.259,189.078,189.54,64.664,0.371,CPU 1 thread; GPU batch32; max_len=128
+BiomedBERT-large,Transformer,335.1,1341.644,4.17,663.178,662.5,664.401,227.161,1.246,CPU 1 thread; GPU batch32; max_len=128
+bmo-fast (TF-IDF + logistic regression),Export bundle,,0.091,0.01,0.313,0.303,0.328,0.008,,CPU 1 thread; raw text in
+bmo-transformer (BiomedBERT-large),Export bundle,335.1,1341.654,4.09,668.159,667.303,671.966,230.214,1.23,CPU 1 thread; GPU batch32; max_len=128
