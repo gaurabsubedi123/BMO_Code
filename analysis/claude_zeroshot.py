@@ -29,7 +29,7 @@ from anthropic.types.messages.batch_create_params import Request
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
-RUN = REPO.parent.parent / "rerun_results"
+RUN = Path(os.environ.get("BMO_RERUN_DIR", REPO.parent.parent / "rerun_results"))
 DATA = RUN / "outputs" / "dataset"
 OUT = RUN / "outputs" / "prompt_llm" / "claude"
 OUT.mkdir(parents=True, exist_ok=True)
