@@ -8,6 +8,8 @@ there is no AUC and no threshold: compare against Qwen at the default 0.5 cut.
     python claude_zeroshot.py pilot            # 20 training records per model, synchronous
     python claude_zeroshot.py submit           # Batch API: all 1,900 records + a second test-set run
     python claude_zeroshot.py collect          # fetch results, score, write tables
+    python claude_zeroshot.py direct           # same requests without the Batch API (full price,
+                                               # no queue); safe to re-run, skips answered requests
 
 The key is read from ~/.anthropic_key unless ANTHROPIC_API_KEY is set.
 """
@@ -121,16 +123,19 @@ def pilot(n=20):
 
 
 # ---------------------------------------------------------------- batch
-def submit():
+def jobs():
+    """(custom_id, model, text): every record once, then the test set a second time."""
     df, _, te = load_data()
-    reqs = []
+    out = []
     for model in MODELS:
-        for r in range(len(df)):
-            reqs.append(Request(custom_id=f"{model}__run1__{r}",
-                                params=MessageCreateParamsNonStreaming(**params(model, df.text[r]))))
-        for r in te:
-            reqs.append(Request(custom_id=f"{model}__run2__{r}",
-                                params=MessageCreateParamsNonStreaming(**params(model, df.text[r]))))
+        out += [(f"{model}__run1__{r}", model, df.text[r]) for r in range(len(df))]
+        out += [(f"{model}__run2__{r}", model, df.text[r]) for r in te]
+    return out
+
+
+def submit():
+    reqs = [Request(custom_id=cid, params=MessageCreateParamsNonStreaming(**params(m, t)))
+            for cid, m, t in jobs()]
     batch = client().messages.batches.create(requests=reqs)
     meta = {"batch_id": batch.id, "submitted": date.today().isoformat(),
             "n_requests": len(reqs), "models": list(MODELS), "max_tokens": MAX_TOKENS}
@@ -157,6 +162,72 @@ def collect():
     raw = pd.DataFrame(rows).sort_values(["model", "run", "row"])
     raw.to_csv(OUT / "raw_replies.csv", index=False)
     print(raw.groupby(["model", "run"]).result.value_counts().to_string())
+    score(raw)
+
+
+# Standard (non-batch) prices, $ per million tokens, for the running cost line.
+PRICE = {"claude-opus-5": (5, 25), "claude-sonnet-5": (2, 10), "claude-haiku-4-5": (1, 5)}
+
+
+def direct(workers=8):
+    """Same requests as the batch, sent one by one at standard price.
+
+    Every reply is appended to direct_replies.jsonl the moment it arrives, and
+    a restart skips anything already answered, so an interruption never pays
+    for the same request twice.
+    """
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    from threading import Lock
+    log = OUT / "direct_replies.jsonl"
+    done = set()
+    if log.exists():
+        for line in log.read_text().splitlines():
+            rec = json.loads(line)
+            if rec["result"] == "succeeded":
+                done.add(rec["custom_id"])
+    todo = [j for j in jobs() if j[0] not in done]
+    print(f"{len(done)} already answered, {len(todo)} to send")
+    c, lock, cost, n = client(), Lock(), [0.0], [0]
+
+    def one(job):
+        cid, model, text = job
+        try:
+            rec = {"custom_id": cid, "result": "succeeded",
+                   **reply_fields(c.messages.create(**params(model, text)))}
+        except anthropic.APIError as e:              # retries are exhausted by now
+            rec = {"custom_id": cid, "result": "errored", "error": f"{type(e).__name__}: {e}"}
+        with lock:
+            with log.open("a") as f:
+                f.write(json.dumps(rec) + "\n")
+            if rec["result"] == "succeeded":
+                pin, pout = PRICE[model]
+                cost[0] += (rec["in_tok"] * pin + rec["out_tok"] * pout) / 1e6
+            n[0] += 1
+            if n[0] % 250 == 0 or n[0] == len(todo):
+                print(f"  {n[0]}/{len(todo)} sent, cost so far ${cost[0]:.2f}", flush=True)
+        return rec["result"]
+
+    with ThreadPoolExecutor(workers) as ex:
+        results = [f.result() for f in as_completed(ex.submit(one, j) for j in todo)]
+    print(f"this session: {results.count('succeeded')} succeeded, "
+          f"{results.count('errored')} errored, ${cost[0]:.2f}")
+
+    recs = {}
+    for line in log.read_text().splitlines():        # last record per id wins
+        rec = json.loads(line)
+        if rec["result"] == "succeeded" or rec["custom_id"] not in recs:
+            recs[rec["custom_id"]] = rec
+    rows = []
+    for cid, rec in recs.items():
+        model, run, r = cid.split("__")
+        rows.append({"model": model, "run": run, "row": int(r),
+                     **{k: v for k, v in rec.items() if k != "custom_id"}})
+    raw = pd.DataFrame(rows).sort_values(["model", "run", "row"])
+    raw.to_csv(OUT / "raw_replies.csv", index=False)
+    missing = raw.result.ne("succeeded").sum()
+    if missing:
+        print(f"{missing} requests still errored; run 'direct' again to retry only those")
+        return
     score(raw)
 
 
@@ -194,4 +265,4 @@ def score(raw):
 
 
 if __name__ == "__main__":
-    {"pilot": pilot, "submit": submit, "collect": collect}[sys.argv[1]]()
+    {"pilot": pilot, "submit": submit, "collect": collect, "direct": direct}[sys.argv[1]]()
