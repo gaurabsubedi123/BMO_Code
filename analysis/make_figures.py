@@ -78,7 +78,7 @@ TIERS = {
     "BioWordVec":   dict(label="TF-IDF + BioWordVec",  color="#009E73", marker="^", ms=5.8),
     "FastText":     dict(label="TF-IDF + FastText",    color="#56B4E9", marker="s", ms=5.0),
     "Classical":    dict(label="TF-IDF only",          color="#0072B2", marker="o", ms=5.4),
-    "Prompt-based": dict(label="Prompted, tuned threshold", color="#CC79A7", marker="v", ms=5.8),
+    "Prompt-based": dict(label="Prompted, no task training", color="#CC79A7", marker="v", ms=5.8),
 }
 
 
@@ -107,6 +107,14 @@ def tidy(s):
 
 
 master = pd.read_csv(RUN / "tables" / "MASTER_test_all_systems_full.csv")
+# The study's 45 systems: the pipeline's 40 plus Qwen3.8-27B at both thresholds
+# and the three Claude models, scored by analysis/combined_significance.py.
+_new = pd.read_csv(RUN / "outputs" / "prompt_llm" / "claude" / "qwen38_claude_test_metrics.csv")
+_new = _new.rename(columns={"ci_low": "wf1_lo", "ci_high": "wf1_hi"}).assign(Tier="Prompt-based")
+_new["Model"] = _new.System
+master = pd.concat([master, _new[["System", "Model", "Tier", "weighted_f1", "biomarker_f1",
+                                  "errors", "wf1_lo", "wf1_hi"]]], ignore_index=True)
+assert len(master) == 45, len(master)
 master = master.sort_values(["weighted_f1", "errors"], ascending=[False, True]).reset_index(drop=True)
 
 
@@ -117,16 +125,10 @@ def fig_ranking():
     d = master[master.weighted_f1 >= 0.95].reset_index(drop=True)
     lead_lo, lead_hi = master.loc[0, "wf1_lo"], master.loc[0, "wf1_hi"]
     n_overlap = int((master.wf1_hi >= lead_lo).sum())
-    # Added comparisons sit outside the forty: their own block below a gap,
-    # hollow markers, and they never enter the overlap count above.
-    added = pd.read_csv(RUN / "outputs" / "prompt_llm" / "claude" / "added_test_metrics.csv")
-    added = added.sort_values(["weighted_f1", "errors"], ascending=[False, True]).reset_index(drop=True)
-    na, gap = len(added), 1.6
     n = len(d)
-    y = np.arange(n)[::-1] + na + gap
-    ya = np.arange(na)[::-1]
+    y = np.arange(n)[::-1]
 
-    fig, ax = plt.subplots(figsize=(6.3, 8.6))
+    fig, ax = plt.subplots(figsize=(6.3, 8.3))
     ax.axvspan(lead_lo, lead_hi, color="#efefef", zorder=0, lw=0)
     for i, r in d.iterrows():
         t = TIERS[r.Tier]
@@ -142,19 +144,9 @@ def fig_ranking():
     ax.text(1.0045, cut + 0.35, f"{n_overlap} systems\nabove this line\noverlap the\nleader's interval\n(shaded)",
             fontsize=7.4, color=MUTED, va="bottom", ha="left", linespacing=1.25)
 
-    pr = TIERS["Prompt-based"]
-    for i, r in added.iterrows():
-        ax.plot([r.ci_low, r.ci_high], [ya[i]] * 2, color=pr["color"], lw=1.3,
-                solid_capstyle="butt", zorder=2)
-        ax.plot(r.weighted_f1, ya[i], marker=pr["marker"], ms=pr["ms"], color=pr["color"],
-                mfc="white", mew=1.1, zorder=3, ls="none")
-    ax.text(0.9205, na - 0.35, "Added comparisons, outside the forty systems",
-            fontsize=8, color=INK, fontweight="bold", va="bottom", ha="left")
-
-    ax.set_yticks(list(y) + list(ya))
-    ax.set_yticklabels([tidy(s) for s in d.System] +
-                       [tidy(s) for s in added.System])
-    ax.set_ylim(-0.7, n + na + gap - 0.3)
+    ax.set_yticks(y)
+    ax.set_yticklabels([tidy(s) for s in d.System])
+    ax.set_ylim(-0.7, n - 0.3)
     ax.set_xlim(0.92, 1.0025)
     ax.set_xticks([0.92, 0.94, 0.96, 0.98, 1.00])
     ax.set_xticklabels(["0.92", "0.94", "0.96", "0.98", "1.00"])
@@ -165,8 +157,6 @@ def fig_ranking():
 
     handles = [Line2D([], [], color=t["color"], marker=t["marker"], ms=t["ms"], mec="white",
                       mew=0.6, lw=1.3, label=t["label"]) for t in TIERS.values()]
-    handles.append(Line2D([], [], color=pr["color"], marker=pr["marker"], ms=pr["ms"],
-                          mfc="white", mew=1.1, lw=1.3, label="Added comparison (prompted)"))
     ax.legend(handles=handles, loc="lower center", bbox_to_anchor=(0.42, 1.005), ncol=3,
               frameon=False, handlelength=1.8, columnspacing=1.4, handletextpad=0.5,
               borderaxespad=0.2)
@@ -216,7 +206,7 @@ def fig_modality():
 # Supplementary Figure S1: significance matrix (lower triangle)
 # --------------------------------------------------------------------------
 def fig_significance():
-    sig = pd.read_csv(RUN / "outputs" / "final_results" / "significance_pairwise_test.csv")
+    sig = pd.read_csv(RUN / "outputs" / "final_results_45" / "significance_pairwise_test_45.csv")
     sig["A"] = sig.system_A.map(display_name)
     sig["B"] = sig.system_B.map(display_name)
     order_raw = master.System.tolist()
@@ -251,9 +241,14 @@ def fig_significance():
     ax.tick_params(length=0, pad=2)
     for s in ax.spines.values():
         s.set_visible(False)
-    # Top twelve.
-    ax.add_patch(Rectangle((0, 1), 11, 11, fill=False, ec="#C0392B", lw=1.2))
-    ax.text(11.6, 6.5, "Twelve strongest systems:\nno pair differs after\nHolm correction",
+    # The leading group: every system with five or fewer errors.
+    k = int((master.errors <= 5).sum())
+    assert (master.errors.iloc[:k] <= 5).all(), "leading group is not a prefix of the order"
+    within = [r for r in sig.itertuples() if idx[r.A] < k and idx[r.B] < k]
+    assert len(within) == k * (k - 1) // 2 and not any(r.sig_holm for r in within)
+    words = {12: "Twelve", 13: "Thirteen", 14: "Fourteen", 15: "Fifteen", 16: "Sixteen"}
+    ax.add_patch(Rectangle((0, 1), k - 1, k - 1, fill=False, ec="#C0392B", lw=1.2))
+    ax.text(k - 0.4, k / 2 + 0.5, f"{words.get(k, k)} strongest systems:\nno pair differs after\nHolm correction",
             fontsize=8, color="#C0392B", va="center", ha="left", linespacing=1.3)
     handles = [Patch(fc="#2c5d8a", label="Significant after Holm correction (the column system is better)"),
                Patch(fc="#e9e9e9", label="Not significantly different")]
@@ -279,7 +274,7 @@ def fig_confusion():
               ("TF-IDF + BioWordVec", "SVM", "BioWordVec | SVM", oof_cl, te_cl),
               ("Fine-tuned encoder", "BioLinkBERT", "BioLinkBERT", oof_be, te_be),
               ("Prompted, tuned threshold", "Qwen2.5-7B", "Qwen2.5-7B-Instruct (tuned threshold)", None, te_pr),
-              ("Added, prompted, tuned", "Qwen3.8-27B", "Qwen3.8-27B (tuned threshold)", None, te_q38)]
+              ("Prompted, tuned threshold", "Qwen3.8-27B", "Qwen3.8-27B (tuned threshold)", None, te_q38)]
     cmap = plt.get_cmap("Blues")
 
     def head(ax, tier, model):
@@ -336,7 +331,7 @@ def fig_confusion():
 
 
 # --------------------------------------------------------------------------
-# Supplementary Figure S4: the three Claude models (added comparison)
+# Supplementary Figure S4: the three Claude models
 # --------------------------------------------------------------------------
 def fig_claude_confusion():
     """Claude was never trained here, so its training-set replies are as fair a

@@ -2,10 +2,10 @@
 
 | File | In the paper |
 |---|---|
-| `ranking.pdf` | Figure 1: systems reaching 0.95 weighted F1 with bootstrap intervals, plus the added comparisons (Qwen3.8-27B, three Claude models) as hollow markers below a gap |
+| `ranking.pdf` | Figure 1: the 37 of 45 systems reaching 0.95 weighted F1, with bootstrap intervals; 27 overlap the leader's interval |
 | `modality_recall.pdf` | Figure 2: out-of-fold recall by biomarker modality |
-| `significance.pdf` | Supplementary Figure S1: pairwise McNemar matrix for the forty systems, Holm-corrected |
-| `confusion.pdf` | Supplementary Figure S2: confusion matrices for the leading system in each group, plus Qwen3.8-27B |
+| `significance.pdf` | Supplementary Figure S1: pairwise McNemar matrix for all 45 systems, Holm-corrected over 990 pairs; the fourteen strongest are boxed |
+| `confusion.pdf` | Supplementary Figure S2: confusion matrices for the leading system in each group, including Qwen2.5-7B and Qwen3.8-27B |
 | `corpus_overview.pdf` | Supplementary Figure S3: the annotated corpus |
 | `claude_confusion.pdf` | Supplementary Figure S4: confusion matrices for the three Claude models on the training and test sets, with unreadable replies in their own column |
 

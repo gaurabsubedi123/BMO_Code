@@ -1,0 +1,991 @@
+system_A,system_B,A_only_correct,B_only_correct,discordant,p_raw,errors_A,errors_B,p_holm,p_fdr,sig_raw,sig_holm,sig_fdr
+BART zero-shot,BART zero-shot (tuned threshold),0,0,0,1.0,16,16,1.0,1.0,False,False,False
+BART zero-shot,BERT-base,1,14,15,0.0009765625,16,3,0.673828125,0.0031491754885993486,True,False,True
+BART zero-shot,Bio+ClinicalBERT,0,13,13,0.000244140625,16,3,0.17333984375,0.0008392333984375,True,False,True
+BART zero-shot,BioBERT,4,13,17,0.049041748046875,16,7,1.0,0.0972972556441007,True,False,False
+BART zero-shot,BioGPT zero-shot,89,1,90,1.4701842918422953e-25,16,104,1.3069938354478005e-22,1.4130897562367693e-24,True,True,True
+BART zero-shot,BioGPT zero-shot (tuned threshold),135,8,143,6.767917179441369e-31,16,143,6.28062714252159e-28,1.0151875769162053e-29,True,True,True
+BART zero-shot,BioLinkBERT,0,15,15,6.103515625e-05,16,1,0.0443115234375,0.00022631012991573035,True,True,True
+BART zero-shot,BioWordVec | Decision Tree,11,13,24,0.8388197422027588,16,14,1.0,1.0,False,False,False
+BART zero-shot,BioWordVec | Logistic Regression,2,14,16,0.004180908203125,16,4,1.0,0.011659434143926057,True,False,True
+BART zero-shot,BioWordVec | MLP Deep,3,13,16,0.021270751953125,16,6,1.0,0.0481877446992992,True,False,True
+BART zero-shot,BioWordVec | MLP Small,4,14,18,0.0308837890625,16,6,1.0,0.06596481876332623,True,False,False
+BART zero-shot,BioWordVec | Random Forest,1,12,13,0.00341796875,16,5,1.0,0.009952320772058824,True,False,True
+BART zero-shot,BioWordVec | SVM,2,14,16,0.004180908203125,16,4,1.0,0.011659434143926057,True,False,True
+BART zero-shot,BioWordVec | XGBoost,4,13,17,0.049041748046875,16,7,1.0,0.0972972556441007,True,False,False
+BART zero-shot,BiomedBERT-large,2,16,18,0.001312255859375,16,2,0.89495849609375,0.004177277494473473,True,False,True
+BART zero-shot,Classical | Decision Tree,33,8,41,0.00011222142620681552,16,41,0.08091164829511399,0.00040996019167803457,True,False,True
+BART zero-shot,Classical | Logistic Regression,4,14,18,0.0308837890625,16,6,1.0,0.06596481876332623,True,False,False
+BART zero-shot,Classical | MLP Deep,10,14,24,0.5412561893463135,16,12,1.0,0.7310281411362215,False,False,False
+BART zero-shot,Classical | MLP Small,3,13,16,0.021270751953125,16,6,1.0,0.0481877446992992,True,False,True
+BART zero-shot,Classical | Random Forest,11,12,23,1.0,16,15,1.0,1.0,False,False,False
+BART zero-shot,Classical | SVM,4,14,18,0.0308837890625,16,6,1.0,0.06596481876332623,True,False,False
+BART zero-shot,Classical | XGBoost,11,12,23,1.0,16,15,1.0,1.0,False,False,False
+BART zero-shot,Claude Haiku 4.5,4,10,14,0.1795654296875,16,10,1.0,0.2999841905564924,False,False,False
+BART zero-shot,Claude Opus 5,4,15,19,0.0192108154296875,16,5,1.0,0.04443623195184725,True,False,True
+BART zero-shot,Claude Sonnet 5,1,10,11,0.01171875,16,7,1.0,0.029149654522613064,True,False,True
+BART zero-shot,DeBERTa-v3,0,13,13,0.000244140625,16,3,0.17333984375,0.0008392333984375,True,False,True
+BART zero-shot,FastText | Decision Tree,23,8,31,0.010673840530216694,16,31,1.0,0.02737591224071121,True,False,True
+BART zero-shot,FastText | Logistic Regression,4,14,18,0.0308837890625,16,6,1.0,0.06596481876332623,True,False,False
+BART zero-shot,FastText | MLP Deep,4,13,17,0.049041748046875,16,7,1.0,0.0972972556441007,True,False,False
+BART zero-shot,FastText | MLP Small,3,14,17,0.012725830078125,16,5,1.0,0.030646073190789474,True,False,True
+BART zero-shot,FastText | Random Forest,10,10,20,1.0,16,16,1.0,1.0,False,False,False
+BART zero-shot,FastText | SVM,4,14,18,0.0308837890625,16,6,1.0,0.06596481876332623,True,False,False
+BART zero-shot,FastText | XGBoost,6,13,19,0.1670684814453125,16,9,1.0,0.2827312762920673,False,False,False
+BART zero-shot,Flan-T5,60,2,62,8.474124180146703e-16,16,74,6.889462958459269e-13,4.6868061108073944e-15,True,True,True
+BART zero-shot,Flan-T5 (tuned threshold),63,4,67,1.1067861037383775e-14,16,75,8.976035301318241e-12,6.053691948624275e-14,True,True,True
+BART zero-shot,ModernBERT,3,14,17,0.012725830078125,16,5,1.0,0.030646073190789474,True,False,True
+BART zero-shot,OpenBioLLM-8B,133,14,147,1.6658931474865648e-25,16,135,1.477647221820583e-22,1.5558813358600936e-24,True,True,True
+BART zero-shot,OpenBioLLM-8B (tuned threshold),16,12,28,0.5715881884098053,16,20,1.0,0.7636603326932622,False,False,False
+BART zero-shot,PubMedBERT,3,14,17,0.012725830078125,16,5,1.0,0.030646073190789474,True,False,True
+BART zero-shot,Qwen2.5-7B-Instruct,8,10,18,0.8145294189453125,16,14,1.0,0.9992368336503834,False,False,False
+BART zero-shot,Qwen2.5-7B-Instruct (tuned threshold),2,10,12,0.03857421875,16,8,1.0,0.07890181107954546,True,False,False
+BART zero-shot,Qwen3.8-27B,1,11,12,0.00634765625,16,6,1.0,0.01735961239640884,True,False,True
+BART zero-shot,Qwen3.8-27B (tuned threshold),0,14,14,0.0001220703125,16,2,0.0875244140625,0.0004362801782490975,True,False,True
+BART zero-shot,SciBERT,3,15,18,0.007537841796875,16,4,1.0,0.020114456546917115,True,False,True
+BART zero-shot (tuned threshold),BERT-base,1,14,15,0.0009765625,16,3,0.673828125,0.0031491754885993486,True,False,True
+BART zero-shot (tuned threshold),Bio+ClinicalBERT,0,13,13,0.000244140625,16,3,0.17333984375,0.0008392333984375,True,False,True
+BART zero-shot (tuned threshold),BioBERT,4,13,17,0.049041748046875,16,7,1.0,0.0972972556441007,True,False,False
+BART zero-shot (tuned threshold),BioGPT zero-shot,89,1,90,1.4701842918422953e-25,16,104,1.3069938354478005e-22,1.4130897562367693e-24,True,True,True
+BART zero-shot (tuned threshold),BioGPT zero-shot (tuned threshold),135,8,143,6.767917179441369e-31,16,143,6.28062714252159e-28,1.0151875769162053e-29,True,True,True
+BART zero-shot (tuned threshold),BioLinkBERT,0,15,15,6.103515625e-05,16,1,0.0443115234375,0.00022631012991573035,True,True,True
+BART zero-shot (tuned threshold),BioWordVec | Decision Tree,11,13,24,0.8388197422027588,16,14,1.0,1.0,False,False,False
+BART zero-shot (tuned threshold),BioWordVec | Logistic Regression,2,14,16,0.004180908203125,16,4,1.0,0.011659434143926057,True,False,True
+BART zero-shot (tuned threshold),BioWordVec | MLP Deep,3,13,16,0.021270751953125,16,6,1.0,0.0481877446992992,True,False,True
+BART zero-shot (tuned threshold),BioWordVec | MLP Small,4,14,18,0.0308837890625,16,6,1.0,0.06596481876332623,True,False,False
+BART zero-shot (tuned threshold),BioWordVec | Random Forest,1,12,13,0.00341796875,16,5,1.0,0.009952320772058824,True,False,True
+BART zero-shot (tuned threshold),BioWordVec | SVM,2,14,16,0.004180908203125,16,4,1.0,0.011659434143926057,True,False,True
+BART zero-shot (tuned threshold),BioWordVec | XGBoost,4,13,17,0.049041748046875,16,7,1.0,0.0972972556441007,True,False,False
+BART zero-shot (tuned threshold),BiomedBERT-large,2,16,18,0.001312255859375,16,2,0.89495849609375,0.004177277494473473,True,False,True
+BART zero-shot (tuned threshold),Classical | Decision Tree,33,8,41,0.00011222142620681552,16,41,0.08091164829511399,0.00040996019167803457,True,False,True
+BART zero-shot (tuned threshold),Classical | Logistic Regression,4,14,18,0.0308837890625,16,6,1.0,0.06596481876332623,True,False,False
+BART zero-shot (tuned threshold),Classical | MLP Deep,10,14,24,0.5412561893463135,16,12,1.0,0.7310281411362215,False,False,False
+BART zero-shot (tuned threshold),Classical | MLP Small,3,13,16,0.021270751953125,16,6,1.0,0.0481877446992992,True,False,True
+BART zero-shot (tuned threshold),Classical | Random Forest,11,12,23,1.0,16,15,1.0,1.0,False,False,False
+BART zero-shot (tuned threshold),Classical | SVM,4,14,18,0.0308837890625,16,6,1.0,0.06596481876332623,True,False,False
+BART zero-shot (tuned threshold),Classical | XGBoost,11,12,23,1.0,16,15,1.0,1.0,False,False,False
+BART zero-shot (tuned threshold),Claude Haiku 4.5,4,10,14,0.1795654296875,16,10,1.0,0.2999841905564924,False,False,False
+BART zero-shot (tuned threshold),Claude Opus 5,4,15,19,0.0192108154296875,16,5,1.0,0.04443623195184725,True,False,True
+BART zero-shot (tuned threshold),Claude Sonnet 5,1,10,11,0.01171875,16,7,1.0,0.029149654522613064,True,False,True
+BART zero-shot (tuned threshold),DeBERTa-v3,0,13,13,0.000244140625,16,3,0.17333984375,0.0008392333984375,True,False,True
+BART zero-shot (tuned threshold),FastText | Decision Tree,23,8,31,0.010673840530216694,16,31,1.0,0.02737591224071121,True,False,True
+BART zero-shot (tuned threshold),FastText | Logistic Regression,4,14,18,0.0308837890625,16,6,1.0,0.06596481876332623,True,False,False
+BART zero-shot (tuned threshold),FastText | MLP Deep,4,13,17,0.049041748046875,16,7,1.0,0.0972972556441007,True,False,False
+BART zero-shot (tuned threshold),FastText | MLP Small,3,14,17,0.012725830078125,16,5,1.0,0.030646073190789474,True,False,True
+BART zero-shot (tuned threshold),FastText | Random Forest,10,10,20,1.0,16,16,1.0,1.0,False,False,False
+BART zero-shot (tuned threshold),FastText | SVM,4,14,18,0.0308837890625,16,6,1.0,0.06596481876332623,True,False,False
+BART zero-shot (tuned threshold),FastText | XGBoost,6,13,19,0.1670684814453125,16,9,1.0,0.2827312762920673,False,False,False
+BART zero-shot (tuned threshold),Flan-T5,60,2,62,8.474124180146703e-16,16,74,6.889462958459269e-13,4.6868061108073944e-15,True,True,True
+BART zero-shot (tuned threshold),Flan-T5 (tuned threshold),63,4,67,1.1067861037383775e-14,16,75,8.976035301318241e-12,6.053691948624275e-14,True,True,True
+BART zero-shot (tuned threshold),ModernBERT,3,14,17,0.012725830078125,16,5,1.0,0.030646073190789474,True,False,True
+BART zero-shot (tuned threshold),OpenBioLLM-8B,133,14,147,1.6658931474865648e-25,16,135,1.477647221820583e-22,1.5558813358600936e-24,True,True,True
+BART zero-shot (tuned threshold),OpenBioLLM-8B (tuned threshold),16,12,28,0.5715881884098053,16,20,1.0,0.7636603326932622,False,False,False
+BART zero-shot (tuned threshold),PubMedBERT,3,14,17,0.012725830078125,16,5,1.0,0.030646073190789474,True,False,True
+BART zero-shot (tuned threshold),Qwen2.5-7B-Instruct,8,10,18,0.8145294189453125,16,14,1.0,0.9992368336503834,False,False,False
+BART zero-shot (tuned threshold),Qwen2.5-7B-Instruct (tuned threshold),2,10,12,0.03857421875,16,8,1.0,0.07890181107954546,True,False,False
+BART zero-shot (tuned threshold),Qwen3.8-27B,1,11,12,0.00634765625,16,6,1.0,0.01735961239640884,True,False,True
+BART zero-shot (tuned threshold),Qwen3.8-27B (tuned threshold),0,14,14,0.0001220703125,16,2,0.0875244140625,0.0004362801782490975,True,False,True
+BART zero-shot (tuned threshold),SciBERT,3,15,18,0.007537841796875,16,4,1.0,0.020114456546917115,True,False,True
+BERT-base,Bio+ClinicalBERT,1,1,2,1.0,3,3,1.0,1.0,False,False,False
+BERT-base,BioBERT,4,0,4,0.125,3,7,1.0,0.21447140381282495,False,False,False
+BERT-base,BioGPT zero-shot,102,1,103,2.0510383535746307e-29,3,104,1.882853208581511e-26,2.781545164436828e-28,True,True,True
+BERT-base,BioGPT zero-shot (tuned threshold),141,1,142,5.12987341820029e-41,3,143,5.058055190345486e-38,1.0157149368036575e-38,True,True,True
+BERT-base,BioLinkBERT,1,3,4,0.625,3,1,1.0,0.8109436435124509,False,False,False
+BERT-base,BioWordVec | Decision Tree,12,1,13,0.00341796875,3,14,1.0,0.009952320772058824,True,False,True
+BERT-base,BioWordVec | Logistic Regression,1,0,1,1.0,3,4,1.0,1.0,False,False,False
+BERT-base,BioWordVec | MLP Deep,4,1,5,0.375,3,6,1.0,0.5403930131004366,False,False,False
+BERT-base,BioWordVec | MLP Small,3,0,3,0.25,3,6,1.0,0.39473684210526316,False,False,False
+BERT-base,BioWordVec | Random Forest,3,1,4,0.625,3,5,1.0,0.8109436435124509,False,False,False
+BERT-base,BioWordVec | SVM,1,0,1,1.0,3,4,1.0,1.0,False,False,False
+BERT-base,BioWordVec | XGBoost,5,1,6,0.21875,3,7,1.0,0.35677512355848434,False,False,False
+BERT-base,BiomedBERT-large,2,3,5,1.0,3,2,1.0,1.0,False,False,False
+BERT-base,Classical | Decision Tree,38,0,38,7.275957614183426e-12,3,41,5.7989382185041904e-09,3.712988679402882e-11,True,True,True
+BERT-base,Classical | Logistic Regression,3,0,3,0.25,3,6,1.0,0.39473684210526316,False,False,False
+BERT-base,Classical | MLP Deep,9,0,9,0.00390625,3,12,1.0,0.011241824127906976,True,False,True
+BERT-base,Classical | MLP Small,3,0,3,0.25,3,6,1.0,0.39473684210526316,False,False,False
+BERT-base,Classical | Random Forest,12,0,12,0.00048828125,3,15,0.34228515625,0.0016276041666666667,True,False,True
+BERT-base,Classical | SVM,3,0,3,0.25,3,6,1.0,0.39473684210526316,False,False,False
+BERT-base,Classical | XGBoost,12,0,12,0.00048828125,3,15,0.34228515625,0.0016276041666666667,True,False,True
+BERT-base,Claude Haiku 4.5,8,1,9,0.0390625,3,10,1.0,0.07924564549180328,True,False,False
+BERT-base,Claude Opus 5,5,3,8,0.7265625,3,5,1.0,0.9025054893350063,False,False,False
+BERT-base,Claude Sonnet 5,5,1,6,0.21875,3,7,1.0,0.35677512355848434,False,False,False
+BERT-base,DeBERTa-v3,1,1,2,1.0,3,3,1.0,1.0,False,False,False
+BERT-base,FastText | Decision Tree,29,1,30,5.774199962615967e-08,3,31,4.405714571475983e-05,2.507218404820091e-07,True,True,True
+BERT-base,FastText | Logistic Regression,3,0,3,0.25,3,6,1.0,0.39473684210526316,False,False,False
+BERT-base,FastText | MLP Deep,4,0,4,0.125,3,7,1.0,0.21447140381282495,False,False,False
+BERT-base,FastText | MLP Small,2,0,2,0.5,3,5,1.0,0.6846473029045643,False,False,False
+BERT-base,FastText | Random Forest,14,1,15,0.0009765625,3,16,0.673828125,0.0031491754885993486,True,False,True
+BERT-base,FastText | SVM,3,0,3,0.25,3,6,1.0,0.39473684210526316,False,False,False
+BERT-base,FastText | XGBoost,6,0,6,0.03125,3,9,1.0,0.06596481876332623,True,False,False
+BERT-base,Flan-T5,71,0,71,8.470329472543003e-22,3,74,7.403067959002585e-19,7.046744687241659e-21,True,True,True
+BERT-base,Flan-T5 (tuned threshold),72,0,72,4.235164736271502e-22,3,75,3.72270980318265e-19,3.645924425138075e-21,True,True,True
+BERT-base,ModernBERT,4,2,6,0.6875,3,5,1.0,0.8692528735632183,False,False,False
+BERT-base,OpenBioLLM-8B,134,2,136,2.1390782942600103e-37,3,135,2.05565424078387e-34,7.058958371058034e-36,True,True,True
+BERT-base,OpenBioLLM-8B (tuned threshold),20,3,23,0.00048828125,3,20,0.34228515625,0.0016276041666666667,True,False,True
+BERT-base,PubMedBERT,4,2,6,0.6875,3,5,1.0,0.8692528735632183,False,False,False
+BERT-base,Qwen2.5-7B-Instruct,12,1,13,0.00341796875,3,14,1.0,0.009952320772058824,True,False,True
+BERT-base,Qwen2.5-7B-Instruct (tuned threshold),6,1,7,0.125,3,8,1.0,0.21447140381282495,False,False,False
+BERT-base,Qwen3.8-27B,4,1,5,0.375,3,6,1.0,0.5403930131004366,False,False,False
+BERT-base,Qwen3.8-27B (tuned threshold),2,3,5,1.0,3,2,1.0,1.0,False,False,False
+BERT-base,SciBERT,3,2,5,1.0,3,4,1.0,1.0,False,False,False
+Bio+ClinicalBERT,BioBERT,4,0,4,0.125,3,7,1.0,0.21447140381282495,False,False,False
+Bio+ClinicalBERT,BioGPT zero-shot,101,0,101,7.888609052210118e-31,3,104,7.289074764242149e-28,1.148488670836473e-29,True,True,True
+Bio+ClinicalBERT,BioGPT zero-shot (tuned threshold),140,0,140,1.4349296274686127e-42,3,143,1.4177104719389893e-39,3.5514508279848164e-40,True,True,True
+Bio+ClinicalBERT,BioLinkBERT,0,2,2,0.5,3,1,1.0,0.6846473029045643,False,False,False
+Bio+ClinicalBERT,BioWordVec | Decision Tree,12,1,13,0.00341796875,3,14,1.0,0.009952320772058824,True,False,True
+Bio+ClinicalBERT,BioWordVec | Logistic Regression,2,1,3,1.0,3,4,1.0,1.0,False,False,False
+Bio+ClinicalBERT,BioWordVec | MLP Deep,3,0,3,0.25,3,6,1.0,0.39473684210526316,False,False,False
+Bio+ClinicalBERT,BioWordVec | MLP Small,4,1,5,0.375,3,6,1.0,0.5403930131004366,False,False,False
+Bio+ClinicalBERT,BioWordVec | Random Forest,2,0,2,0.5,3,5,1.0,0.6846473029045643,False,False,False
+Bio+ClinicalBERT,BioWordVec | SVM,2,1,3,1.0,3,4,1.0,1.0,False,False,False
+Bio+ClinicalBERT,BioWordVec | XGBoost,4,0,4,0.125,3,7,1.0,0.21447140381282495,False,False,False
+Bio+ClinicalBERT,BiomedBERT-large,2,3,5,1.0,3,2,1.0,1.0,False,False,False
+Bio+ClinicalBERT,Classical | Decision Tree,39,1,40,7.457856554538012e-11,3,41,5.891706678085029e-08,3.655088113362689e-10,True,True,True
+Bio+ClinicalBERT,Classical | Logistic Regression,4,1,5,0.375,3,6,1.0,0.5403930131004366,False,False,False
+Bio+ClinicalBERT,Classical | MLP Deep,10,1,11,0.01171875,3,12,1.0,0.029149654522613064,True,False,True
+Bio+ClinicalBERT,Classical | MLP Small,3,0,3,0.25,3,6,1.0,0.39473684210526316,False,False,False
+Bio+ClinicalBERT,Classical | Random Forest,12,0,12,0.00048828125,3,15,0.34228515625,0.0016276041666666667,True,False,True
+Bio+ClinicalBERT,Classical | SVM,4,1,5,0.375,3,6,1.0,0.5403930131004366,False,False,False
+Bio+ClinicalBERT,Classical | XGBoost,12,0,12,0.00048828125,3,15,0.34228515625,0.0016276041666666667,True,False,True
+Bio+ClinicalBERT,Claude Haiku 4.5,7,0,7,0.015625,3,10,1.0,0.03648290094339623,True,False,True
+Bio+ClinicalBERT,Claude Opus 5,4,2,6,0.6875,3,5,1.0,0.8692528735632183,False,False,False
+Bio+ClinicalBERT,Claude Sonnet 5,4,0,4,0.125,3,7,1.0,0.21447140381282495,False,False,False
+Bio+ClinicalBERT,DeBERTa-v3,0,0,0,1.0,3,3,1.0,1.0,False,False,False
+Bio+ClinicalBERT,FastText | Decision Tree,28,0,28,7.450580596923828e-09,3,31,5.7891011238098145e-06,3.430732460909112e-08,True,True,True
+Bio+ClinicalBERT,FastText | Logistic Regression,4,1,5,0.375,3,6,1.0,0.5403930131004366,False,False,False
+Bio+ClinicalBERT,FastText | MLP Deep,4,0,4,0.125,3,7,1.0,0.21447140381282495,False,False,False
+Bio+ClinicalBERT,FastText | MLP Small,3,1,4,0.625,3,5,1.0,0.8109436435124509,False,False,False
+Bio+ClinicalBERT,FastText | Random Forest,13,0,13,0.000244140625,3,16,0.17333984375,0.0008392333984375,True,False,True
+Bio+ClinicalBERT,FastText | SVM,4,1,5,0.375,3,6,1.0,0.5403930131004366,False,False,False
+Bio+ClinicalBERT,FastText | XGBoost,6,0,6,0.03125,3,9,1.0,0.06596481876332623,True,False,False
+Bio+ClinicalBERT,Flan-T5,71,0,71,8.470329472543003e-22,3,74,7.403067959002585e-19,7.046744687241659e-21,True,True,True
+Bio+ClinicalBERT,Flan-T5 (tuned threshold),72,0,72,4.235164736271502e-22,3,75,3.72270980318265e-19,3.645924425138075e-21,True,True,True
+Bio+ClinicalBERT,ModernBERT,3,1,4,0.625,3,5,1.0,0.8109436435124509,False,False,False
+Bio+ClinicalBERT,OpenBioLLM-8B,135,3,138,2.5147313912942733e-36,3,135,2.4040832100773253e-33,6.915511326059252e-35,True,True,True
+Bio+ClinicalBERT,OpenBioLLM-8B (tuned threshold),19,2,21,0.00022125244140625,3,20,0.15775299072265625,0.0007850893082157258,True,False,True
+Bio+ClinicalBERT,PubMedBERT,3,1,4,0.625,3,5,1.0,0.8109436435124509,False,False,False
+Bio+ClinicalBERT,Qwen2.5-7B-Instruct,11,0,11,0.0009765625,3,14,0.673828125,0.0031491754885993486,True,False,True
+Bio+ClinicalBERT,Qwen2.5-7B-Instruct (tuned threshold),5,0,5,0.0625,3,8,1.0,0.120849609375,False,False,False
+Bio+ClinicalBERT,Qwen3.8-27B,3,0,3,0.25,3,6,1.0,0.39473684210526316,False,False,False
+Bio+ClinicalBERT,Qwen3.8-27B (tuned threshold),1,2,3,1.0,3,2,1.0,1.0,False,False,False
+Bio+ClinicalBERT,SciBERT,3,2,5,1.0,3,4,1.0,1.0,False,False,False
+BioBERT,BioGPT zero-shot,99,2,101,4.064211383698653e-27,7,104,3.641533399793993e-24,4.191217989439236e-26,True,True,True
+BioBERT,BioGPT zero-shot (tuned threshold),138,2,140,1.4164190352742676e-38,7,143,1.3696772071102167e-35,5.393287865082788e-37,True,True,True
+BioBERT,BioLinkBERT,0,6,6,0.03125,7,1,1.0,0.06596481876332623,True,False,False
+BioBERT,BioWordVec | Decision Tree,12,5,17,0.143463134765625,7,14,1.0,0.24445525545261404,False,False,False
+BioBERT,BioWordVec | Logistic Regression,1,4,5,0.375,7,4,1.0,0.5403930131004366,False,False,False
+BioBERT,BioWordVec | MLP Deep,1,2,3,1.0,7,6,1.0,1.0,False,False,False
+BioBERT,BioWordVec | MLP Small,1,2,3,1.0,7,6,1.0,1.0,False,False,False
+BioBERT,BioWordVec | Random Forest,2,4,6,0.6875,7,5,1.0,0.8692528735632183,False,False,False
+BioBERT,BioWordVec | SVM,1,4,5,0.375,7,4,1.0,0.5403930131004366,False,False,False
+BioBERT,BioWordVec | XGBoost,4,4,8,1.0,7,7,1.0,1.0,False,False,False
+BioBERT,BiomedBERT-large,1,6,7,0.125,7,2,1.0,0.21447140381282495,False,False,False
+BioBERT,Classical | Decision Tree,38,4,42,5.65314621780999e-08,7,41,4.3246568566246424e-05,2.465469055344445e-07,True,True,True
+BioBERT,Classical | Logistic Regression,1,2,3,1.0,7,6,1.0,1.0,False,False,False
+BioBERT,Classical | MLP Deep,7,2,9,0.1796875,7,12,1.0,0.2999841905564924,False,False,False
+BioBERT,Classical | MLP Small,0,1,1,1.0,7,6,1.0,1.0,False,False,False
+BioBERT,Classical | Random Forest,9,1,10,0.021484375,7,15,1.0,0.04856057363013699,True,False,True
+BioBERT,Classical | SVM,1,2,3,1.0,7,6,1.0,1.0,False,False,False
+BioBERT,Classical | XGBoost,11,3,14,0.057373046875,7,15,1.0,0.11225161345108696,False,False,False
+BioBERT,Claude Haiku 4.5,7,4,11,0.548828125,7,10,1.0,0.7362328506097561,False,False,False
+BioBERT,Claude Opus 5,2,4,6,0.6875,7,5,1.0,0.8692528735632183,False,False,False
+BioBERT,Claude Sonnet 5,4,4,8,1.0,7,7,1.0,1.0,False,False,False
+BioBERT,DeBERTa-v3,0,4,4,0.125,7,3,1.0,0.21447140381282495,False,False,False
+BioBERT,FastText | Decision Tree,28,4,32,1.9301194697618484e-05,7,31,0.014070570934563875,7.265468726479962e-05,True,True,True
+BioBERT,FastText | Logistic Regression,1,2,3,1.0,7,6,1.0,1.0,False,False,False
+BioBERT,FastText | MLP Deep,1,1,2,1.0,7,7,1.0,1.0,False,False,False
+BioBERT,FastText | MLP Small,0,2,2,0.5,7,5,1.0,0.6846473029045643,False,False,False
+BioBERT,FastText | Random Forest,11,2,13,0.0224609375,7,16,1.0,0.05008182010135135,True,False,False
+BioBERT,FastText | SVM,1,2,3,1.0,7,6,1.0,1.0,False,False,False
+BioBERT,FastText | XGBoost,3,1,4,0.625,7,9,1.0,0.8109436435124509,False,False,False
+BioBERT,Flan-T5,70,3,73,1.3742686052727396e-17,7,74,1.1255259877183737e-14,7.864311671791979e-17,True,True,True
+BioBERT,Flan-T5 (tuned threshold),71,3,74,7.157428404298838e-18,7,75,5.919193290355139e-15,4.143774339330906e-17,True,True,True
+BioBERT,ModernBERT,0,2,2,0.5,7,5,1.0,0.6846473029045643,False,False,False
+BioBERT,OpenBioLLM-8B,133,5,138,2.3103057490381402e-33,7,135,2.1693770983468137e-30,4.3154767765052055e-32,True,True,True
+BioBERT,OpenBioLLM-8B (tuned threshold),19,6,25,0.01463329792022705,7,20,1.0,0.03449277366910662,True,False,True
+BioBERT,PubMedBERT,0,2,2,0.5,7,5,1.0,0.6846473029045643,False,False,False
+BioBERT,Qwen2.5-7B-Instruct,11,4,15,0.11846923828124999,7,14,1.0,0.21447140381282495,False,False,False
+BioBERT,Qwen2.5-7B-Instruct (tuned threshold),5,4,9,1.0,7,8,1.0,1.0,False,False,False
+BioBERT,Qwen3.8-27B,3,4,7,1.0,7,6,1.0,1.0,False,False,False
+BioBERT,Qwen3.8-27B (tuned threshold),1,6,7,0.125,7,2,1.0,0.21447140381282495,False,False,False
+BioBERT,SciBERT,1,4,5,0.375,7,4,1.0,0.5403930131004366,False,False,False
+BioGPT zero-shot,BioGPT zero-shot (tuned threshold),73,34,107,0.0002391582755984762,104,143,0.17004153395051658,0.0008392333984375,True,False,True
+BioGPT zero-shot,BioLinkBERT,0,103,103,1.9721522630525295e-31,104,1,1.836073756901905e-28,3.254051234036674e-30,True,True,True
+BioGPT zero-shot,BioWordVec | Decision Tree,6,96,102,5.657185283317709e-22,104,14,4.9500371229029955e-19,4.828115026279769e-21,True,True,True
+BioGPT zero-shot,BioWordVec | Logistic Regression,2,102,104,5.384961754264932e-28,104,4,4.868005425855498e-25,6.058081973548048e-27,True,True,True
+BioGPT zero-shot,BioWordVec | MLP Deep,1,99,100,1.5934990285464438e-28,104,6,1.4516776150058103e-25,1.923858583245097e-27,True,True,True
+BioGPT zero-shot,BioWordVec | MLP Small,2,100,102,2.072337598015598e-27,104,6,1.8651038382140382e-24,2.1825683213143e-26,True,True,True
+BioGPT zero-shot,BioWordVec | Random Forest,1,100,101,8.04638123325432e-29,104,5,7.370485209660958e-26,1.0212714642207406e-27,True,True,True
+BioGPT zero-shot,BioWordVec | SVM,2,102,104,5.384961754264932e-28,104,4,4.868005425855498e-25,6.058081973548048e-27,True,True,True
+BioGPT zero-shot,BioWordVec | XGBoost,2,99,101,4.064211383698653e-27,104,7,3.641533399793993e-24,4.191217989439236e-26,True,True,True
+BioGPT zero-shot,BiomedBERT-large,2,104,106,1.3982559545042434e-28,104,2,1.27520943050787e-25,1.752244803745824e-27,True,True,True
+BioGPT zero-shot,Classical | Decision Tree,30,93,123,2.2661010766019464e-08,104,41,1.7426317279068966e-05,1.0105585882143814e-07,True,True,True
+BioGPT zero-shot,Classical | Logistic Regression,2,100,102,2.072337598015598e-27,104,6,1.8651038382140382e-24,2.1825683213143e-26,True,True,True
+BioGPT zero-shot,Classical | MLP Deep,8,100,108,2.3538835344558568e-21,104,12,2.0455247914421396e-18,1.910118605828933e-20,True,True,True
+BioGPT zero-shot,Classical | MLP Small,1,99,100,1.5934990285464438e-28,104,6,1.4516776150058103e-25,1.923858583245097e-27,True,True,True
+BioGPT zero-shot,Classical | Random Forest,7,96,103,4.207682867061068e-21,104,15,3.643853362874885e-18,3.332484830712366e-20,True,True,True
+BioGPT zero-shot,Classical | SVM,1,99,100,1.5934990285464438e-28,104,6,1.4516776150058103e-25,1.923858583245097e-27,True,True,True
+BioGPT zero-shot,Classical | XGBoost,11,100,111,4.0853725805661456e-19,104,15,3.4603105757395254e-16,2.808693649139225e-18,True,True,True
+BioGPT zero-shot,Claude Haiku 4.5,3,97,100,2.630866896130179e-25,104,10,2.325686336179078e-22,2.4341665674475485e-24,True,True,True
+BioGPT zero-shot,Claude Opus 5,2,101,103,1.05648196731724e-27,104,5,9.518902525528333e-25,1.162130164048964e-26,True,True,True
+BioGPT zero-shot,Claude Sonnet 5,1,98,99,3.155443620884047e-28,104,7,2.861987364141831e-25,3.675163746676714e-27,True,True,True
+BioGPT zero-shot,DeBERTa-v3,0,101,101,7.888609052210118e-31,104,3,7.289074764242149e-28,1.148488670836473e-29,True,True,True
+BioGPT zero-shot,FastText | Decision Tree,14,87,101,4.798716712141831e-14,104,31,3.872564386698457e-11,2.5819182309893547e-13,True,True,True
+BioGPT zero-shot,FastText | Logistic Regression,2,100,102,2.072337598015598e-27,104,6,1.8651038382140382e-24,2.1825683213143e-26,True,True,True
+BioGPT zero-shot,FastText | MLP Deep,1,98,99,3.155443620884047e-28,104,7,2.861987364141831e-25,3.675163746676714e-27,True,True,True
+BioGPT zero-shot,FastText | MLP Small,1,100,101,8.04638123325432e-29,104,5,7.370485209660958e-26,1.0212714642207406e-27,True,True,True
+BioGPT zero-shot,FastText | Random Forest,6,94,100,2.005959521923613e-21,104,16,1.747190743595467e-18,1.6549166055869807e-20,True,True,True
+BioGPT zero-shot,FastText | SVM,2,100,102,2.072337598015598e-27,104,6,1.8651038382140382e-24,2.1825683213143e-26,True,True,True
+BioGPT zero-shot,FastText | XGBoost,3,98,101,1.3552788123878027e-25,104,9,1.2061981430251444e-22,1.3284416081821037e-24,True,True,True
+BioGPT zero-shot,Flan-T5,50,80,130,0.010975802958107647,104,74,1.0,0.02807763547422886,True,False,True
+BioGPT zero-shot,Flan-T5 (tuned threshold),53,82,135,0.015958804665394306,104,75,1.0,0.03717462733821262,True,False,True
+BioGPT zero-shot,ModernBERT,1,100,101,8.04638123325432e-29,104,5,7.370485209660958e-26,1.0212714642207406e-27,True,True,True
+BioGPT zero-shot,OpenBioLLM-8B,98,67,165,0.019517481182177752,104,135,1.0,0.04504034118964097,True,False,True
+BioGPT zero-shot,OpenBioLLM-8B (tuned threshold),9,93,102,9.977557876076285e-19,104,20,8.401103731656232e-16,6.629384092158069e-18,True,True,True
+BioGPT zero-shot,PubMedBERT,1,100,101,8.04638123325432e-29,104,5,7.370485209660958e-26,1.0212714642207406e-27,True,True,True
+BioGPT zero-shot,Qwen2.5-7B-Instruct,7,97,104,2.253920747846914e-21,104,14,1.960911050626815e-18,1.8441169755111113e-20,True,True,True
+BioGPT zero-shot,Qwen2.5-7B-Instruct (tuned threshold),1,97,98,6.2477783693504135e-28,104,8,5.635496089154073e-25,6.949775938940348e-27,True,True,True
+BioGPT zero-shot,Qwen3.8-27B,0,98,98,6.310887241768095e-30,104,6,5.806016262426647e-27,8.799687844155512e-29,True,True,True
+BioGPT zero-shot,Qwen3.8-27B (tuned threshold),0,102,102,3.944304526105059e-31,104,2,3.6642589047516e-28,6.2981636787806584e-30,True,True,True
+BioGPT zero-shot,SciBERT,3,103,106,4.895670777801599e-27,104,4,4.37672967535463e-24,4.9966124433232816e-26,True,True,True
+BioGPT zero-shot (tuned threshold),BioLinkBERT,0,142,142,3.587324068671532e-43,143,1,3.5514508279848164e-40,3.5514508279848164e-40,True,True,True
+BioGPT zero-shot (tuned threshold),BioWordVec | Decision Tree,6,135,141,7.352026653297796e-33,143,14,6.888848974140035e-30,1.2997332833508605e-31,True,True,True
+BioGPT zero-shot (tuned threshold),BioWordVec | Logistic Regression,2,141,143,1.846933796755538e-39,143,4,1.8044543194301607e-36,1.2189763058586551e-37,True,True,True
+BioGPT zero-shot (tuned threshold),BioWordVec | MLP Deep,1,138,139,4.0178029569121155e-40,143,6,3.941464700730785e-37,3.3146874394524953e-38,True,True,True
+BioGPT zero-shot (tuned threshold),BioWordVec | MLP Small,2,139,141,7.183257715107875e-39,143,6,6.982126499084855e-36,3.0919239730246942e-37,True,True,True
+BioGPT zero-shot (tuned threshold),BioWordVec | Random Forest,2,140,142,3.642568859329073e-39,143,5,3.5478620689865174e-36,2.1212606886681072e-37,True,True,True
+BioGPT zero-shot (tuned threshold),BioWordVec | SVM,2,141,143,1.846933796755538e-39,143,4,1.8044543194301607e-36,1.2189763058586551e-37,True,True,True
+BioGPT zero-shot (tuned threshold),BioWordVec | XGBoost,2,138,140,1.4164190352742676e-38,143,7,1.3696772071102167e-35,5.393287865082788e-37,True,True,True
+BioGPT zero-shot (tuned threshold),BiomedBERT-large,2,143,145,4.746926573869604e-40,143,2,4.642494189244473e-37,3.6149671601006986e-38,True,True,True
+BioGPT zero-shot (tuned threshold),Classical | Decision Tree,14,116,130,3.6437336224421384e-21,143,41,3.159117050657334e-18,2.909109908240095e-20,True,True,True
+BioGPT zero-shot (tuned threshold),Classical | Logistic Regression,2,139,141,7.183257715107875e-39,143,6,6.982126499084855e-36,3.0919239730246942e-37,True,True,True
+BioGPT zero-shot (tuned threshold),Classical | MLP Deep,2,133,135,4.2157084511325866e-37,143,12,4.0428644046361505e-34,1.264712535339776e-35,True,True,True
+BioGPT zero-shot (tuned threshold),Classical | MLP Small,1,138,139,4.0178029569121155e-40,143,6,3.941464700730785e-37,3.3146874394524953e-38,True,True,True
+BioGPT zero-shot (tuned threshold),Classical | Random Forest,3,131,134,3.6837972573855015e-35,143,15,3.5069749890309974e-32,9.351177653363197e-34,True,True,True
+BioGPT zero-shot (tuned threshold),Classical | SVM,2,139,141,7.183257715107875e-39,143,6,6.982126499084855e-36,3.0919239730246942e-37,True,True,True
+BioGPT zero-shot (tuned threshold),Classical | XGBoost,6,134,140,1.4083083788101097e-32,143,15,1.3153600258086425e-29,2.4038367155551872e-31,True,True,True
+BioGPT zero-shot (tuned threshold),Claude Haiku 4.5,5,138,143,8.636411235831265e-35,143,10,8.178681440332208e-32,1.9431925280620345e-33,True,True,True
+BioGPT zero-shot (tuned threshold),Claude Opus 5,1,139,140,2.023250774730744e-40,143,5,1.9929020131097827e-37,2.2255758522038183e-38,True,True,True
+BioGPT zero-shot (tuned threshold),Claude Sonnet 5,3,139,142,1.712351746995257e-37,143,7,1.6472823806094372e-34,5.845614584570015e-36,True,True,True
+BioGPT zero-shot (tuned threshold),DeBERTa-v3,0,140,140,1.4349296274686127e-42,143,3,1.4177104719389893e-39,3.5514508279848164e-40,True,True,True
+BioGPT zero-shot (tuned threshold),FastText | Decision Tree,18,130,148,4.005820608928471e-22,143,31,3.5251221358570543e-19,3.572758921476744e-21,True,True,True
+BioGPT zero-shot (tuned threshold),FastText | Logistic Regression,2,139,141,7.183257715107875e-39,143,6,6.982126499084855e-36,3.0919239730246942e-37,True,True,True
+BioGPT zero-shot (tuned threshold),FastText | MLP Deep,2,138,140,1.4164190352742676e-38,143,7,1.3696772071102167e-35,5.393287865082788e-37,True,True,True
+BioGPT zero-shot (tuned threshold),FastText | MLP Small,1,139,140,2.023250774730744e-40,143,5,1.9929020131097827e-37,2.2255758522038183e-38,True,True,True
+BioGPT zero-shot (tuned threshold),FastText | Random Forest,8,135,143,6.767917179441369e-31,143,16,6.28062714252159e-28,1.0151875769162053e-29,True,True,True
+BioGPT zero-shot (tuned threshold),FastText | SVM,2,139,141,7.183257715107875e-39,143,6,6.982126499084855e-36,3.0919239730246942e-37,True,True,True
+BioGPT zero-shot (tuned threshold),FastText | XGBoost,3,137,140,6.564099930151443e-37,143,9,6.281843633154931e-34,1.911311450249979e-35,True,True,True
+BioGPT zero-shot (tuned threshold),Flan-T5,58,127,185,5.749126690808036e-07,143,74,0.00043405906515600666,2.411709925381337e-06,True,True,True
+BioGPT zero-shot (tuned threshold),Flan-T5 (tuned threshold),58,126,184,7.840128791457597e-07,143,75,0.0005911457108759028,3.2618305233293486e-06,True,True,True
+BioGPT zero-shot (tuned threshold),ModernBERT,1,139,140,2.023250774730744e-40,143,5,1.9929020131097827e-37,2.2255758522038183e-38,True,True,True
+BioGPT zero-shot (tuned threshold),OpenBioLLM-8B,60,68,128,0.536101864250067,143,135,1.0,0.7260476684098035,False,False,False
+BioGPT zero-shot (tuned threshold),OpenBioLLM-8B (tuned threshold),7,130,137,1.8643680069333046e-30,143,20,1.7170829343855735e-27,2.636749038377102e-29,True,True,True
+BioGPT zero-shot (tuned threshold),PubMedBERT,1,139,140,2.023250774730744e-40,143,5,1.9929020131097827e-37,2.2255758522038183e-38,True,True,True
+BioGPT zero-shot (tuned threshold),Qwen2.5-7B-Instruct,9,138,147,8.242822904129312e-31,143,14,7.599882717607226e-28,1.1826658949402926e-29,True,True,True
+BioGPT zero-shot (tuned threshold),Qwen2.5-7B-Instruct (tuned threshold),3,138,141,3.352870916839435e-37,143,8,3.2187560801658577e-34,1.070755550861626e-35,True,True,True
+BioGPT zero-shot (tuned threshold),Qwen3.8-27B,1,138,139,4.0178029569121155e-40,143,6,3.941464700730785e-37,3.3146874394524953e-38,True,True,True
+BioGPT zero-shot (tuned threshold),Qwen3.8-27B (tuned threshold),0,141,141,7.174648137343064e-43,143,2,7.09572700783229e-40,3.5514508279848164e-40,True,True,True
+BioGPT zero-shot (tuned threshold),SciBERT,3,142,145,2.2789642026558223e-38,143,4,2.1969214913602127e-35,8.356202076404681e-37,True,True,True
+BioLinkBERT,BioWordVec | Decision Tree,14,1,15,0.0009765625,1,14,0.673828125,0.0031491754885993486,True,False,True
+BioLinkBERT,BioWordVec | Logistic Regression,4,1,5,0.375,1,4,1.0,0.5403930131004366,False,False,False
+BioLinkBERT,BioWordVec | MLP Deep,5,0,5,0.0625,1,6,1.0,0.120849609375,False,False,False
+BioLinkBERT,BioWordVec | MLP Small,6,1,7,0.125,1,6,1.0,0.21447140381282495,False,False,False
+BioLinkBERT,BioWordVec | Random Forest,4,0,4,0.125,1,5,1.0,0.21447140381282495,False,False,False
+BioLinkBERT,BioWordVec | SVM,4,1,5,0.375,1,4,1.0,0.5403930131004366,False,False,False
+BioLinkBERT,BioWordVec | XGBoost,6,0,6,0.03125,1,7,1.0,0.06596481876332623,True,False,False
+BioLinkBERT,BiomedBERT-large,2,1,3,1.0,1,2,1.0,1.0,False,False,False
+BioLinkBERT,Classical | Decision Tree,41,1,42,1.9554136088117957e-11,1,41,1.5525984053965658e-08,9.826697831084659e-11,True,True,True
+BioLinkBERT,Classical | Logistic Regression,6,1,7,0.125,1,6,1.0,0.21447140381282495,False,False,False
+BioLinkBERT,Classical | MLP Deep,12,1,13,0.00341796875,1,12,1.0,0.009952320772058824,True,False,True
+BioLinkBERT,Classical | MLP Small,5,0,5,0.0625,1,6,1.0,0.120849609375,False,False,False
+BioLinkBERT,Classical | Random Forest,14,0,14,0.0001220703125,1,15,0.0875244140625,0.0004362801782490975,True,False,True
+BioLinkBERT,Classical | SVM,6,1,7,0.125,1,6,1.0,0.21447140381282495,False,False,False
+BioLinkBERT,Classical | XGBoost,14,0,14,0.0001220703125,1,15,0.0875244140625,0.0004362801782490975,True,False,True
+BioLinkBERT,Claude Haiku 4.5,9,0,9,0.00390625,1,10,1.0,0.011241824127906976,True,False,True
+BioLinkBERT,Claude Opus 5,4,0,4,0.125,1,5,1.0,0.21447140381282495,False,False,False
+BioLinkBERT,Claude Sonnet 5,6,0,6,0.03125,1,7,1.0,0.06596481876332623,True,False,False
+BioLinkBERT,DeBERTa-v3,2,0,2,0.5,1,3,1.0,0.6846473029045643,False,False,False
+BioLinkBERT,FastText | Decision Tree,30,0,30,1.862645149230957e-09,1,31,1.4603137969970703e-06,8.908302887626316e-09,True,True,True
+BioLinkBERT,FastText | Logistic Regression,6,1,7,0.125,1,6,1.0,0.21447140381282495,False,False,False
+BioLinkBERT,FastText | MLP Deep,6,0,6,0.03125,1,7,1.0,0.06596481876332623,True,False,False
+BioLinkBERT,FastText | MLP Small,5,1,6,0.21875,1,5,1.0,0.35677512355848434,False,False,False
+BioLinkBERT,FastText | Random Forest,15,0,15,6.103515625e-05,1,16,0.0443115234375,0.00022631012991573035,True,True,True
+BioLinkBERT,FastText | SVM,6,1,7,0.125,1,6,1.0,0.21447140381282495,False,False,False
+BioLinkBERT,FastText | XGBoost,8,0,8,0.0078125,1,9,1.0,0.020515583554376656,True,False,True
+BioLinkBERT,Flan-T5,73,0,73,2.117582368135751e-22,1,74,1.8677076486957322e-19,1.9058241313221758e-21,True,True,True
+BioLinkBERT,Flan-T5 (tuned threshold),74,0,74,1.0587911840678754e-22,1,75,9.34912615531934e-20,9.705585853955524e-22,True,True,True
+BioLinkBERT,ModernBERT,4,0,4,0.125,1,5,1.0,0.21447140381282495,False,False,False
+BioLinkBERT,OpenBioLLM-8B,135,1,136,3.145365743411199e-39,1,135,3.066731599825919e-36,1.9461950537356794e-37,True,True,True
+BioLinkBERT,OpenBioLLM-8B (tuned threshold),19,0,19,3.814697265625e-06,1,20,0.00283050537109375,1.5166868646460844e-05,True,True,True
+BioLinkBERT,PubMedBERT,4,0,4,0.125,1,5,1.0,0.21447140381282495,False,False,False
+BioLinkBERT,Qwen2.5-7B-Instruct,13,0,13,0.000244140625,1,14,0.17333984375,0.0008392333984375,True,False,True
+BioLinkBERT,Qwen2.5-7B-Instruct (tuned threshold),7,0,7,0.015625,1,8,1.0,0.03648290094339623,True,False,True
+BioLinkBERT,Qwen3.8-27B,5,0,5,0.0625,1,6,1.0,0.120849609375,False,False,False
+BioLinkBERT,Qwen3.8-27B (tuned threshold),1,0,1,1.0,1,2,1.0,1.0,False,False,False
+BioLinkBERT,SciBERT,3,0,3,0.25,1,4,1.0,0.39473684210526316,False,False,False
+BioWordVec | Decision Tree,BioWordVec | Logistic Regression,2,12,14,0.012939453125,14,4,1.0,0.030646073190789474,True,False,True
+BioWordVec | Decision Tree,BioWordVec | MLP Deep,3,11,14,0.057373046875,14,6,1.0,0.11225161345108696,False,False,False
+BioWordVec | Decision Tree,BioWordVec | MLP Small,4,12,16,0.076812744140625,14,6,1.0,0.14240564924947333,False,False,False
+BioWordVec | Decision Tree,BioWordVec | Random Forest,2,11,13,0.0224609375,14,5,1.0,0.05008182010135135,True,False,False
+BioWordVec | Decision Tree,BioWordVec | SVM,2,12,14,0.012939453125,14,4,1.0,0.030646073190789474,True,False,True
+BioWordVec | Decision Tree,BioWordVec | XGBoost,2,9,11,0.0654296875,14,7,1.0,0.1252908909574468,False,False,False
+BioWordVec | Decision Tree,BiomedBERT-large,2,14,16,0.004180908203125,14,2,1.0,0.011659434143926057,True,False,True
+BioWordVec | Decision Tree,Classical | Decision Tree,36,9,45,6.57466324582856e-05,14,41,0.04753481526734049,0.00024196716034833736,True,True,True
+BioWordVec | Decision Tree,Classical | Logistic Regression,4,12,16,0.076812744140625,14,6,1.0,0.14240564924947333,False,False,False
+BioWordVec | Decision Tree,Classical | MLP Deep,10,12,22,0.8318119049072266,14,12,1.0,1.0,False,False,False
+BioWordVec | Decision Tree,Classical | MLP Small,4,12,16,0.076812744140625,14,6,1.0,0.14240564924947333,False,False,False
+BioWordVec | Decision Tree,Classical | Random Forest,12,11,23,1.0,14,15,1.0,1.0,False,False,False
+BioWordVec | Decision Tree,Classical | SVM,4,12,16,0.076812744140625,14,6,1.0,0.14240564924947333,False,False,False
+BioWordVec | Decision Tree,Classical | XGBoost,11,10,21,1.0,14,15,1.0,1.0,False,False,False
+BioWordVec | Decision Tree,Claude Haiku 4.5,7,11,18,0.480682373046875,14,10,1.0,0.6769211227829391,False,False,False
+BioWordVec | Decision Tree,Claude Opus 5,5,14,19,0.063568115234375,14,5,1.0,0.12267531010142543,False,False,False
+BioWordVec | Decision Tree,Claude Sonnet 5,5,12,17,0.143463134765625,14,7,1.0,0.24445525545261404,False,False,False
+BioWordVec | Decision Tree,DeBERTa-v3,1,12,13,0.00341796875,14,3,1.0,0.009952320772058824,True,False,True
+BioWordVec | Decision Tree,FastText | Decision Tree,22,5,27,0.0015137195587158203,14,31,1.0,0.0047878030770883775,True,False,True
+BioWordVec | Decision Tree,FastText | Logistic Regression,4,12,16,0.076812744140625,14,6,1.0,0.14240564924947333,False,False,False
+BioWordVec | Decision Tree,FastText | MLP Deep,5,12,17,0.143463134765625,14,7,1.0,0.24445525545261404,False,False,False
+BioWordVec | Decision Tree,FastText | MLP Small,3,12,15,0.03515625,14,5,1.0,0.072509765625,True,False,False
+BioWordVec | Decision Tree,FastText | Random Forest,11,9,20,0.8238029479980469,14,16,1.0,1.0,False,False,False
+BioWordVec | Decision Tree,FastText | SVM,4,12,16,0.076812744140625,14,6,1.0,0.14240564924947333,False,False,False
+BioWordVec | Decision Tree,FastText | XGBoost,6,11,17,0.332305908203125,14,9,1.0,0.5069073175979872,False,False,False
+BioWordVec | Decision Tree,Flan-T5,65,5,70,2.215352840138473e-14,14,74,1.7900050948318862e-11,1.1984695692552396e-13,True,True,True
+BioWordVec | Decision Tree,Flan-T5 (tuned threshold),66,5,71,1.1901876782304671e-14,14,75,9.628618316884479e-12,6.474097810154739e-14,True,True,True
+BioWordVec | Decision Tree,ModernBERT,4,13,17,0.049041748046875,14,5,1.0,0.0972972556441007,True,False,False
+BioWordVec | Decision Tree,OpenBioLLM-8B,128,7,135,6.717980078383356e-30,14,135,6.173823692034304e-27,9.237222607777114e-29,True,True,True
+BioWordVec | Decision Tree,OpenBioLLM-8B (tuned threshold),16,10,26,0.32693958282470703,14,20,1.0,0.5018142434053643,False,False,False
+BioWordVec | Decision Tree,PubMedBERT,4,13,17,0.049041748046875,14,5,1.0,0.0972972556441007,True,False,False
+BioWordVec | Decision Tree,Qwen2.5-7B-Instruct,11,11,22,1.0,14,14,1.0,1.0,False,False,False
+BioWordVec | Decision Tree,Qwen2.5-7B-Instruct (tuned threshold),6,12,18,0.237884521484375,14,8,1.0,0.3841854425277834,False,False,False
+BioWordVec | Decision Tree,Qwen3.8-27B,4,12,16,0.076812744140625,14,6,1.0,0.14240564924947333,False,False,False
+BioWordVec | Decision Tree,Qwen3.8-27B (tuned threshold),2,14,16,0.004180908203125,14,2,1.0,0.011659434143926057,True,False,True
+BioWordVec | Decision Tree,SciBERT,4,14,18,0.0308837890625,14,4,1.0,0.06596481876332623,True,False,False
+BioWordVec | Logistic Regression,BioWordVec | MLP Deep,4,2,6,0.6875,4,6,1.0,0.8692528735632183,False,False,False
+BioWordVec | Logistic Regression,BioWordVec | MLP Small,2,0,2,0.5,4,6,1.0,0.6846473029045643,False,False,False
+BioWordVec | Logistic Regression,BioWordVec | Random Forest,3,2,5,1.0,4,5,1.0,1.0,False,False,False
+BioWordVec | Logistic Regression,BioWordVec | SVM,0,0,0,1.0,4,4,1.0,1.0,False,False,False
+BioWordVec | Logistic Regression,BioWordVec | XGBoost,4,1,5,0.375,4,7,1.0,0.5403930131004366,False,False,False
+BioWordVec | Logistic Regression,BiomedBERT-large,1,3,4,0.625,4,2,1.0,0.8109436435124509,False,False,False
+BioWordVec | Logistic Regression,Classical | Decision Tree,37,0,37,1.4551915228366852e-11,4,41,1.1583324521780014e-08,7.350202079634277e-11,True,True,True
+BioWordVec | Logistic Regression,Classical | Logistic Regression,2,0,2,0.5,4,6,1.0,0.6846473029045643,False,False,False
+BioWordVec | Logistic Regression,Classical | MLP Deep,8,0,8,0.0078125,4,12,1.0,0.020515583554376656,True,False,True
+BioWordVec | Logistic Regression,Classical | MLP Small,3,1,4,0.625,4,6,1.0,0.8109436435124509,False,False,False
+BioWordVec | Logistic Regression,Classical | Random Forest,12,1,13,0.00341796875,4,15,1.0,0.009952320772058824,True,False,True
+BioWordVec | Logistic Regression,Classical | SVM,3,1,4,0.625,4,6,1.0,0.8109436435124509,False,False,False
+BioWordVec | Logistic Regression,Classical | XGBoost,12,1,13,0.00341796875,4,15,1.0,0.009952320772058824,True,False,True
+BioWordVec | Logistic Regression,Claude Haiku 4.5,8,2,10,0.109375,4,10,1.0,0.1997809040590406,False,False,False
+BioWordVec | Logistic Regression,Claude Opus 5,5,4,9,1.0,4,5,1.0,1.0,False,False,False
+BioWordVec | Logistic Regression,Claude Sonnet 5,5,2,7,0.453125,4,7,1.0,0.6408482142857143,False,False,False
+BioWordVec | Logistic Regression,DeBERTa-v3,1,2,3,1.0,4,3,1.0,1.0,False,False,False
+BioWordVec | Logistic Regression,FastText | Decision Tree,29,2,31,4.628673195838928e-07,4,31,0.00035039056092500687,1.9499516867576763e-06,True,True,True
+BioWordVec | Logistic Regression,FastText | Logistic Regression,2,0,2,0.5,4,6,1.0,0.6846473029045643,False,False,False
+BioWordVec | Logistic Regression,FastText | MLP Deep,4,1,5,0.375,4,7,1.0,0.5403930131004366,False,False,False
+BioWordVec | Logistic Regression,FastText | MLP Small,2,1,3,1.0,4,5,1.0,1.0,False,False,False
+BioWordVec | Logistic Regression,FastText | Random Forest,14,2,16,0.004180908203125,4,16,1.0,0.011659434143926057,True,False,True
+BioWordVec | Logistic Regression,FastText | SVM,2,0,2,0.5,4,6,1.0,0.6846473029045643,False,False,False
+BioWordVec | Logistic Regression,FastText | XGBoost,6,1,7,0.125,4,9,1.0,0.21447140381282495,False,False,False
+BioWordVec | Logistic Regression,Flan-T5,71,1,72,3.091670257478196e-20,4,74,2.6526530809162924e-17,2.2672248554840107e-19,True,True,True
+BioWordVec | Logistic Regression,Flan-T5 (tuned threshold),72,1,73,1.5670109524204556e-20,4,75,1.3491964300340123e-17,1.1842296510658405e-19,True,True,True
+BioWordVec | Logistic Regression,ModernBERT,4,3,7,1.0,4,5,1.0,1.0,False,False,False
+BioWordVec | Logistic Regression,OpenBioLLM-8B,134,3,137,4.9209361850038406e-36,4,135,4.694573120493664e-33,1.2820333745141585e-34,True,True,True
+BioWordVec | Logistic Regression,OpenBioLLM-8B (tuned threshold),20,4,24,0.001543879508972168,4,20,1.0,0.004852192742483956,True,False,True
+BioWordVec | Logistic Regression,PubMedBERT,4,3,7,1.0,4,5,1.0,1.0,False,False,False
+BioWordVec | Logistic Regression,Qwen2.5-7B-Instruct,12,2,14,0.012939453125,4,14,1.0,0.030646073190789474,True,False,True
+BioWordVec | Logistic Regression,Qwen2.5-7B-Instruct (tuned threshold),6,2,8,0.2890625,4,8,1.0,0.4457505841121495,False,False,False
+BioWordVec | Logistic Regression,Qwen3.8-27B,4,2,6,0.6875,4,6,1.0,0.8692528735632183,False,False,False
+BioWordVec | Logistic Regression,Qwen3.8-27B (tuned threshold),2,4,6,0.6875,4,2,1.0,0.8692528735632183,False,False,False
+BioWordVec | Logistic Regression,SciBERT,2,2,4,1.0,4,4,1.0,1.0,False,False,False
+BioWordVec | MLP Deep,BioWordVec | MLP Small,2,2,4,1.0,6,6,1.0,1.0,False,False,False
+BioWordVec | MLP Deep,BioWordVec | Random Forest,1,2,3,1.0,6,5,1.0,1.0,False,False,False
+BioWordVec | MLP Deep,BioWordVec | SVM,2,4,6,0.6875,6,4,1.0,0.8692528735632183,False,False,False
+BioWordVec | MLP Deep,BioWordVec | XGBoost,3,2,5,1.0,6,7,1.0,1.0,False,False,False
+BioWordVec | MLP Deep,BiomedBERT-large,2,6,8,0.2890625,6,2,1.0,0.4457505841121495,False,False,False
+BioWordVec | MLP Deep,Classical | Decision Tree,39,4,43,3.1081526685738936e-08,6,41,2.3870612494647503e-05,1.3798525299946882e-07,True,True,True
+BioWordVec | MLP Deep,Classical | Logistic Regression,2,2,4,1.0,6,6,1.0,1.0,False,False,False
+BioWordVec | MLP Deep,Classical | MLP Deep,8,2,10,0.109375,6,12,1.0,0.1997809040590406,False,False,False
+BioWordVec | MLP Deep,Classical | MLP Small,1,1,2,1.0,6,6,1.0,1.0,False,False,False
+BioWordVec | MLP Deep,Classical | Random Forest,10,1,11,0.01171875,6,15,1.0,0.029149654522613064,True,False,True
+BioWordVec | MLP Deep,Classical | SVM,2,2,4,1.0,6,6,1.0,1.0,False,False,False
+BioWordVec | MLP Deep,Classical | XGBoost,12,3,15,0.03515625,6,15,1.0,0.072509765625,True,False,False
+BioWordVec | MLP Deep,Claude Haiku 4.5,7,3,10,0.34375,6,10,1.0,0.5219516871165644,False,False,False
+BioWordVec | MLP Deep,Claude Opus 5,2,3,5,1.0,6,5,1.0,1.0,False,False,False
+BioWordVec | MLP Deep,Claude Sonnet 5,4,3,7,1.0,6,7,1.0,1.0,False,False,False
+BioWordVec | MLP Deep,DeBERTa-v3,0,3,3,0.25,6,3,1.0,0.39473684210526316,False,False,False
+BioWordVec | MLP Deep,FastText | Decision Tree,27,2,29,1.6242265701293945e-06,6,31,0.0012149214744567871,6.617219359786422e-06,True,True,True
+BioWordVec | MLP Deep,FastText | Logistic Regression,2,2,4,1.0,6,6,1.0,1.0,False,False,False
+BioWordVec | MLP Deep,FastText | MLP Deep,2,1,3,1.0,6,7,1.0,1.0,False,False,False
+BioWordVec | MLP Deep,FastText | MLP Small,1,2,3,1.0,6,5,1.0,1.0,False,False,False
+BioWordVec | MLP Deep,FastText | Random Forest,10,0,10,0.001953125,6,16,1.0,0.006099664826498423,True,False,True
+BioWordVec | MLP Deep,FastText | SVM,2,2,4,1.0,6,6,1.0,1.0,False,False,False
+BioWordVec | MLP Deep,FastText | XGBoost,4,1,5,0.375,6,9,1.0,0.5403930131004366,False,False,False
+BioWordVec | MLP Deep,Flan-T5,71,3,74,7.157428404298838e-18,6,74,5.919193290355139e-15,4.143774339330906e-17,True,True,True
+BioWordVec | MLP Deep,Flan-T5 (tuned threshold),72,3,75,3.72567441849804e-18,6,75,3.1146638138643615e-15,2.262832929026417e-17,True,True,True
+BioWordVec | MLP Deep,ModernBERT,1,2,3,1.0,6,5,1.0,1.0,False,False,False
+BioWordVec | MLP Deep,OpenBioLLM-8B,135,6,141,7.352026653297796e-33,6,135,6.888848974140035e-30,1.2997332833508605e-31,True,True,True
+BioWordVec | MLP Deep,OpenBioLLM-8B (tuned threshold),19,5,24,0.006610751152038574,6,20,1.0,0.017979790221203815,True,False,True
+BioWordVec | MLP Deep,PubMedBERT,1,2,3,1.0,6,5,1.0,1.0,False,False,False
+BioWordVec | MLP Deep,Qwen2.5-7B-Instruct,11,3,14,0.057373046875,6,14,1.0,0.11225161345108696,False,False,False
+BioWordVec | MLP Deep,Qwen2.5-7B-Instruct (tuned threshold),5,3,8,0.7265625,6,8,1.0,0.9025054893350063,False,False,False
+BioWordVec | MLP Deep,Qwen3.8-27B,3,3,6,1.0,6,6,1.0,1.0,False,False,False
+BioWordVec | MLP Deep,Qwen3.8-27B (tuned threshold),1,5,6,0.21875,6,2,1.0,0.35677512355848434,False,False,False
+BioWordVec | MLP Deep,SciBERT,3,5,8,0.7265625,6,4,1.0,0.9025054893350063,False,False,False
+BioWordVec | MLP Small,BioWordVec | Random Forest,3,4,7,1.0,6,5,1.0,1.0,False,False,False
+BioWordVec | MLP Small,BioWordVec | SVM,0,2,2,0.5,6,4,1.0,0.6846473029045643,False,False,False
+BioWordVec | MLP Small,BioWordVec | XGBoost,4,3,7,1.0,6,7,1.0,1.0,False,False,False
+BioWordVec | MLP Small,BiomedBERT-large,1,5,6,0.21875,6,2,1.0,0.35677512355848434,False,False,False
+BioWordVec | MLP Small,Classical | Decision Tree,37,2,39,2.841261448338628e-09,6,41,2.2247077140491456e-06,1.3268154876675667e-08,True,True,True
+BioWordVec | MLP Small,Classical | Logistic Regression,0,0,0,1.0,6,6,1.0,1.0,False,False,False
+BioWordVec | MLP Small,Classical | MLP Deep,6,0,6,0.03125,6,12,1.0,0.06596481876332623,True,False,False
+BioWordVec | MLP Small,Classical | MLP Small,1,1,2,1.0,6,6,1.0,1.0,False,False,False
+BioWordVec | MLP Small,Classical | Random Forest,10,1,11,0.01171875,6,15,1.0,0.029149654522613064,True,False,True
+BioWordVec | MLP Small,Classical | SVM,1,1,2,1.0,6,6,1.0,1.0,False,False,False
+BioWordVec | MLP Small,Classical | XGBoost,12,3,15,0.03515625,6,15,1.0,0.072509765625,True,False,False
+BioWordVec | MLP Small,Claude Haiku 4.5,8,4,12,0.3876953125,6,10,1.0,0.5546508083453757,False,False,False
+BioWordVec | MLP Small,Claude Opus 5,3,4,7,1.0,6,5,1.0,1.0,False,False,False
+BioWordVec | MLP Small,Claude Sonnet 5,5,4,9,1.0,6,7,1.0,1.0,False,False,False
+BioWordVec | MLP Small,DeBERTa-v3,1,4,5,0.375,6,3,1.0,0.5403930131004366,False,False,False
+BioWordVec | MLP Small,FastText | Decision Tree,29,4,33,1.0928604751825333e-05,6,31,0.00803252449259162,4.161276424733492e-05,True,True,True
+BioWordVec | MLP Small,FastText | Logistic Regression,0,0,0,1.0,6,6,1.0,1.0,False,False,False
+BioWordVec | MLP Small,FastText | MLP Deep,2,1,3,1.0,6,7,1.0,1.0,False,False,False
+BioWordVec | MLP Small,FastText | MLP Small,0,1,1,1.0,6,5,1.0,1.0,False,False,False
+BioWordVec | MLP Small,FastText | Random Forest,12,2,14,0.012939453125,6,16,1.0,0.030646073190789474,True,False,True
+BioWordVec | MLP Small,FastText | SVM,0,0,0,1.0,6,6,1.0,1.0,False,False,False
+BioWordVec | MLP Small,FastText | XGBoost,4,1,5,0.375,6,9,1.0,0.5403930131004366,False,False,False
+BioWordVec | MLP Small,Flan-T5,71,3,74,7.157428404298838e-18,6,74,5.919193290355139e-15,4.143774339330906e-17,True,True,True
+BioWordVec | MLP Small,Flan-T5 (tuned threshold),72,3,75,3.72567441849804e-18,6,75,3.1146638138643615e-15,2.262832929026417e-17,True,True,True
+BioWordVec | MLP Small,ModernBERT,2,3,5,1.0,6,5,1.0,1.0,False,False,False
+BioWordVec | MLP Small,OpenBioLLM-8B,134,5,139,1.1979172729062073e-33,6,135,1.1320318228963659e-30,2.3253688238767554e-32,True,True,True
+BioWordVec | MLP Small,OpenBioLLM-8B (tuned threshold),20,6,26,0.009355306625366211,6,20,1.0,0.024182124175228588,True,False,True
+BioWordVec | MLP Small,PubMedBERT,2,3,5,1.0,6,5,1.0,1.0,False,False,False
+BioWordVec | MLP Small,Qwen2.5-7B-Instruct,12,4,16,0.076812744140625,6,14,1.0,0.14240564924947333,False,False,False
+BioWordVec | MLP Small,Qwen2.5-7B-Instruct (tuned threshold),6,4,10,0.75390625,6,8,1.0,0.9283173973880597,False,False,False
+BioWordVec | MLP Small,Qwen3.8-27B,4,4,8,1.0,6,6,1.0,1.0,False,False,False
+BioWordVec | MLP Small,Qwen3.8-27B (tuned threshold),2,6,8,0.2890625,6,2,1.0,0.4457505841121495,False,False,False
+BioWordVec | MLP Small,SciBERT,2,4,6,0.6875,6,4,1.0,0.8692528735632183,False,False,False
+BioWordVec | Random Forest,BioWordVec | SVM,2,3,5,1.0,5,4,1.0,1.0,False,False,False
+BioWordVec | Random Forest,BioWordVec | XGBoost,3,1,4,0.625,5,7,1.0,0.8109436435124509,False,False,False
+BioWordVec | Random Forest,BiomedBERT-large,2,5,7,0.453125,5,2,1.0,0.6408482142857143,False,False,False
+BioWordVec | Random Forest,Classical | Decision Tree,38,2,40,1.4933903003111482e-09,5,41,1.1738047760445625e-06,7.1769728024661976e-09,True,True,True
+BioWordVec | Random Forest,Classical | Logistic Regression,4,3,7,1.0,5,6,1.0,1.0,False,False,False
+BioWordVec | Random Forest,Classical | MLP Deep,10,3,13,0.09228515625,5,12,1.0,0.17013464560055866,False,False,False
+BioWordVec | Random Forest,Classical | MLP Small,3,2,5,1.0,5,6,1.0,1.0,False,False,False
+BioWordVec | Random Forest,Classical | Random Forest,12,2,14,0.012939453125,5,15,1.0,0.030646073190789474,True,False,True
+BioWordVec | Random Forest,Classical | SVM,4,3,7,1.0,5,6,1.0,1.0,False,False,False
+BioWordVec | Random Forest,Classical | XGBoost,12,2,14,0.012939453125,5,15,1.0,0.030646073190789474,True,False,True
+BioWordVec | Random Forest,Claude Haiku 4.5,6,1,7,0.125,5,10,1.0,0.21447140381282495,False,False,False
+BioWordVec | Random Forest,Claude Opus 5,4,4,8,1.0,5,5,1.0,1.0,False,False,False
+BioWordVec | Random Forest,Claude Sonnet 5,3,1,4,0.625,5,7,1.0,0.8109436435124509,False,False,False
+BioWordVec | Random Forest,DeBERTa-v3,0,2,2,0.5,5,3,1.0,0.6846473029045643,False,False,False
+BioWordVec | Random Forest,FastText | Decision Tree,27,1,28,2.1606683731079102e-07,5,31,0.00016421079635620117,9.260007313319615e-07,True,True,True
+BioWordVec | Random Forest,FastText | Logistic Regression,4,3,7,1.0,5,6,1.0,1.0,False,False,False
+BioWordVec | Random Forest,FastText | MLP Deep,4,2,6,0.6875,5,7,1.0,0.8692528735632183,False,False,False
+BioWordVec | Random Forest,FastText | MLP Small,3,3,6,1.0,5,5,1.0,1.0,False,False,False
+BioWordVec | Random Forest,FastText | Random Forest,12,1,13,0.00341796875,5,16,1.0,0.009952320772058824,True,False,True
+BioWordVec | Random Forest,FastText | SVM,4,3,7,1.0,5,6,1.0,1.0,False,False,False
+BioWordVec | Random Forest,FastText | XGBoost,6,2,8,0.2890625,5,9,1.0,0.4457505841121495,False,False,False
+BioWordVec | Random Forest,Flan-T5,70,1,71,6.098637220230962e-20,5,74,5.202137548857011e-17,4.37510931016569e-19,True,True,True
+BioWordVec | Random Forest,Flan-T5 (tuned threshold),71,1,72,3.091670257478196e-20,5,75,2.6526530809162924e-17,2.2672248554840107e-19,True,True,True
+BioWordVec | Random Forest,ModernBERT,3,3,6,1.0,5,5,1.0,1.0,False,False,False
+BioWordVec | Random Forest,OpenBioLLM-8B,135,5,140,6.209695184944958e-34,5,135,5.87437164495793e-31,1.3661329406878907e-32,True,True,True
+BioWordVec | Random Forest,OpenBioLLM-8B (tuned threshold),19,4,23,0.002599477767944336,5,20,1.0,0.00794284873538547,True,False,True
+BioWordVec | Random Forest,PubMedBERT,3,3,6,1.0,5,5,1.0,1.0,False,False,False
+BioWordVec | Random Forest,Qwen2.5-7B-Instruct,10,1,11,0.01171875,5,14,1.0,0.029149654522613064,True,False,True
+BioWordVec | Random Forest,Qwen2.5-7B-Instruct (tuned threshold),4,1,5,0.375,5,8,1.0,0.5403930131004366,False,False,False
+BioWordVec | Random Forest,Qwen3.8-27B,3,2,5,1.0,5,6,1.0,1.0,False,False,False
+BioWordVec | Random Forest,Qwen3.8-27B (tuned threshold),1,4,5,0.375,5,2,1.0,0.5403930131004366,False,False,False
+BioWordVec | Random Forest,SciBERT,3,4,7,1.0,5,4,1.0,1.0,False,False,False
+BioWordVec | SVM,BioWordVec | XGBoost,4,1,5,0.375,4,7,1.0,0.5403930131004366,False,False,False
+BioWordVec | SVM,BiomedBERT-large,1,3,4,0.625,4,2,1.0,0.8109436435124509,False,False,False
+BioWordVec | SVM,Classical | Decision Tree,37,0,37,1.4551915228366852e-11,4,41,1.1583324521780014e-08,7.350202079634277e-11,True,True,True
+BioWordVec | SVM,Classical | Logistic Regression,2,0,2,0.5,4,6,1.0,0.6846473029045643,False,False,False
+BioWordVec | SVM,Classical | MLP Deep,8,0,8,0.0078125,4,12,1.0,0.020515583554376656,True,False,True
+BioWordVec | SVM,Classical | MLP Small,3,1,4,0.625,4,6,1.0,0.8109436435124509,False,False,False
+BioWordVec | SVM,Classical | Random Forest,12,1,13,0.00341796875,4,15,1.0,0.009952320772058824,True,False,True
+BioWordVec | SVM,Classical | SVM,3,1,4,0.625,4,6,1.0,0.8109436435124509,False,False,False
+BioWordVec | SVM,Classical | XGBoost,12,1,13,0.00341796875,4,15,1.0,0.009952320772058824,True,False,True
+BioWordVec | SVM,Claude Haiku 4.5,8,2,10,0.109375,4,10,1.0,0.1997809040590406,False,False,False
+BioWordVec | SVM,Claude Opus 5,5,4,9,1.0,4,5,1.0,1.0,False,False,False
+BioWordVec | SVM,Claude Sonnet 5,5,2,7,0.453125,4,7,1.0,0.6408482142857143,False,False,False
+BioWordVec | SVM,DeBERTa-v3,1,2,3,1.0,4,3,1.0,1.0,False,False,False
+BioWordVec | SVM,FastText | Decision Tree,29,2,31,4.628673195838928e-07,4,31,0.00035039056092500687,1.9499516867576763e-06,True,True,True
+BioWordVec | SVM,FastText | Logistic Regression,2,0,2,0.5,4,6,1.0,0.6846473029045643,False,False,False
+BioWordVec | SVM,FastText | MLP Deep,4,1,5,0.375,4,7,1.0,0.5403930131004366,False,False,False
+BioWordVec | SVM,FastText | MLP Small,2,1,3,1.0,4,5,1.0,1.0,False,False,False
+BioWordVec | SVM,FastText | Random Forest,14,2,16,0.004180908203125,4,16,1.0,0.011659434143926057,True,False,True
+BioWordVec | SVM,FastText | SVM,2,0,2,0.5,4,6,1.0,0.6846473029045643,False,False,False
+BioWordVec | SVM,FastText | XGBoost,6,1,7,0.125,4,9,1.0,0.21447140381282495,False,False,False
+BioWordVec | SVM,Flan-T5,71,1,72,3.091670257478196e-20,4,74,2.6526530809162924e-17,2.2672248554840107e-19,True,True,True
+BioWordVec | SVM,Flan-T5 (tuned threshold),72,1,73,1.5670109524204556e-20,4,75,1.3491964300340123e-17,1.1842296510658405e-19,True,True,True
+BioWordVec | SVM,ModernBERT,4,3,7,1.0,4,5,1.0,1.0,False,False,False
+BioWordVec | SVM,OpenBioLLM-8B,134,3,137,4.9209361850038406e-36,4,135,4.694573120493664e-33,1.2820333745141585e-34,True,True,True
+BioWordVec | SVM,OpenBioLLM-8B (tuned threshold),20,4,24,0.001543879508972168,4,20,1.0,0.004852192742483956,True,False,True
+BioWordVec | SVM,PubMedBERT,4,3,7,1.0,4,5,1.0,1.0,False,False,False
+BioWordVec | SVM,Qwen2.5-7B-Instruct,12,2,14,0.012939453125,4,14,1.0,0.030646073190789474,True,False,True
+BioWordVec | SVM,Qwen2.5-7B-Instruct (tuned threshold),6,2,8,0.2890625,4,8,1.0,0.4457505841121495,False,False,False
+BioWordVec | SVM,Qwen3.8-27B,4,2,6,0.6875,4,6,1.0,0.8692528735632183,False,False,False
+BioWordVec | SVM,Qwen3.8-27B (tuned threshold),2,4,6,0.6875,4,2,1.0,0.8692528735632183,False,False,False
+BioWordVec | SVM,SciBERT,2,2,4,1.0,4,4,1.0,1.0,False,False,False
+BioWordVec | XGBoost,BiomedBERT-large,1,6,7,0.125,7,2,1.0,0.21447140381282495,False,False,False
+BioWordVec | XGBoost,Classical | Decision Tree,37,3,40,1.946500560734421e-08,7,41,1.5007519323262386e-05,8.71961789650261e-08,True,True,True
+BioWordVec | XGBoost,Classical | Logistic Regression,3,4,7,1.0,7,6,1.0,1.0,False,False,False
+BioWordVec | XGBoost,Classical | MLP Deep,9,4,13,0.266845703125,7,12,1.0,0.41999562177066774,False,False,False
+BioWordVec | XGBoost,Classical | MLP Small,3,4,7,1.0,7,6,1.0,1.0,False,False,False
+BioWordVec | XGBoost,Classical | Random Forest,12,4,16,0.076812744140625,7,15,1.0,0.14240564924947333,False,False,False
+BioWordVec | XGBoost,Classical | SVM,4,5,9,1.0,7,6,1.0,1.0,False,False,False
+BioWordVec | XGBoost,Classical | XGBoost,12,4,16,0.076812744140625,7,15,1.0,0.14240564924947333,False,False,False
+BioWordVec | XGBoost,Claude Haiku 4.5,7,4,11,0.548828125,7,10,1.0,0.7362328506097561,False,False,False
+BioWordVec | XGBoost,Claude Opus 5,4,6,10,0.75390625,7,5,1.0,0.9283173973880597,False,False,False
+BioWordVec | XGBoost,Claude Sonnet 5,4,4,8,1.0,7,7,1.0,1.0,False,False,False
+BioWordVec | XGBoost,DeBERTa-v3,0,4,4,0.125,7,3,1.0,0.21447140381282495,False,False,False
+BioWordVec | XGBoost,FastText | Decision Tree,25,1,26,8.046627044677734e-07,7,31,0.0006051063537597656,3.333121662858141e-06,True,True,True
+BioWordVec | XGBoost,FastText | Logistic Regression,3,4,7,1.0,7,6,1.0,1.0,False,False,False
+BioWordVec | XGBoost,FastText | MLP Deep,4,4,8,1.0,7,7,1.0,1.0,False,False,False
+BioWordVec | XGBoost,FastText | MLP Small,3,5,8,0.7265625,7,5,1.0,0.9025054893350063,False,False,False
+BioWordVec | XGBoost,FastText | Random Forest,11,2,13,0.0224609375,7,16,1.0,0.05008182010135135,True,False,False
+BioWordVec | XGBoost,FastText | SVM,3,4,7,1.0,7,6,1.0,1.0,False,False,False
+BioWordVec | XGBoost,FastText | XGBoost,5,3,8,0.7265625,7,9,1.0,0.9025054893350063,False,False,False
+BioWordVec | XGBoost,Flan-T5,71,4,75,6.8071061652263e-17,7,74,5.540984418494208e-14,3.807364465296066e-16,True,True,True
+BioWordVec | XGBoost,Flan-T5 (tuned threshold),72,4,76,3.589836803538052e-17,7,75,2.9293068316870504e-14,2.0308219631443836e-16,True,True,True
+BioWordVec | XGBoost,ModernBERT,3,5,8,0.7265625,7,5,1.0,0.9025054893350063,False,False,False
+BioWordVec | XGBoost,OpenBioLLM-8B,133,5,138,2.3103057490381402e-33,7,135,2.1693770983468137e-30,4.3154767765052055e-32,True,True,True
+BioWordVec | XGBoost,OpenBioLLM-8B (tuned threshold),17,4,21,0.007197380065917969,7,20,1.0,0.019521661000709012,True,False,True
+BioWordVec | XGBoost,PubMedBERT,3,5,8,0.7265625,7,5,1.0,0.9025054893350063,False,False,False
+BioWordVec | XGBoost,Qwen2.5-7B-Instruct,11,4,15,0.11846923828124999,7,14,1.0,0.21447140381282495,False,False,False
+BioWordVec | XGBoost,Qwen2.5-7B-Instruct (tuned threshold),5,4,9,1.0,7,8,1.0,1.0,False,False,False
+BioWordVec | XGBoost,Qwen3.8-27B,3,4,7,1.0,7,6,1.0,1.0,False,False,False
+BioWordVec | XGBoost,Qwen3.8-27B (tuned threshold),1,6,7,0.125,7,2,1.0,0.21447140381282495,False,False,False
+BioWordVec | XGBoost,SciBERT,2,5,7,0.453125,7,4,1.0,0.6408482142857143,False,False,False
+BiomedBERT-large,Classical | Decision Tree,40,1,41,3.8198777474462986e-11,2,41,3.029163053724915e-08,1.900341190940621e-10,True,True,True
+BiomedBERT-large,Classical | Logistic Regression,5,1,6,0.21875,2,6,1.0,0.35677512355848434,False,False,False
+BiomedBERT-large,Classical | MLP Deep,11,1,12,0.00634765625,2,12,1.0,0.01735961239640884,True,False,True
+BiomedBERT-large,Classical | MLP Small,6,2,8,0.2890625,2,6,1.0,0.4457505841121495,False,False,False
+BiomedBERT-large,Classical | Random Forest,15,2,17,0.002349853515625,2,15,1.0,0.007292648841594827,True,False,True
+BiomedBERT-large,Classical | SVM,6,2,8,0.2890625,2,6,1.0,0.4457505841121495,False,False,False
+BiomedBERT-large,Classical | XGBoost,15,2,17,0.002349853515625,2,15,1.0,0.007292648841594827,True,False,True
+BiomedBERT-large,Claude Haiku 4.5,10,2,12,0.03857421875,2,10,1.0,0.07890181107954546,True,False,False
+BiomedBERT-large,Claude Opus 5,5,2,7,0.453125,2,5,1.0,0.6408482142857143,False,False,False
+BiomedBERT-large,Claude Sonnet 5,7,2,9,0.1796875,2,7,1.0,0.2999841905564924,False,False,False
+BiomedBERT-large,DeBERTa-v3,3,2,5,1.0,2,3,1.0,1.0,False,False,False
+BiomedBERT-large,FastText | Decision Tree,31,2,33,1.3085082173347473e-07,2,31,9.970832616090775e-05,5.632274500701738e-07,True,True,True
+BiomedBERT-large,FastText | Logistic Regression,5,1,6,0.21875,2,6,1.0,0.35677512355848434,False,False,False
+BiomedBERT-large,FastText | MLP Deep,7,2,9,0.1796875,2,7,1.0,0.2999841905564924,False,False,False
+BiomedBERT-large,FastText | MLP Small,5,2,7,0.453125,2,5,1.0,0.6408482142857143,False,False,False
+BiomedBERT-large,FastText | Random Forest,16,2,18,0.001312255859375,2,16,0.89495849609375,0.004177277494473473,True,False,True
+BiomedBERT-large,FastText | SVM,5,1,6,0.21875,2,6,1.0,0.35677512355848434,False,False,False
+BiomedBERT-large,FastText | XGBoost,9,2,11,0.0654296875,2,9,1.0,0.1252908909574468,False,False,False
+BiomedBERT-large,Flan-T5,74,2,76,7.747704489416678e-20,2,74,6.60104422498301e-17,5.518149240663677e-19,True,True,True
+BiomedBERT-large,Flan-T5 (tuned threshold),75,2,77,3.975760896174872e-20,2,75,3.399275566229516e-17,2.894120064127297e-19,True,True,True
+BiomedBERT-large,ModernBERT,4,1,5,0.375,2,5,1.0,0.5403930131004366,False,False,False
+BiomedBERT-large,OpenBioLLM-8B,134,1,135,6.244813738743402e-39,2,135,6.07620376779733e-36,3.0919239730246942e-37,True,True,True
+BiomedBERT-large,OpenBioLLM-8B (tuned threshold),20,2,22,0.00012111663818359375,2,20,0.08696174621582031,0.0004362801782490975,True,False,True
+BiomedBERT-large,PubMedBERT,4,1,5,0.375,2,5,1.0,0.5403930131004366,False,False,False
+BiomedBERT-large,Qwen2.5-7B-Instruct,14,2,16,0.004180908203125,2,14,1.0,0.011659434143926057,True,False,True
+BiomedBERT-large,Qwen2.5-7B-Instruct (tuned threshold),8,2,10,0.109375,2,8,1.0,0.1997809040590406,False,False,False
+BiomedBERT-large,Qwen3.8-27B,6,2,8,0.2890625,2,6,1.0,0.4457505841121495,False,False,False
+BiomedBERT-large,Qwen3.8-27B (tuned threshold),2,2,4,1.0,2,2,1.0,1.0,False,False,False
+BiomedBERT-large,SciBERT,2,0,2,0.5,2,4,1.0,0.6846473029045643,False,False,False
+Classical | Decision Tree,Classical | Logistic Regression,2,37,39,2.841261448338628e-09,41,6,2.2247077140491456e-06,1.3268154876675667e-08,True,True,True
+Classical | Decision Tree,Classical | MLP Deep,2,31,33,1.3085082173347473e-07,41,12,9.970832616090775e-05,5.632274500701738e-07,True,True,True
+Classical | Decision Tree,Classical | MLP Small,3,38,41,1.0479197953827679e-08,41,6,8.121378414216451e-06,4.780832246216314e-08,True,True,True
+Classical | Decision Tree,Classical | Random Forest,4,30,34,6.16488978266716e-06,41,15,0.004555853549391031,2.4123481758262802e-05,True,True,True
+Classical | Decision Tree,Classical | SVM,3,38,41,1.0479197953827679e-08,41,6,8.121378414216451e-06,4.780832246216314e-08,True,True,True
+Classical | Decision Tree,Classical | XGBoost,3,29,32,2.5560148060321808e-06,41,15,0.001909343060106039,1.0244755700290927e-05,True,True,True
+Classical | Decision Tree,Claude Haiku 4.5,5,36,41,7.84157236921601e-07,41,10,0.0005911457108759028,3.2618305233293486e-06,True,True,True
+Classical | Decision Tree,Claude Opus 5,5,41,46,4.405936238072172e-08,41,5,3.374947158363284e-05,1.938611944751756e-07,True,True,True
+Classical | Decision Tree,Claude Sonnet 5,3,37,40,1.946500560734421e-08,41,7,1.5007519323262386e-05,8.71961789650261e-08,True,True,True
+Classical | Decision Tree,DeBERTa-v3,1,39,40,7.457856554538012e-11,41,3,5.891706678085029e-08,3.655088113362689e-10,True,True,True
+Classical | Decision Tree,FastText | Decision Tree,24,34,58,0.23704711476271959,41,31,1.0,0.38408615976283533,False,False,False
+Classical | Decision Tree,FastText | Logistic Regression,2,37,39,2.841261448338628e-09,41,6,2.2247077140491456e-06,1.3268154876675667e-08,True,True,True
+Classical | Decision Tree,FastText | MLP Deep,4,38,42,5.65314621780999e-08,41,7,4.3246568566246424e-05,2.465469055344445e-07,True,True,True
+Classical | Decision Tree,FastText | MLP Small,2,38,40,1.4933903003111482e-09,41,5,1.1738047760445625e-06,7.1769728024661976e-09,True,True,True
+Classical | Decision Tree,FastText | Random Forest,12,37,49,0.0004697573180081349,41,16,0.3297696372417107,0.0016092032693012235,True,False,True
+Classical | Decision Tree,FastText | SVM,2,37,39,2.841261448338628e-09,41,6,2.2247077140491456e-06,1.3268154876675667e-08,True,True,True
+Classical | Decision Tree,FastText | XGBoost,5,37,42,4.4337048166198656e-07,41,9,0.0003360748250997858,1.883848827662518e-06,True,True,True
+Classical | Decision Tree,Flan-T5,64,31,95,0.0010266104684135235,41,74,0.7011749499264366,0.0032998193627577542,True,False,True
+Classical | Decision Tree,Flan-T5 (tuned threshold),65,31,96,0.0007570230615259813,41,75,0.523859958575979,0.0025065312070592692,True,False,True
+Classical | Decision Tree,ModernBERT,4,40,44,1.7051434042514302e-08,41,5,1.3180758514863555e-05,7.708182512369479e-08,True,True,True
+Classical | Decision Tree,OpenBioLLM-8B,130,36,166,5.26802438709003e-13,41,135,4.2302235828332935e-10,2.774119225116558e-12,True,True,True
+Classical | Decision Tree,OpenBioLLM-8B (tuned threshold),15,36,51,0.0046013097117665325,41,20,1.0,0.012795777007440638,True,False,True
+Classical | Decision Tree,PubMedBERT,4,40,44,1.7051434042514302e-08,41,5,1.3180758514863555e-05,7.708182512369479e-08,True,True,True
+Classical | Decision Tree,Qwen2.5-7B-Instruct,9,36,45,6.57466324582856e-05,41,14,0.04753481526734049,0.00024196716034833736,True,True,True
+Classical | Decision Tree,Qwen2.5-7B-Instruct (tuned threshold),3,36,39,3.608874976634979e-08,41,8,2.768007107079029e-05,1.5949938512806382e-07,True,True,True
+Classical | Decision Tree,Qwen3.8-27B,2,37,39,2.841261448338628e-09,41,6,2.2247077140491456e-06,1.3268154876675667e-08,True,True,True
+Classical | Decision Tree,Qwen3.8-27B (tuned threshold),1,40,41,3.8198777474462986e-11,41,2,3.029163053724915e-08,1.900341190940621e-10,True,True,True
+Classical | Decision Tree,SciBERT,2,39,41,7.839844329282641e-10,41,4,6.169957487145439e-07,3.804630336269517e-09,True,True,True
+Classical | Logistic Regression,Classical | MLP Deep,6,0,6,0.03125,6,12,1.0,0.06596481876332623,True,False,False
+Classical | Logistic Regression,Classical | MLP Small,1,1,2,1.0,6,6,1.0,1.0,False,False,False
+Classical | Logistic Regression,Classical | Random Forest,10,1,11,0.01171875,6,15,1.0,0.029149654522613064,True,False,True
+Classical | Logistic Regression,Classical | SVM,1,1,2,1.0,6,6,1.0,1.0,False,False,False
+Classical | Logistic Regression,Classical | XGBoost,12,3,15,0.03515625,6,15,1.0,0.072509765625,True,False,False
+Classical | Logistic Regression,Claude Haiku 4.5,8,4,12,0.3876953125,6,10,1.0,0.5546508083453757,False,False,False
+Classical | Logistic Regression,Claude Opus 5,3,4,7,1.0,6,5,1.0,1.0,False,False,False
+Classical | Logistic Regression,Claude Sonnet 5,5,4,9,1.0,6,7,1.0,1.0,False,False,False
+Classical | Logistic Regression,DeBERTa-v3,1,4,5,0.375,6,3,1.0,0.5403930131004366,False,False,False
+Classical | Logistic Regression,FastText | Decision Tree,29,4,33,1.0928604751825333e-05,6,31,0.00803252449259162,4.161276424733492e-05,True,True,True
+Classical | Logistic Regression,FastText | Logistic Regression,0,0,0,1.0,6,6,1.0,1.0,False,False,False
+Classical | Logistic Regression,FastText | MLP Deep,2,1,3,1.0,6,7,1.0,1.0,False,False,False
+Classical | Logistic Regression,FastText | MLP Small,0,1,1,1.0,6,5,1.0,1.0,False,False,False
+Classical | Logistic Regression,FastText | Random Forest,12,2,14,0.012939453125,6,16,1.0,0.030646073190789474,True,False,True
+Classical | Logistic Regression,FastText | SVM,0,0,0,1.0,6,6,1.0,1.0,False,False,False
+Classical | Logistic Regression,FastText | XGBoost,4,1,5,0.375,6,9,1.0,0.5403930131004366,False,False,False
+Classical | Logistic Regression,Flan-T5,71,3,74,7.157428404298838e-18,6,74,5.919193290355139e-15,4.143774339330906e-17,True,True,True
+Classical | Logistic Regression,Flan-T5 (tuned threshold),72,3,75,3.72567441849804e-18,6,75,3.1146638138643615e-15,2.262832929026417e-17,True,True,True
+Classical | Logistic Regression,ModernBERT,2,3,5,1.0,6,5,1.0,1.0,False,False,False
+Classical | Logistic Regression,OpenBioLLM-8B,134,5,139,1.1979172729062073e-33,6,135,1.1320318228963659e-30,2.3253688238767554e-32,True,True,True
+Classical | Logistic Regression,OpenBioLLM-8B (tuned threshold),20,6,26,0.009355306625366211,6,20,1.0,0.024182124175228588,True,False,True
+Classical | Logistic Regression,PubMedBERT,2,3,5,1.0,6,5,1.0,1.0,False,False,False
+Classical | Logistic Regression,Qwen2.5-7B-Instruct,12,4,16,0.076812744140625,6,14,1.0,0.14240564924947333,False,False,False
+Classical | Logistic Regression,Qwen2.5-7B-Instruct (tuned threshold),6,4,10,0.75390625,6,8,1.0,0.9283173973880597,False,False,False
+Classical | Logistic Regression,Qwen3.8-27B,4,4,8,1.0,6,6,1.0,1.0,False,False,False
+Classical | Logistic Regression,Qwen3.8-27B (tuned threshold),2,6,8,0.2890625,6,2,1.0,0.4457505841121495,False,False,False
+Classical | Logistic Regression,SciBERT,2,4,6,0.6875,6,4,1.0,0.8692528735632183,False,False,False
+Classical | MLP Deep,Classical | MLP Small,1,7,8,0.0703125,12,6,1.0,0.1341221098265896,False,False,False
+Classical | MLP Deep,Classical | Random Forest,10,7,17,0.629058837890625,12,15,1.0,0.8151416878425638,False,False,False
+Classical | MLP Deep,Classical | SVM,1,7,8,0.0703125,12,6,1.0,0.1341221098265896,False,False,False
+Classical | MLP Deep,Classical | XGBoost,6,3,9,0.5078125,12,15,1.0,0.6886772260273972,False,False,False
+Classical | MLP Deep,Claude Haiku 4.5,8,10,18,0.8145294189453125,12,10,1.0,0.9992368336503834,False,False,False
+Classical | MLP Deep,Claude Opus 5,3,10,13,0.09228515625,12,5,1.0,0.17013464560055866,False,False,False
+Classical | MLP Deep,Claude Sonnet 5,5,10,15,0.30175781249999994,12,7,1.0,0.4646037859642301,False,False,False
+Classical | MLP Deep,DeBERTa-v3,1,10,11,0.01171875,12,3,1.0,0.029149654522613064,True,False,True
+Classical | MLP Deep,FastText | Decision Tree,29,10,39,0.0033778479119064286,12,31,1.0,0.009952320772058824,True,False,True
+Classical | MLP Deep,FastText | Logistic Regression,0,6,6,0.03125,12,6,1.0,0.06596481876332623,True,False,False
+Classical | MLP Deep,FastText | MLP Deep,2,7,9,0.1796875,12,7,1.0,0.2999841905564924,False,False,False
+Classical | MLP Deep,FastText | MLP Small,0,7,7,0.015625,12,5,1.0,0.03648290094339623,True,False,True
+Classical | MLP Deep,FastText | Random Forest,12,8,20,0.5034446716308594,12,16,1.0,0.6884119128654016,False,False,False
+Classical | MLP Deep,FastText | SVM,0,6,6,0.03125,12,6,1.0,0.06596481876332623,True,False,False
+Classical | MLP Deep,FastText | XGBoost,4,7,11,0.548828125,12,9,1.0,0.7362328506097561,False,False,False
+Classical | MLP Deep,Flan-T5,71,9,80,4.3739781822391746e-13,12,74,3.5166784585202964e-10,2.315635508244269e-12,True,True,True
+Classical | MLP Deep,Flan-T5 (tuned threshold),72,9,81,2.4557438833479224e-13,12,75,1.9793295699784253e-10,1.314154834872672e-12,True,True,True
+Classical | MLP Deep,ModernBERT,2,9,11,0.0654296875,12,5,1.0,0.1252908909574468,False,False,False
+Classical | MLP Deep,OpenBioLLM-8B,134,11,145,4.935136788675153e-28,12,135,4.466298793751013e-25,5.6811458381260486e-27,True,True,True
+Classical | MLP Deep,OpenBioLLM-8B (tuned threshold),20,12,32,0.21532714972272515,12,20,1.0,0.35677512355848434,False,False,False
+Classical | MLP Deep,PubMedBERT,2,9,11,0.0654296875,12,5,1.0,0.1252908909574468,False,False,False
+Classical | MLP Deep,Qwen2.5-7B-Instruct,12,10,22,0.8318119049072266,12,14,1.0,1.0,False,False,False
+Classical | MLP Deep,Qwen2.5-7B-Instruct (tuned threshold),6,10,16,0.454498291015625,12,8,1.0,0.641873478039185,False,False,False
+Classical | MLP Deep,Qwen3.8-27B,4,10,14,0.1795654296875,12,6,1.0,0.2999841905564924,False,False,False
+Classical | MLP Deep,Qwen3.8-27B (tuned threshold),2,12,14,0.012939453125,12,2,1.0,0.030646073190789474,True,False,True
+Classical | MLP Deep,SciBERT,2,10,12,0.03857421875,12,4,1.0,0.07890181107954546,True,False,False
+Classical | MLP Small,Classical | Random Forest,9,0,9,0.00390625,6,15,1.0,0.011241824127906976,True,False,True
+Classical | MLP Small,Classical | SVM,1,1,2,1.0,6,6,1.0,1.0,False,False,False
+Classical | MLP Small,Classical | XGBoost,11,2,13,0.0224609375,6,15,1.0,0.05008182010135135,True,False,False
+Classical | MLP Small,Claude Haiku 4.5,7,3,10,0.34375,6,10,1.0,0.5219516871165644,False,False,False
+Classical | MLP Small,Claude Opus 5,2,3,5,1.0,6,5,1.0,1.0,False,False,False
+Classical | MLP Small,Claude Sonnet 5,4,3,7,1.0,6,7,1.0,1.0,False,False,False
+Classical | MLP Small,DeBERTa-v3,0,3,3,0.25,6,3,1.0,0.39473684210526316,False,False,False
+Classical | MLP Small,FastText | Decision Tree,28,3,31,4.649162292480469e-06,6,31,0.0034450292587280273,1.8410682678222656e-05,True,True,True
+Classical | MLP Small,FastText | Logistic Regression,1,1,2,1.0,6,6,1.0,1.0,False,False,False
+Classical | MLP Small,FastText | MLP Deep,1,0,1,1.0,6,7,1.0,1.0,False,False,False
+Classical | MLP Small,FastText | MLP Small,0,1,1,1.0,6,5,1.0,1.0,False,False,False
+Classical | MLP Small,FastText | Random Forest,11,1,12,0.00634765625,6,16,1.0,0.01735961239640884,True,False,True
+Classical | MLP Small,FastText | SVM,1,1,2,1.0,6,6,1.0,1.0,False,False,False
+Classical | MLP Small,FastText | XGBoost,3,0,3,0.25,6,9,1.0,0.39473684210526316,False,False,False
+Classical | MLP Small,Flan-T5,70,2,72,1.1134248091657778e-18,6,74,9.363902645084191e-16,7.348603740494134e-18,True,True,True
+Classical | MLP Small,Flan-T5 (tuned threshold),71,2,73,5.721707558702799e-19,6,75,4.840564594662568e-16,3.8797880021340895e-18,True,True,True
+Classical | MLP Small,ModernBERT,1,2,3,1.0,6,5,1.0,1.0,False,False,False
+Classical | MLP Small,OpenBioLLM-8B,134,5,139,1.1979172729062073e-33,6,135,1.1320318228963659e-30,2.3253688238767554e-32,True,True,True
+Classical | MLP Small,OpenBioLLM-8B (tuned threshold),19,5,24,0.006610751152038574,6,20,1.0,0.017979790221203815,True,False,True
+Classical | MLP Small,PubMedBERT,1,2,3,1.0,6,5,1.0,1.0,False,False,False
+Classical | MLP Small,Qwen2.5-7B-Instruct,11,3,14,0.057373046875,6,14,1.0,0.11225161345108696,False,False,False
+Classical | MLP Small,Qwen2.5-7B-Instruct (tuned threshold),5,3,8,0.7265625,6,8,1.0,0.9025054893350063,False,False,False
+Classical | MLP Small,Qwen3.8-27B,3,3,6,1.0,6,6,1.0,1.0,False,False,False
+Classical | MLP Small,Qwen3.8-27B (tuned threshold),1,5,6,0.21875,6,2,1.0,0.35677512355848434,False,False,False
+Classical | MLP Small,SciBERT,2,4,6,0.6875,6,4,1.0,0.8692528735632183,False,False,False
+Classical | Random Forest,Classical | SVM,0,9,9,0.00390625,15,6,1.0,0.011241824127906976,True,False,True
+Classical | Random Forest,Classical | XGBoost,10,10,20,1.0,15,15,1.0,1.0,False,False,False
+Classical | Random Forest,Claude Haiku 4.5,6,11,17,0.332305908203125,15,10,1.0,0.5069073175979872,False,False,False
+Classical | Random Forest,Claude Opus 5,2,12,14,0.012939453125,15,5,1.0,0.030646073190789474,True,False,True
+Classical | Random Forest,Claude Sonnet 5,3,11,14,0.057373046875,15,7,1.0,0.11225161345108696,False,False,False
+Classical | Random Forest,DeBERTa-v3,0,12,12,0.00048828125,15,3,0.34228515625,0.0016276041666666667,True,False,True
+Classical | Random Forest,FastText | Decision Tree,26,10,36,0.011330984183587134,15,31,1.0,0.028911531808637276,True,False,True
+Classical | Random Forest,FastText | Logistic Regression,1,10,11,0.01171875,15,6,1.0,0.029149654522613064,True,False,True
+Classical | Random Forest,FastText | MLP Deep,0,8,8,0.0078125,15,7,1.0,0.020515583554376656,True,False,True
+Classical | Random Forest,FastText | MLP Small,0,10,10,0.001953125,15,5,1.0,0.006099664826498423,True,False,True
+Classical | Random Forest,FastText | Random Forest,11,10,21,1.0,15,16,1.0,1.0,False,False,False
+Classical | Random Forest,FastText | SVM,1,10,11,0.01171875,15,6,1.0,0.029149654522613064,True,False,True
+Classical | Random Forest,FastText | XGBoost,3,9,12,0.14599609375,15,9,1.0,0.24791789504716982,False,False,False
+Classical | Random Forest,Flan-T5,68,9,77,2.4488215083103315e-12,15,74,1.9541595636316446e-09,1.256131240014108e-11,True,True,True
+Classical | Random Forest,Flan-T5 (tuned threshold),69,9,78,1.3812783597891096e-12,15,75,1.1036414094714986e-09,7.1222165426625965e-12,True,True,True
+Classical | Random Forest,ModernBERT,1,11,12,0.00634765625,15,5,1.0,0.01735961239640884,True,False,True
+Classical | Random Forest,OpenBioLLM-8B,134,14,148,9.191926693634371e-26,15,135,8.199198610721859e-23,9.100007426698027e-25,True,True,True
+Classical | Random Forest,OpenBioLLM-8B (tuned threshold),18,13,31,0.47312965989112854,15,20,1.0,0.6672341357438992,False,False,False
+Classical | Random Forest,PubMedBERT,1,11,12,0.00634765625,15,5,1.0,0.01735961239640884,True,False,True
+Classical | Random Forest,Qwen2.5-7B-Instruct,10,11,21,1.0,15,14,1.0,1.0,False,False,False
+Classical | Random Forest,Qwen2.5-7B-Instruct (tuned threshold),4,11,15,0.11846923828124999,15,8,1.0,0.21447140381282495,False,False,False
+Classical | Random Forest,Qwen3.8-27B,2,11,13,0.0224609375,15,6,1.0,0.05008182010135135,True,False,False
+Classical | Random Forest,Qwen3.8-27B (tuned threshold),0,13,13,0.000244140625,15,2,0.17333984375,0.0008392333984375,True,False,True
+Classical | Random Forest,SciBERT,2,13,15,0.00738525390625,15,4,1.0,0.019867938497792118,True,False,True
+Classical | SVM,Classical | XGBoost,12,3,15,0.03515625,6,15,1.0,0.072509765625,True,False,False
+Classical | SVM,Claude Haiku 4.5,8,4,12,0.3876953125,6,10,1.0,0.5546508083453757,False,False,False
+Classical | SVM,Claude Opus 5,3,4,7,1.0,6,5,1.0,1.0,False,False,False
+Classical | SVM,Claude Sonnet 5,5,4,9,1.0,6,7,1.0,1.0,False,False,False
+Classical | SVM,DeBERTa-v3,1,4,5,0.375,6,3,1.0,0.5403930131004366,False,False,False
+Classical | SVM,FastText | Decision Tree,29,4,33,1.0928604751825333e-05,6,31,0.00803252449259162,4.161276424733492e-05,True,True,True
+Classical | SVM,FastText | Logistic Regression,1,1,2,1.0,6,6,1.0,1.0,False,False,False
+Classical | SVM,FastText | MLP Deep,1,0,1,1.0,6,7,1.0,1.0,False,False,False
+Classical | SVM,FastText | MLP Small,0,1,1,1.0,6,5,1.0,1.0,False,False,False
+Classical | SVM,FastText | Random Forest,12,2,14,0.012939453125,6,16,1.0,0.030646073190789474,True,False,True
+Classical | SVM,FastText | SVM,1,1,2,1.0,6,6,1.0,1.0,False,False,False
+Classical | SVM,FastText | XGBoost,4,1,5,0.375,6,9,1.0,0.5403930131004366,False,False,False
+Classical | SVM,Flan-T5,71,3,74,7.157428404298838e-18,6,74,5.919193290355139e-15,4.143774339330906e-17,True,True,True
+Classical | SVM,Flan-T5 (tuned threshold),72,3,75,3.72567441849804e-18,6,75,3.1146638138643615e-15,2.262832929026417e-17,True,True,True
+Classical | SVM,ModernBERT,2,3,5,1.0,6,5,1.0,1.0,False,False,False
+Classical | SVM,OpenBioLLM-8B,134,5,139,1.1979172729062073e-33,6,135,1.1320318228963659e-30,2.3253688238767554e-32,True,True,True
+Classical | SVM,OpenBioLLM-8B (tuned threshold),20,6,26,0.009355306625366211,6,20,1.0,0.024182124175228588,True,False,True
+Classical | SVM,PubMedBERT,2,3,5,1.0,6,5,1.0,1.0,False,False,False
+Classical | SVM,Qwen2.5-7B-Instruct,12,4,16,0.076812744140625,6,14,1.0,0.14240564924947333,False,False,False
+Classical | SVM,Qwen2.5-7B-Instruct (tuned threshold),6,4,10,0.75390625,6,8,1.0,0.9283173973880597,False,False,False
+Classical | SVM,Qwen3.8-27B,4,4,8,1.0,6,6,1.0,1.0,False,False,False
+Classical | SVM,Qwen3.8-27B (tuned threshold),2,6,8,0.2890625,6,2,1.0,0.4457505841121495,False,False,False
+Classical | SVM,SciBERT,3,5,8,0.7265625,6,4,1.0,0.9025054893350063,False,False,False
+Classical | XGBoost,Claude Haiku 4.5,6,11,17,0.332305908203125,15,10,1.0,0.5069073175979872,False,False,False
+Classical | XGBoost,Claude Opus 5,4,14,18,0.0308837890625,15,5,1.0,0.06596481876332623,True,False,False
+Classical | XGBoost,Claude Sonnet 5,4,12,16,0.076812744140625,15,7,1.0,0.14240564924947333,False,False,False
+Classical | XGBoost,DeBERTa-v3,0,12,12,0.00048828125,15,3,0.34228515625,0.0016276041666666667,True,False,True
+Classical | XGBoost,FastText | Decision Tree,25,9,34,0.00904118549078703,15,31,1.0,0.023679295333013647,True,False,True
+Classical | XGBoost,FastText | Logistic Regression,3,12,15,0.03515625,15,6,1.0,0.072509765625,True,False,False
+Classical | XGBoost,FastText | MLP Deep,3,11,14,0.057373046875,15,7,1.0,0.11225161345108696,False,False,False
+Classical | XGBoost,FastText | MLP Small,2,12,14,0.012939453125,15,5,1.0,0.030646073190789474,True,False,True
+Classical | XGBoost,FastText | Random Forest,13,12,25,1.0,15,16,1.0,1.0,False,False,False
+Classical | XGBoost,FastText | SVM,3,12,15,0.03515625,15,6,1.0,0.072509765625,True,False,False
+Classical | XGBoost,FastText | XGBoost,5,11,16,0.210113525390625,15,9,1.0,0.350189208984375,False,False,False
+Classical | XGBoost,Flan-T5,66,7,73,3.845005957472025e-13,15,74,3.09522979576498e-10,2.0465354289770457e-12,True,True,True
+Classical | XGBoost,Flan-T5 (tuned threshold),68,8,76,5.632907524806409e-13,15,75,4.51759183489474e-10,2.9505706082319285e-12,True,True,True
+Classical | XGBoost,ModernBERT,3,13,16,0.021270751953125,15,5,1.0,0.0481877446992992,True,False,True
+Classical | XGBoost,OpenBioLLM-8B,134,14,148,9.191926693634371e-26,15,135,8.199198610721859e-23,9.100007426698027e-25,True,True,True
+Classical | XGBoost,OpenBioLLM-8B (tuned threshold),19,14,33,0.48685024166479707,15,20,1.0,0.6846331523411209,False,False,False
+Classical | XGBoost,PubMedBERT,3,13,16,0.021270751953125,15,5,1.0,0.0481877446992992,True,False,True
+Classical | XGBoost,Qwen2.5-7B-Instruct,10,11,21,1.0,15,14,1.0,1.0,False,False,False
+Classical | XGBoost,Qwen2.5-7B-Instruct (tuned threshold),5,12,17,0.143463134765625,15,8,1.0,0.24445525545261404,False,False,False
+Classical | XGBoost,Qwen3.8-27B,3,12,15,0.03515625,15,6,1.0,0.072509765625,True,False,False
+Classical | XGBoost,Qwen3.8-27B (tuned threshold),1,14,15,0.0009765625,15,2,0.673828125,0.0031491754885993486,True,False,True
+Classical | XGBoost,SciBERT,2,13,15,0.00738525390625,15,4,1.0,0.019867938497792118,True,False,True
+Claude Haiku 4.5,Claude Opus 5,4,9,13,0.266845703125,10,5,1.0,0.41999562177066774,False,False,False
+Claude Haiku 4.5,Claude Sonnet 5,1,4,5,0.375,10,7,1.0,0.5403930131004366,False,False,False
+Claude Haiku 4.5,DeBERTa-v3,0,7,7,0.015625,10,3,1.0,0.03648290094339623,True,False,True
+Claude Haiku 4.5,FastText | Decision Tree,24,3,27,4.9233436584472656e-05,10,31,0.03579270839691162,0.00018462538719177246,True,True,True
+Claude Haiku 4.5,FastText | Logistic Regression,4,8,12,0.3876953125,10,6,1.0,0.5546508083453757,False,False,False
+Claude Haiku 4.5,FastText | MLP Deep,4,7,11,0.548828125,10,7,1.0,0.7362328506097561,False,False,False
+Claude Haiku 4.5,FastText | MLP Small,3,8,11,0.2265625,10,5,1.0,0.3676997950819672,False,False,False
+Claude Haiku 4.5,FastText | Random Forest,12,6,18,0.237884521484375,10,16,1.0,0.3841854425277834,False,False,False
+Claude Haiku 4.5,FastText | SVM,4,8,12,0.3876953125,10,6,1.0,0.5546508083453757,False,False,False
+Claude Haiku 4.5,FastText | XGBoost,6,7,13,1.0,10,9,1.0,1.0,False,False,False
+Claude Haiku 4.5,Flan-T5,64,0,64,1.0842021724855044e-19,10,74,9.226560487851643e-17,7.666858219718924e-19,True,True,True
+Claude Haiku 4.5,Flan-T5 (tuned threshold),65,0,65,5.421010862427522e-20,10,75,4.629543276513104e-17,3.917372812995071e-19,True,True,True
+Claude Haiku 4.5,ModernBERT,3,8,11,0.2265625,10,5,1.0,0.3676997950819672,False,False,False
+Claude Haiku 4.5,OpenBioLLM-8B,135,10,145,3.98708379363283e-29,10,135,3.6561558387613054e-26,5.33407156175203e-28,True,True,True
+Claude Haiku 4.5,OpenBioLLM-8B (tuned threshold),16,6,22,0.052478790283203125,10,20,1.0,0.10390800476074219,False,False,False
+Claude Haiku 4.5,PubMedBERT,3,8,11,0.2265625,10,5,1.0,0.3676997950819672,False,False,False
+Claude Haiku 4.5,Qwen2.5-7B-Instruct,5,1,6,0.21875,10,14,1.0,0.35677512355848434,False,False,False
+Claude Haiku 4.5,Qwen2.5-7B-Instruct (tuned threshold),1,3,4,0.625,10,8,1.0,0.8109436435124509,False,False,False
+Claude Haiku 4.5,Qwen3.8-27B,0,4,4,0.125,10,6,1.0,0.21447140381282495,False,False,False
+Claude Haiku 4.5,Qwen3.8-27B (tuned threshold),0,8,8,0.0078125,10,2,1.0,0.020515583554376656,True,False,True
+Claude Haiku 4.5,SciBERT,3,9,12,0.14599609375,10,4,1.0,0.24791789504716982,False,False,False
+Claude Opus 5,Claude Sonnet 5,5,3,8,0.7265625,5,7,1.0,0.9025054893350063,False,False,False
+Claude Opus 5,DeBERTa-v3,2,4,6,0.6875,5,3,1.0,0.8692528735632183,False,False,False
+Claude Opus 5,FastText | Decision Tree,30,4,34,6.16488978266716e-06,5,31,0.004555853549391031,2.4123481758262802e-05,True,True,True
+Claude Opus 5,FastText | Logistic Regression,4,3,7,1.0,5,6,1.0,1.0,False,False,False
+Claude Opus 5,FastText | MLP Deep,4,2,6,0.6875,5,7,1.0,0.8692528735632183,False,False,False
+Claude Opus 5,FastText | MLP Small,3,3,6,1.0,5,5,1.0,1.0,False,False,False
+Claude Opus 5,FastText | Random Forest,13,2,15,0.00738525390625,5,16,1.0,0.019867938497792118,True,False,True
+Claude Opus 5,FastText | SVM,4,3,7,1.0,5,6,1.0,1.0,False,False,False
+Claude Opus 5,FastText | XGBoost,6,2,8,0.2890625,5,9,1.0,0.4457505841121495,False,False,False
+Claude Opus 5,Flan-T5,72,3,75,3.72567441849804e-18,5,74,3.1146638138643615e-15,2.262832929026417e-17,True,True,True
+Claude Opus 5,Flan-T5 (tuned threshold),73,3,76,1.938302550893458e-18,5,75,1.6262358401996111e-15,1.24605163986008e-17,True,True,True
+Claude Opus 5,ModernBERT,2,2,4,1.0,5,5,1.0,1.0,False,False,False
+Claude Opus 5,OpenBioLLM-8B,134,4,138,8.552879677427434e-35,5,135,8.13378857323349e-32,1.9431925280620345e-33,True,True,True
+Claude Opus 5,OpenBioLLM-8B (tuned threshold),19,4,23,0.002599477767944336,5,20,1.0,0.00794284873538547,True,False,True
+Claude Opus 5,PubMedBERT,2,2,4,1.0,5,5,1.0,1.0,False,False,False
+Claude Opus 5,Qwen2.5-7B-Instruct,13,4,17,0.049041748046875,5,14,1.0,0.0972972556441007,True,False,False
+Claude Opus 5,Qwen2.5-7B-Instruct (tuned threshold),7,4,11,0.548828125,5,8,1.0,0.7362328506097561,False,False,False
+Claude Opus 5,Qwen3.8-27B,5,4,9,1.0,5,6,1.0,1.0,False,False,False
+Claude Opus 5,Qwen3.8-27B (tuned threshold),1,4,5,0.375,5,2,1.0,0.5403930131004366,False,False,False
+Claude Opus 5,SciBERT,3,4,7,1.0,5,4,1.0,1.0,False,False,False
+Claude Sonnet 5,DeBERTa-v3,0,4,4,0.125,7,3,1.0,0.21447140381282495,False,False,False
+Claude Sonnet 5,FastText | Decision Tree,26,2,28,3.032386302947998e-06,7,31,0.0022530630230903625,1.2105090483542412e-05,True,True,True
+Claude Sonnet 5,FastText | Logistic Regression,4,5,9,1.0,7,6,1.0,1.0,False,False,False
+Claude Sonnet 5,FastText | MLP Deep,4,4,8,1.0,7,7,1.0,1.0,False,False,False
+Claude Sonnet 5,FastText | MLP Small,3,5,8,0.7265625,7,5,1.0,0.9025054893350063,False,False,False
+Claude Sonnet 5,FastText | Random Forest,13,4,17,0.049041748046875,7,16,1.0,0.0972972556441007,True,False,False
+Claude Sonnet 5,FastText | SVM,4,5,9,1.0,7,6,1.0,1.0,False,False,False
+Claude Sonnet 5,FastText | XGBoost,6,4,10,0.75390625,7,9,1.0,0.9283173973880597,False,False,False
+Claude Sonnet 5,Flan-T5,67,0,67,1.3552527156068805e-20,7,74,1.1695830935687379e-17,1.0400776654657456e-19,True,True,True
+Claude Sonnet 5,Flan-T5 (tuned threshold),68,0,68,6.776263578034403e-21,7,75,5.861467994999758e-18,5.282284206499259e-20,True,True,True
+Claude Sonnet 5,ModernBERT,3,5,8,0.7265625,7,5,1.0,0.9025054893350063,False,False,False
+Claude Sonnet 5,OpenBioLLM-8B,135,7,142,7.514338779667388e-32,7,135,7.003363742650006e-29,1.2608805748933414e-30,True,True,True
+Claude Sonnet 5,OpenBioLLM-8B (tuned threshold),18,5,23,0.010622024536132812,7,20,1.0,0.02737591224071121,True,False,True
+Claude Sonnet 5,PubMedBERT,3,5,8,0.7265625,7,5,1.0,0.9025054893350063,False,False,False
+Claude Sonnet 5,Qwen2.5-7B-Instruct,8,1,9,0.0390625,7,14,1.0,0.07924564549180328,True,False,False
+Claude Sonnet 5,Qwen2.5-7B-Instruct (tuned threshold),2,1,3,1.0,7,8,1.0,1.0,False,False,False
+Claude Sonnet 5,Qwen3.8-27B,1,2,3,1.0,7,6,1.0,1.0,False,False,False
+Claude Sonnet 5,Qwen3.8-27B (tuned threshold),0,5,5,0.0625,7,2,1.0,0.120849609375,False,False,False
+Claude Sonnet 5,SciBERT,3,6,9,0.5078125,7,4,1.0,0.6886772260273972,False,False,False
+DeBERTa-v3,FastText | Decision Tree,28,0,28,7.450580596923828e-09,3,31,5.7891011238098145e-06,3.430732460909112e-08,True,True,True
+DeBERTa-v3,FastText | Logistic Regression,4,1,5,0.375,3,6,1.0,0.5403930131004366,False,False,False
+DeBERTa-v3,FastText | MLP Deep,4,0,4,0.125,3,7,1.0,0.21447140381282495,False,False,False
+DeBERTa-v3,FastText | MLP Small,3,1,4,0.625,3,5,1.0,0.8109436435124509,False,False,False
+DeBERTa-v3,FastText | Random Forest,13,0,13,0.000244140625,3,16,0.17333984375,0.0008392333984375,True,False,True
+DeBERTa-v3,FastText | SVM,4,1,5,0.375,3,6,1.0,0.5403930131004366,False,False,False
+DeBERTa-v3,FastText | XGBoost,6,0,6,0.03125,3,9,1.0,0.06596481876332623,True,False,False
+DeBERTa-v3,Flan-T5,71,0,71,8.470329472543003e-22,3,74,7.403067959002585e-19,7.046744687241659e-21,True,True,True
+DeBERTa-v3,Flan-T5 (tuned threshold),72,0,72,4.235164736271502e-22,3,75,3.72270980318265e-19,3.645924425138075e-21,True,True,True
+DeBERTa-v3,ModernBERT,3,1,4,0.625,3,5,1.0,0.8109436435124509,False,False,False
+DeBERTa-v3,OpenBioLLM-8B,135,3,138,2.5147313912942733e-36,3,135,2.4040832100773253e-33,6.915511326059252e-35,True,True,True
+DeBERTa-v3,OpenBioLLM-8B (tuned threshold),19,2,21,0.00022125244140625,3,20,0.15775299072265625,0.0007850893082157258,True,False,True
+DeBERTa-v3,PubMedBERT,3,1,4,0.625,3,5,1.0,0.8109436435124509,False,False,False
+DeBERTa-v3,Qwen2.5-7B-Instruct,11,0,11,0.0009765625,3,14,0.673828125,0.0031491754885993486,True,False,True
+DeBERTa-v3,Qwen2.5-7B-Instruct (tuned threshold),5,0,5,0.0625,3,8,1.0,0.120849609375,False,False,False
+DeBERTa-v3,Qwen3.8-27B,3,0,3,0.25,3,6,1.0,0.39473684210526316,False,False,False
+DeBERTa-v3,Qwen3.8-27B (tuned threshold),1,2,3,1.0,3,2,1.0,1.0,False,False,False
+DeBERTa-v3,SciBERT,3,2,5,1.0,3,4,1.0,1.0,False,False,False
+FastText | Decision Tree,FastText | Logistic Regression,4,29,33,1.0928604751825333e-05,31,6,0.00803252449259162,4.161276424733492e-05,True,True,True
+FastText | Decision Tree,FastText | MLP Deep,4,28,32,1.9301194697618484e-05,31,7,0.014070570934563875,7.265468726479962e-05,True,True,True
+FastText | Decision Tree,FastText | MLP Small,3,29,32,2.5560148060321808e-06,31,5,0.001909343060106039,1.0244755700290927e-05,True,True,True
+FastText | Decision Tree,FastText | Random Forest,5,20,25,0.004077315330505371,31,16,1.0,0.011659434143926057,True,False,True
+FastText | Decision Tree,FastText | SVM,4,29,33,1.0928604751825333e-05,31,6,0.00803252449259162,4.161276424733492e-05,True,True,True
+FastText | Decision Tree,FastText | XGBoost,5,27,32,0.00011307420209050179,31,9,0.08130035130307078,0.00041155683849116456,True,False,True
+FastText | Decision Tree,Flan-T5,60,17,77,8.909847968334875e-07,31,74,0.0006691295824219492,3.675312286938136e-06,True,True,True
+FastText | Decision Tree,Flan-T5 (tuned threshold),63,19,82,1.1467543245820195e-06,31,75,0.0008600657434365146,4.71073353251535e-06,True,True,True
+FastText | Decision Tree,ModernBERT,3,29,32,2.5560148060321808e-06,31,5,0.001909343060106039,1.0244755700290927e-05,True,True,True
+FastText | Decision Tree,OpenBioLLM-8B,126,22,148,6.485282938356565e-19,31,135,5.473578799972941e-16,4.367639529913605e-18,True,True,True
+FastText | Decision Tree,OpenBioLLM-8B (tuned threshold),12,23,35,0.08953107893466952,31,20,1.0,0.16567433298191184,False,False,False
+FastText | Decision Tree,PubMedBERT,3,29,32,2.5560148060321808e-06,31,5,0.001909343060106039,1.0244755700290927e-05,True,True,True
+FastText | Decision Tree,Qwen2.5-7B-Instruct,5,22,27,0.0015137195587158203,31,14,1.0,0.0047878030770883775,True,False,True
+FastText | Decision Tree,Qwen2.5-7B-Instruct (tuned threshold),2,25,27,5.647540092468262e-06,31,8,0.004179179668426514,2.2275158133639757e-05,True,True,True
+FastText | Decision Tree,Qwen3.8-27B,1,26,27,4.172325134277344e-07,31,6,0.0003166794776916504,1.7804318460924871e-06,True,True,True
+FastText | Decision Tree,Qwen3.8-27B (tuned threshold),0,29,29,3.725290298461914e-09,31,2,2.898275852203369e-06,1.731472955623143e-08,True,True,True
+FastText | Decision Tree,SciBERT,3,30,33,1.4011748135089874e-06,31,4,0.0010494799353182316,5.7320787825367665e-06,True,True,True
+FastText | Logistic Regression,FastText | MLP Deep,2,1,3,1.0,6,7,1.0,1.0,False,False,False
+FastText | Logistic Regression,FastText | MLP Small,0,1,1,1.0,6,5,1.0,1.0,False,False,False
+FastText | Logistic Regression,FastText | Random Forest,12,2,14,0.012939453125,6,16,1.0,0.030646073190789474,True,False,True
+FastText | Logistic Regression,FastText | SVM,0,0,0,1.0,6,6,1.0,1.0,False,False,False
+FastText | Logistic Regression,FastText | XGBoost,4,1,5,0.375,6,9,1.0,0.5403930131004366,False,False,False
+FastText | Logistic Regression,Flan-T5,71,3,74,7.157428404298838e-18,6,74,5.919193290355139e-15,4.143774339330906e-17,True,True,True
+FastText | Logistic Regression,Flan-T5 (tuned threshold),72,3,75,3.72567441849804e-18,6,75,3.1146638138643615e-15,2.262832929026417e-17,True,True,True
+FastText | Logistic Regression,ModernBERT,2,3,5,1.0,6,5,1.0,1.0,False,False,False
+FastText | Logistic Regression,OpenBioLLM-8B,134,5,139,1.1979172729062073e-33,6,135,1.1320318228963659e-30,2.3253688238767554e-32,True,True,True
+FastText | Logistic Regression,OpenBioLLM-8B (tuned threshold),20,6,26,0.009355306625366211,6,20,1.0,0.024182124175228588,True,False,True
+FastText | Logistic Regression,PubMedBERT,2,3,5,1.0,6,5,1.0,1.0,False,False,False
+FastText | Logistic Regression,Qwen2.5-7B-Instruct,12,4,16,0.076812744140625,6,14,1.0,0.14240564924947333,False,False,False
+FastText | Logistic Regression,Qwen2.5-7B-Instruct (tuned threshold),6,4,10,0.75390625,6,8,1.0,0.9283173973880597,False,False,False
+FastText | Logistic Regression,Qwen3.8-27B,4,4,8,1.0,6,6,1.0,1.0,False,False,False
+FastText | Logistic Regression,Qwen3.8-27B (tuned threshold),2,6,8,0.2890625,6,2,1.0,0.4457505841121495,False,False,False
+FastText | Logistic Regression,SciBERT,2,4,6,0.6875,6,4,1.0,0.8692528735632183,False,False,False
+FastText | MLP Deep,FastText | MLP Small,0,2,2,0.5,7,5,1.0,0.6846473029045643,False,False,False
+FastText | MLP Deep,FastText | Random Forest,11,2,13,0.0224609375,7,16,1.0,0.05008182010135135,True,False,False
+FastText | MLP Deep,FastText | SVM,1,2,3,1.0,7,6,1.0,1.0,False,False,False
+FastText | MLP Deep,FastText | XGBoost,3,1,4,0.625,7,9,1.0,0.8109436435124509,False,False,False
+FastText | MLP Deep,Flan-T5,70,3,73,1.3742686052727396e-17,7,74,1.1255259877183737e-14,7.864311671791979e-17,True,True,True
+FastText | MLP Deep,Flan-T5 (tuned threshold),71,3,74,7.157428404298838e-18,7,75,5.919193290355139e-15,4.143774339330906e-17,True,True,True
+FastText | MLP Deep,ModernBERT,1,3,4,0.625,7,5,1.0,0.8109436435124509,False,False,False
+FastText | MLP Deep,OpenBioLLM-8B,134,6,140,1.4083083788101097e-32,7,135,1.3153600258086425e-29,2.4038367155551872e-31,True,True,True
+FastText | MLP Deep,OpenBioLLM-8B (tuned threshold),19,6,25,0.01463329792022705,7,20,1.0,0.03449277366910662,True,False,True
+FastText | MLP Deep,PubMedBERT,1,3,4,0.625,7,5,1.0,0.8109436435124509,False,False,False
+FastText | MLP Deep,Qwen2.5-7B-Instruct,11,4,15,0.11846923828124999,7,14,1.0,0.21447140381282495,False,False,False
+FastText | MLP Deep,Qwen2.5-7B-Instruct (tuned threshold),5,4,9,1.0,7,8,1.0,1.0,False,False,False
+FastText | MLP Deep,Qwen3.8-27B,3,4,7,1.0,7,6,1.0,1.0,False,False,False
+FastText | MLP Deep,Qwen3.8-27B (tuned threshold),1,6,7,0.125,7,2,1.0,0.21447140381282495,False,False,False
+FastText | MLP Deep,SciBERT,2,5,7,0.453125,7,4,1.0,0.6408482142857143,False,False,False
+FastText | MLP Small,FastText | Random Forest,12,1,13,0.00341796875,5,16,1.0,0.009952320772058824,True,False,True
+FastText | MLP Small,FastText | SVM,1,0,1,1.0,5,6,1.0,1.0,False,False,False
+FastText | MLP Small,FastText | XGBoost,4,0,4,0.125,5,9,1.0,0.21447140381282495,False,False,False
+FastText | MLP Small,Flan-T5,71,2,73,5.721707558702799e-19,5,74,4.840564594662568e-16,3.8797880021340895e-18,True,True,True
+FastText | MLP Small,Flan-T5 (tuned threshold),72,2,74,2.939204326972422e-19,5,75,2.4953844735995864e-16,2.0348337648270616e-18,True,True,True
+FastText | MLP Small,ModernBERT,2,2,4,1.0,5,5,1.0,1.0,False,False,False
+FastText | MLP Small,OpenBioLLM-8B,134,4,138,8.552879677427434e-35,5,135,8.13378857323349e-32,1.9431925280620345e-33,True,True,True
+FastText | MLP Small,OpenBioLLM-8B (tuned threshold),20,5,25,0.004077315330505371,5,20,1.0,0.011659434143926057,True,False,True
+FastText | MLP Small,PubMedBERT,2,2,4,1.0,5,5,1.0,1.0,False,False,False
+FastText | MLP Small,Qwen2.5-7B-Instruct,12,3,15,0.03515625,5,14,1.0,0.072509765625,True,False,False
+FastText | MLP Small,Qwen2.5-7B-Instruct (tuned threshold),6,3,9,0.5078125,5,8,1.0,0.6886772260273972,False,False,False
+FastText | MLP Small,Qwen3.8-27B,4,3,7,1.0,5,6,1.0,1.0,False,False,False
+FastText | MLP Small,Qwen3.8-27B (tuned threshold),2,5,7,0.453125,5,2,1.0,0.6408482142857143,False,False,False
+FastText | MLP Small,SciBERT,3,4,7,1.0,5,4,1.0,1.0,False,False,False
+FastText | Random Forest,FastText | SVM,2,12,14,0.012939453125,16,6,1.0,0.030646073190789474,True,False,True
+FastText | Random Forest,FastText | XGBoost,1,8,9,0.0390625,16,9,1.0,0.07924564549180328,True,False,False
+FastText | Random Forest,Flan-T5,65,7,72,6.9644370929921e-13,16,74,5.578514111486672e-10,3.628838274769568e-12,True,True,True
+FastText | Random Forest,Flan-T5 (tuned threshold),67,8,75,1.0098638262297781e-12,16,75,8.078910609838225e-10,5.234372711871625e-12,True,True,True
+FastText | Random Forest,ModernBERT,1,12,13,0.00341796875,16,5,1.0,0.009952320772058824,True,False,True
+FastText | Random Forest,OpenBioLLM-8B,133,14,147,1.6658931474865648e-25,16,135,1.477647221820583e-22,1.5558813358600936e-24,True,True,True
+FastText | Random Forest,OpenBioLLM-8B (tuned threshold),16,12,28,0.5715881884098053,16,20,1.0,0.7636603326932622,False,False,False
+FastText | Random Forest,PubMedBERT,1,12,13,0.00341796875,16,5,1.0,0.009952320772058824,True,False,True
+FastText | Random Forest,Qwen2.5-7B-Instruct,9,11,20,0.8238029479980469,16,14,1.0,1.0,False,False,False
+FastText | Random Forest,Qwen2.5-7B-Instruct (tuned threshold),5,13,18,0.09625244140625,16,8,1.0,0.17711880481819237,False,False,False
+FastText | Random Forest,Qwen3.8-27B,3,13,16,0.021270751953125,16,6,1.0,0.0481877446992992,True,False,True
+FastText | Random Forest,Qwen3.8-27B (tuned threshold),1,15,16,0.000518798828125,16,2,0.359527587890625,0.0017235263082005033,True,False,True
+FastText | Random Forest,SciBERT,3,15,18,0.007537841796875,16,4,1.0,0.020114456546917115,True,False,True
+FastText | SVM,FastText | XGBoost,4,1,5,0.375,6,9,1.0,0.5403930131004366,False,False,False
+FastText | SVM,Flan-T5,71,3,74,7.157428404298838e-18,6,74,5.919193290355139e-15,4.143774339330906e-17,True,True,True
+FastText | SVM,Flan-T5 (tuned threshold),72,3,75,3.72567441849804e-18,6,75,3.1146638138643615e-15,2.262832929026417e-17,True,True,True
+FastText | SVM,ModernBERT,2,3,5,1.0,6,5,1.0,1.0,False,False,False
+FastText | SVM,OpenBioLLM-8B,134,5,139,1.1979172729062073e-33,6,135,1.1320318228963659e-30,2.3253688238767554e-32,True,True,True
+FastText | SVM,OpenBioLLM-8B (tuned threshold),20,6,26,0.009355306625366211,6,20,1.0,0.024182124175228588,True,False,True
+FastText | SVM,PubMedBERT,2,3,5,1.0,6,5,1.0,1.0,False,False,False
+FastText | SVM,Qwen2.5-7B-Instruct,12,4,16,0.076812744140625,6,14,1.0,0.14240564924947333,False,False,False
+FastText | SVM,Qwen2.5-7B-Instruct (tuned threshold),6,4,10,0.75390625,6,8,1.0,0.9283173973880597,False,False,False
+FastText | SVM,Qwen3.8-27B,4,4,8,1.0,6,6,1.0,1.0,False,False,False
+FastText | SVM,Qwen3.8-27B (tuned threshold),2,6,8,0.2890625,6,2,1.0,0.4457505841121495,False,False,False
+FastText | SVM,SciBERT,2,4,6,0.6875,6,4,1.0,0.8692528735632183,False,False,False
+FastText | XGBoost,Flan-T5,68,3,71,5.057803134644878e-17,9,74,4.122109554735576e-14,2.845014263237744e-16,True,True,True
+FastText | XGBoost,Flan-T5 (tuned threshold),69,3,72,2.6371947296289014e-17,9,75,2.1545880941068124e-14,1.5004728634095474e-16,True,True,True
+FastText | XGBoost,ModernBERT,1,5,6,0.21875,9,5,1.0,0.35677512355848434,False,False,False
+FastText | XGBoost,OpenBioLLM-8B,133,7,140,2.717864140919989e-31,9,135,2.5276136510555897e-28,4.410959835263589e-30,True,True,True
+FastText | XGBoost,OpenBioLLM-8B (tuned threshold),18,7,25,0.043285250663757324,9,20,1.0,0.08763271606772956,True,False,False
+FastText | XGBoost,PubMedBERT,1,5,6,0.21875,9,5,1.0,0.35677512355848434,False,False,False
+FastText | XGBoost,Qwen2.5-7B-Instruct,11,6,17,0.332305908203125,9,14,1.0,0.5069073175979872,False,False,False
+FastText | XGBoost,Qwen2.5-7B-Instruct (tuned threshold),5,6,11,1.0,9,8,1.0,1.0,False,False,False
+FastText | XGBoost,Qwen3.8-27B,3,6,9,0.5078125,9,6,1.0,0.6886772260273972,False,False,False
+FastText | XGBoost,Qwen3.8-27B (tuned threshold),1,8,9,0.0390625,9,2,1.0,0.07924564549180328,True,False,False
+FastText | XGBoost,SciBERT,2,7,9,0.1796875,9,4,1.0,0.2999841905564924,False,False,False
+Flan-T5,Flan-T5 (tuned threshold),6,5,11,1.0,74,75,1.0,1.0,False,False,False
+Flan-T5,ModernBERT,3,72,75,3.72567441849804e-18,74,5,3.1146638138643615e-15,2.262832929026417e-17,True,True,True
+Flan-T5,OpenBioLLM-8B,123,62,185,1.0275765963276422e-05,74,135,0.007562963748971446,3.9894150210367285e-05,True,True,True
+Flan-T5,OpenBioLLM-8B (tuned threshold),11,65,76,1.81197137160965e-10,74,20,1.4278334408284042e-07,8.836707674352481e-10,True,True,True
+Flan-T5,PubMedBERT,3,72,75,3.72567441849804e-18,74,5,3.1146638138643615e-15,2.262832929026417e-17,True,True,True
+Flan-T5,Qwen2.5-7B-Instruct,0,60,60,1.734723475976807e-18,74,14,1.457167719820518e-15,1.1373352590841318e-17,True,True,True
+Flan-T5,Qwen2.5-7B-Instruct (tuned threshold),0,66,66,2.710505431213761e-20,74,8,2.3283241654126208e-17,2.0328790734103208e-19,True,True,True
+Flan-T5,Qwen3.8-27B,0,68,68,6.776263578034403e-21,74,6,5.861467994999758e-18,5.282284206499259e-20,True,True,True
+Flan-T5,Qwen3.8-27B (tuned threshold),0,72,72,4.235164736271502e-22,74,2,3.72270980318265e-19,3.645924425138075e-21,True,True,True
+Flan-T5,SciBERT,2,72,74,2.939204326972422e-19,74,4,2.4953844735995864e-16,2.0348337648270616e-18,True,True,True
+Flan-T5 (tuned threshold),ModernBERT,3,73,76,1.938302550893458e-18,75,5,1.6262358401996111e-15,1.24605163986008e-17,True,True,True
+Flan-T5 (tuned threshold),OpenBioLLM-8B,121,61,182,1.223425675637973e-05,75,135,0.008931007432157202,4.640580148971621e-05,True,True,True
+Flan-T5 (tuned threshold),OpenBioLLM-8B (tuned threshold),10,65,75,5.154208808246549e-11,75,20,4.07697916732302e-08,2.5513333600820417e-10,True,True,True
+Flan-T5 (tuned threshold),PubMedBERT,3,73,76,1.938302550893458e-18,75,5,1.6262358401996111e-15,1.24605163986008e-17,True,True,True
+Flan-T5 (tuned threshold),Qwen2.5-7B-Instruct,0,61,61,8.673617379884035e-19,75,14,7.311859451242242e-16,5.801946760868375e-18,True,True,True
+Flan-T5 (tuned threshold),Qwen2.5-7B-Instruct (tuned threshold),0,67,67,1.3552527156068805e-20,75,8,1.1695830935687379e-17,1.0400776654657456e-19,True,True,True
+Flan-T5 (tuned threshold),Qwen3.8-27B,0,69,69,3.3881317890172014e-21,75,6,2.9408983928669308e-18,2.7270329033553084e-20,True,True,True
+Flan-T5 (tuned threshold),Qwen3.8-27B (tuned threshold),0,73,73,2.117582368135751e-22,75,2,1.8677076486957322e-19,1.9058241313221758e-21,True,True,True
+Flan-T5 (tuned threshold),SciBERT,2,73,75,1.5093068328887564e-19,75,4,1.282910807955443e-16,1.0597260741559354e-18,True,True,True
+ModernBERT,OpenBioLLM-8B,134,4,138,8.552879677427434e-35,5,135,8.13378857323349e-32,1.9431925280620345e-33,True,True,True
+ModernBERT,OpenBioLLM-8B (tuned threshold),19,4,23,0.002599477767944336,5,20,1.0,0.00794284873538547,True,False,True
+ModernBERT,PubMedBERT,1,1,2,1.0,5,5,1.0,1.0,False,False,False
+ModernBERT,Qwen2.5-7B-Instruct,12,3,15,0.03515625,5,14,1.0,0.072509765625,True,False,False
+ModernBERT,Qwen2.5-7B-Instruct (tuned threshold),6,3,9,0.5078125,5,8,1.0,0.6886772260273972,False,False,False
+ModernBERT,Qwen3.8-27B,4,3,7,1.0,5,6,1.0,1.0,False,False,False
+ModernBERT,Qwen3.8-27B (tuned threshold),1,4,5,0.375,5,2,1.0,0.5403930131004366,False,False,False
+ModernBERT,SciBERT,2,3,5,1.0,5,4,1.0,1.0,False,False,False
+OpenBioLLM-8B,OpenBioLLM-8B (tuned threshold),7,122,129,3.1128320466458535e-28,135,20,2.826451498354435e-25,3.675163746676714e-27,True,True,True
+OpenBioLLM-8B,PubMedBERT,4,134,138,8.552879677427434e-35,135,5,8.13378857323349e-32,1.9431925280620345e-33,True,True,True
+OpenBioLLM-8B,Qwen2.5-7B-Instruct,14,135,149,5.068356889073817e-26,135,14,4.526042701942919e-23,5.120074816513346e-25,True,True,True
+OpenBioLLM-8B,Qwen2.5-7B-Instruct (tuned threshold),8,135,143,6.767917179441369e-31,135,8,6.28062714252159e-28,1.0151875769162053e-29,True,True,True
+OpenBioLLM-8B,Qwen3.8-27B,6,135,141,7.352026653297796e-33,135,6,6.888848974140035e-30,1.2997332833508605e-31,True,True,True
+OpenBioLLM-8B,Qwen3.8-27B (tuned threshold),2,135,137,1.0852659758470611e-37,135,2,1.0451111347407199e-34,3.837190414602109e-36,True,True,True
+OpenBioLLM-8B,SciBERT,2,133,135,4.2157084511325866e-37,135,4,4.0428644046361505e-34,1.264712535339776e-35,True,True,True
+OpenBioLLM-8B (tuned threshold),PubMedBERT,4,19,23,0.002599477767944336,20,5,1.0,0.00794284873538547,True,False,True
+OpenBioLLM-8B (tuned threshold),Qwen2.5-7B-Instruct,10,16,26,0.32693958282470703,20,14,1.0,0.5018142434053643,False,False,False
+OpenBioLLM-8B (tuned threshold),Qwen2.5-7B-Instruct (tuned threshold),5,17,22,0.01690053939819336,20,8,1.0,0.03927590141833668,True,False,True
+OpenBioLLM-8B (tuned threshold),Qwen3.8-27B,3,17,20,0.0025768280029296875,20,6,1.0,0.00794284873538547,True,False,True
+OpenBioLLM-8B (tuned threshold),Qwen3.8-27B (tuned threshold),0,18,18,7.62939453125e-06,20,2,0.00562286376953125,2.97366164800689e-05,True,True,True
+OpenBioLLM-8B (tuned threshold),SciBERT,3,19,22,0.0008554458618164062,20,4,0.5911130905151367,0.0028229713439941405,True,False,True
+PubMedBERT,Qwen2.5-7B-Instruct,12,3,15,0.03515625,5,14,1.0,0.072509765625,True,False,False
+PubMedBERT,Qwen2.5-7B-Instruct (tuned threshold),6,3,9,0.5078125,5,8,1.0,0.6886772260273972,False,False,False
+PubMedBERT,Qwen3.8-27B,4,3,7,1.0,5,6,1.0,1.0,False,False,False
+PubMedBERT,Qwen3.8-27B (tuned threshold),1,4,5,0.375,5,2,1.0,0.5403930131004366,False,False,False
+PubMedBERT,SciBERT,2,3,5,1.0,5,4,1.0,1.0,False,False,False
+Qwen2.5-7B-Instruct,Qwen2.5-7B-Instruct (tuned threshold),0,6,6,0.03125,14,8,1.0,0.06596481876332623,True,False,False
+Qwen2.5-7B-Instruct,Qwen3.8-27B,0,8,8,0.0078125,14,6,1.0,0.020515583554376656,True,False,True
+Qwen2.5-7B-Instruct,Qwen3.8-27B (tuned threshold),0,12,12,0.00048828125,14,2,0.34228515625,0.0016276041666666667,True,False,True
+Qwen2.5-7B-Instruct,SciBERT,3,13,16,0.021270751953125,14,4,1.0,0.0481877446992992,True,False,True
+Qwen2.5-7B-Instruct (tuned threshold),Qwen3.8-27B,0,2,2,0.5,8,6,1.0,0.6846473029045643,False,False,False
+Qwen2.5-7B-Instruct (tuned threshold),Qwen3.8-27B (tuned threshold),0,6,6,0.03125,8,2,1.0,0.06596481876332623,True,False,False
+Qwen2.5-7B-Instruct (tuned threshold),SciBERT,3,7,10,0.34375,8,4,1.0,0.5219516871165644,False,False,False
+Qwen3.8-27B,Qwen3.8-27B (tuned threshold),0,4,4,0.125,6,2,1.0,0.21447140381282495,False,False,False
+Qwen3.8-27B,SciBERT,3,5,8,0.7265625,6,4,1.0,0.9025054893350063,False,False,False
+Qwen3.8-27B (tuned threshold),SciBERT,3,1,4,0.625,2,4,1.0,0.8109436435124509,False,False,False

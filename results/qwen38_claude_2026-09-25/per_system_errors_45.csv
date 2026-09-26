@@ -1,0 +1,46 @@
+System,errors,unique_errors
+BioLinkBERT,1,0
+BiomedBERT-large,2,0
+Qwen3.8-27B (tuned threshold),2,0
+BERT-base,3,0
+DeBERTa-v3,3,0
+Bio+ClinicalBERT,3,0
+BioWordVec | SVM,4,0
+BioWordVec | Logistic Regression,4,0
+SciBERT,4,0
+FastText | MLP Small,5,0
+Claude Opus 5,5,0
+BioWordVec | Random Forest,5,0
+ModernBERT,5,0
+PubMedBERT,5,0
+BioWordVec | MLP Small,6,0
+FastText | Logistic Regression,6,0
+Classical | Logistic Regression,6,0
+Classical | SVM,6,0
+Qwen3.8-27B,6,0
+FastText | SVM,6,0
+Classical | MLP Small,6,0
+BioWordVec | MLP Deep,6,0
+Claude Sonnet 5,7,0
+BioWordVec | XGBoost,7,0
+BioBERT,7,0
+FastText | MLP Deep,7,0
+Qwen2.5-7B-Instruct (tuned threshold),8,0
+FastText | XGBoost,9,0
+Claude Haiku 4.5,10,0
+Classical | MLP Deep,12,0
+BioWordVec | Decision Tree,14,0
+Qwen2.5-7B-Instruct,14,0
+Classical | Random Forest,15,0
+Classical | XGBoost,15,0
+FastText | Random Forest,16,0
+BART zero-shot,16,0
+BART zero-shot (tuned threshold),16,0
+OpenBioLLM-8B (tuned threshold),20,1
+FastText | Decision Tree,31,3
+Classical | Decision Tree,41,7
+Flan-T5,74,1
+Flan-T5 (tuned threshold),75,2
+BioGPT zero-shot,104,17
+OpenBioLLM-8B,135,45
+BioGPT zero-shot (tuned threshold),143,13
