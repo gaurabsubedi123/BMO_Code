@@ -1,9 +1,9 @@
-"""Test-set metrics and McNemar tests for the added Claude comparison.
+"""Test-set metrics and McNemar tests for the added comparisons.
 
-The Claude models are an added comparison outside the paper's forty systems, so
-they get their own Holm family: each Claude model against BioLinkBERT (the best
-supervised system) and against Qwen2.5-7B with a tuned threshold (the best of
-the ten prompted systems). Metrics, bootstrap intervals and the McNemar test
+Qwen3.8-27B (default and tuned threshold) and three Claude models were added
+after the paper's forty systems were fixed, so they get their own Holm family:
+each added system against BioLinkBERT (the best supervised system) and against
+Qwen2.5-7B with a tuned threshold (the best of the ten prompted systems). Metrics, bootstrap intervals and the McNemar test
 are the paper's own; the script first reproduces published rows to prove it.
 
     python claude_significance.py
@@ -104,14 +104,29 @@ def main():
             tests.append({"Claude": name, "vs": rname, "discordant": only_claude_right + only_ref_right,
                           "only_claude_wrong": only_ref_right, "only_other_wrong": only_claude_right,
                           "p_raw": mcnemar(only_claude_right, only_ref_right)})
-    t = pd.DataFrame(tests)
+    # Qwen3.8-27B: probabilities from qwen38_zeroshot.py, both thresholds
+    q38 = pd.read_csv(RUN / "outputs" / "prompt_llm" / "qwen38" / "test_predictions.csv")
+    assert (q38.y_true.values == y).all()
+    for col in [c for c in q38.columns if c.startswith("Qwen3.8")]:
+        p = q38[col].values
+        r, (lo, hi) = row(y, p), bootstrap_ci(y, p)
+        rows.append({"System": col, **r, "ci_low": lo, "ci_high": hi, "unreadable": 0,
+                     "errors_readable_only": r["errors"], "run_agreement": np.nan})
+        for rname, rp in ref.items():
+            a, b_ = (p == y), (rp == y)
+            only_new_right, only_ref_right = int((a & ~b_).sum()), int((~a & b_).sum())
+            tests.append({"Claude": col, "vs": rname, "discordant": only_new_right + only_ref_right,
+                          "only_claude_wrong": only_ref_right, "only_other_wrong": only_new_right,
+                          "p_raw": mcnemar(only_new_right, only_ref_right)})
+    t = pd.DataFrame(tests).rename(columns={"Claude": "added_system",
+                                            "only_claude_wrong": "only_added_wrong"})
     t["p_holm"] = holm(t.p_raw.values)
     m = pd.DataFrame(rows)
     pd.set_option("display.width", 200)
     print(m.round(4).to_string(index=False))
     print(t.round(4).to_string(index=False))
-    m.to_csv(OUT / "claude_test_metrics.csv", index=False)
-    t.to_csv(OUT / "claude_mcnemar_holm.csv", index=False)
+    m.to_csv(OUT / "added_test_metrics.csv", index=False)
+    t.to_csv(OUT / "added_mcnemar_holm.csv", index=False)
 
 
 if __name__ == "__main__":
