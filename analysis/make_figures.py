@@ -334,6 +334,61 @@ def fig_confusion():
     save(fig, "confusion")
 
 
+
+# --------------------------------------------------------------------------
+# Supplementary Figure S4: the three Claude models (added comparison)
+# --------------------------------------------------------------------------
+def fig_claude_confusion():
+    """Claude was never trained here, so its training-set replies are as fair a
+    test as its test-set replies, and 1,559 records show the pattern better.
+    A reply that did not open with Yes or No gets its own column rather than
+    being folded into a miss or a false alarm."""
+    raw = pd.read_csv(RUN / "outputs" / "prompt_llm" / "claude" / "raw_replies.csv")
+    ds = pd.read_csv(RUN / "outputs" / "dataset" / "labeled_dataset.csv")
+    tr = np.load(RUN / "outputs" / "dataset" / "train_idx.npy")
+    te = np.load(RUN / "outputs" / "dataset" / "test_idx.npy")
+    y = ds.has_biomarker.values
+    models = [("claude-opus-5", "Claude Opus 5"), ("claude-sonnet-5", "Claude Sonnet 5"),
+              ("claude-haiku-4-5", "Claude Haiku 4.5")]
+    cmap = plt.get_cmap("Blues")
+    fig, axes = plt.subplots(2, 3, figsize=(8.4, 4.6), gridspec_kw=dict(wspace=0.14, hspace=0.30))
+    fig.subplots_adjust(left=0.15, right=0.99, top=0.86, bottom=0.13)
+    for c, (mid, name) in enumerate(models):
+        g = raw[(raw.model == mid) & (raw.run == "run1")].set_index("row").pred
+        for r, idx in enumerate([tr, te]):
+            ax = axes[r, c]
+            p, yy = g.reindex(idx).values, y[idx]
+            assert not np.isnan(p).any(), f"missing replies for {mid}"
+            cm = np.array([[((yy == a) & (p == b)).sum() for b in (0, 1, -1)] for a in (0, 1)])
+            rowpct = cm / cm.sum(axis=1, keepdims=True)
+            ax.imshow(rowpct, cmap=cmap, vmin=0, vmax=1.25, aspect="auto")
+            for a in range(2):
+                for b in range(3):
+                    dark = rowpct[a, b] > 0.6
+                    ax.text(b, a - 0.12, f"{cm[a, b]:,}", ha="center", va="center", fontsize=9,
+                            fontweight="bold", color="white" if dark else INK)
+                    ax.text(b, a + 0.2, f"{100*rowpct[a, b]:.1f}%", ha="center", va="center",
+                            fontsize=7, color="white" if dark else MUTED)
+            ax.set_xticks([0, 1, 2]); ax.set_yticks([0, 1])
+            ax.set_xticklabels(["Not\nbiomarker", "Biomarker", "Unreadable"] if r == 1 else ["", "", ""],
+                               fontsize=7.4)
+            ax.set_yticklabels(["Not biomarker", "Biomarker"] if c == 0 else ["", ""], fontsize=7.4)
+            ax.tick_params(length=0, pad=3)
+            for sp in ax.spines.values():
+                sp.set_visible(False)
+            if r == 0:
+                ax.text(0, 1.20, name, transform=ax.transAxes, ha="left", va="bottom",
+                        fontsize=9.5, fontweight="bold", color=INK)
+                ax.text(0, 1.05, "Prompted, first word scored", transform=ax.transAxes,
+                        ha="left", va="bottom", fontsize=8, color=MUTED)
+    for r, txt in enumerate(["Training set\n(n = 1,559;\nnever trained on)", "Held-out\ntest set\n(n = 341)"]):
+        pos = axes[r, 0].get_position()
+        fig.text(0.012, (pos.y0 + pos.y1) / 2, txt, ha="left", va="center", fontsize=8.2,
+                 linespacing=1.3)
+    fig.text(0.57, 0.012, "Reply  (rows are the annotated label; percentages are per row)",
+             ha="center", fontsize=8.2)
+    save(fig, "claude_confusion")
+
 # --------------------------------------------------------------------------
 # Supplementary Figure S3: corpus overview
 # --------------------------------------------------------------------------
@@ -412,6 +467,7 @@ if __name__ == "__main__":
     fig_modality()
     fig_significance()
     fig_confusion()
+    fig_claude_confusion()
     print("corpus:", fig_corpus())
     if os.environ.get("BMO_SUBMISSION_DIR"):
         sub = Path(os.environ["BMO_SUBMISSION_DIR"])
