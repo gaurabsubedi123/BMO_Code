@@ -6,7 +6,7 @@ each added system against BioLinkBERT (the best supervised system) and against
 Qwen2.5-7B with a tuned threshold (the best of the ten prompted systems). Metrics, bootstrap intervals and the McNemar test
 are the paper's own; the script first reproduces published rows to prove it.
 
-    python claude_significance.py
+    python added_comparisons_significance.py
 """
 from pathlib import Path
 
