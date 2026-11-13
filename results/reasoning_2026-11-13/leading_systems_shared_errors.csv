@@ -1,0 +1,106 @@
+A,B,shared_errors,errors_A,errors_B
+BERT-base,Bio+ClinicalBERT,2,3,3
+BERT-base,BioLinkBERT,0,3,1
+BERT-base,BioWordVec | Logistic Regression,3,3,4
+BERT-base,BioWordVec | Random Forest,2,3,5
+BERT-base,BioWordVec | SVM,3,3,4
+BERT-base,BiomedBERT-large,0,3,2
+BERT-base,Claude Fable 5.2 (reasoning),0,3,5
+BERT-base,Claude Opus 5,0,3,5
+BERT-base,DeBERTa-v3,2,3,3
+BERT-base,FastText | MLP Small,3,3,5
+BERT-base,ModernBERT,1,3,5
+BERT-base,PubMedBERT,1,3,5
+BERT-base,Qwen3.8-27B (tuned threshold),0,3,2
+BERT-base,SciBERT,1,3,4
+Bio+ClinicalBERT,BioLinkBERT,1,3,1
+Bio+ClinicalBERT,BioWordVec | Logistic Regression,2,3,4
+Bio+ClinicalBERT,BioWordVec | Random Forest,3,3,5
+Bio+ClinicalBERT,BioWordVec | SVM,2,3,4
+Bio+ClinicalBERT,BiomedBERT-large,0,3,2
+Bio+ClinicalBERT,Claude Fable 5.2 (reasoning),1,3,5
+Bio+ClinicalBERT,Claude Opus 5,1,3,5
+Bio+ClinicalBERT,DeBERTa-v3,3,3,3
+Bio+ClinicalBERT,FastText | MLP Small,2,3,5
+Bio+ClinicalBERT,ModernBERT,2,3,5
+Bio+ClinicalBERT,PubMedBERT,2,3,5
+Bio+ClinicalBERT,Qwen3.8-27B (tuned threshold),1,3,2
+Bio+ClinicalBERT,SciBERT,1,3,4
+BioLinkBERT,BioWordVec | Logistic Regression,0,1,4
+BioLinkBERT,BioWordVec | Random Forest,1,1,5
+BioLinkBERT,BioWordVec | SVM,0,1,4
+BioLinkBERT,BiomedBERT-large,0,1,2
+BioLinkBERT,Claude Fable 5.2 (reasoning),1,1,5
+BioLinkBERT,Claude Opus 5,1,1,5
+BioLinkBERT,DeBERTa-v3,1,1,3
+BioLinkBERT,FastText | MLP Small,0,1,5
+BioLinkBERT,ModernBERT,1,1,5
+BioLinkBERT,PubMedBERT,1,1,5
+BioLinkBERT,Qwen3.8-27B (tuned threshold),1,1,2
+BioLinkBERT,SciBERT,1,1,4
+BioWordVec | Logistic Regression,BioWordVec | Random Forest,2,4,5
+BioWordVec | Logistic Regression,BioWordVec | SVM,4,4,4
+BioWordVec | Logistic Regression,BiomedBERT-large,1,4,2
+BioWordVec | Logistic Regression,Claude Fable 5.2 (reasoning),0,4,5
+BioWordVec | Logistic Regression,Claude Opus 5,0,4,5
+BioWordVec | Logistic Regression,DeBERTa-v3,2,4,3
+BioWordVec | Logistic Regression,FastText | MLP Small,3,4,5
+BioWordVec | Logistic Regression,ModernBERT,1,4,5
+BioWordVec | Logistic Regression,PubMedBERT,1,4,5
+BioWordVec | Logistic Regression,Qwen3.8-27B (tuned threshold),0,4,2
+BioWordVec | Logistic Regression,SciBERT,2,4,4
+BioWordVec | Random Forest,BioWordVec | SVM,2,5,4
+BioWordVec | Random Forest,BiomedBERT-large,0,5,2
+BioWordVec | Random Forest,Claude Fable 5.2 (reasoning),1,5,5
+BioWordVec | Random Forest,Claude Opus 5,1,5,5
+BioWordVec | Random Forest,DeBERTa-v3,3,5,3
+BioWordVec | Random Forest,FastText | MLP Small,2,5,5
+BioWordVec | Random Forest,ModernBERT,2,5,5
+BioWordVec | Random Forest,PubMedBERT,2,5,5
+BioWordVec | Random Forest,Qwen3.8-27B (tuned threshold),1,5,2
+BioWordVec | Random Forest,SciBERT,1,5,4
+BioWordVec | SVM,BiomedBERT-large,1,4,2
+BioWordVec | SVM,Claude Fable 5.2 (reasoning),0,4,5
+BioWordVec | SVM,Claude Opus 5,0,4,5
+BioWordVec | SVM,DeBERTa-v3,2,4,3
+BioWordVec | SVM,FastText | MLP Small,3,4,5
+BioWordVec | SVM,ModernBERT,1,4,5
+BioWordVec | SVM,PubMedBERT,1,4,5
+BioWordVec | SVM,Qwen3.8-27B (tuned threshold),0,4,2
+BioWordVec | SVM,SciBERT,2,4,4
+BiomedBERT-large,Claude Fable 5.2 (reasoning),0,2,5
+BiomedBERT-large,Claude Opus 5,0,2,5
+BiomedBERT-large,DeBERTa-v3,0,2,3
+BiomedBERT-large,FastText | MLP Small,0,2,5
+BiomedBERT-large,ModernBERT,1,2,5
+BiomedBERT-large,PubMedBERT,1,2,5
+BiomedBERT-large,Qwen3.8-27B (tuned threshold),0,2,2
+BiomedBERT-large,SciBERT,2,2,4
+Claude Fable 5.2 (reasoning),Claude Opus 5,3,5,5
+Claude Fable 5.2 (reasoning),DeBERTa-v3,1,5,3
+Claude Fable 5.2 (reasoning),FastText | MLP Small,2,5,5
+Claude Fable 5.2 (reasoning),ModernBERT,3,5,5
+Claude Fable 5.2 (reasoning),PubMedBERT,3,5,5
+Claude Fable 5.2 (reasoning),Qwen3.8-27B (tuned threshold),1,5,2
+Claude Fable 5.2 (reasoning),SciBERT,1,5,4
+Claude Opus 5,DeBERTa-v3,1,5,3
+Claude Opus 5,FastText | MLP Small,2,5,5
+Claude Opus 5,ModernBERT,3,5,5
+Claude Opus 5,PubMedBERT,3,5,5
+Claude Opus 5,Qwen3.8-27B (tuned threshold),1,5,2
+Claude Opus 5,SciBERT,1,5,4
+DeBERTa-v3,FastText | MLP Small,2,3,5
+DeBERTa-v3,ModernBERT,2,3,5
+DeBERTa-v3,PubMedBERT,2,3,5
+DeBERTa-v3,Qwen3.8-27B (tuned threshold),1,3,2
+DeBERTa-v3,SciBERT,1,3,4
+FastText | MLP Small,ModernBERT,3,5,5
+FastText | MLP Small,PubMedBERT,3,5,5
+FastText | MLP Small,Qwen3.8-27B (tuned threshold),0,5,2
+FastText | MLP Small,SciBERT,1,5,4
+ModernBERT,PubMedBERT,4,5,5
+ModernBERT,Qwen3.8-27B (tuned threshold),1,5,2
+ModernBERT,SciBERT,2,5,4
+PubMedBERT,Qwen3.8-27B (tuned threshold),1,5,2
+PubMedBERT,SciBERT,2,5,4
+Qwen3.8-27B (tuned threshold),SciBERT,1,2,4

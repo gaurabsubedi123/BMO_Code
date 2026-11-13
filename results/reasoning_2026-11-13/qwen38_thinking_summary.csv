@@ -1,0 +1,2 @@
+Model,test_errors,missed_biomarkers,false_alarms,unparsed,unfinished_reasoning,run_agreement,train_errors_of_1559,median_out_tokens,max_out_tokens
+Qwen3.8-27B (thinking),7,7,0,0,0,0.9971,62,114,3939
