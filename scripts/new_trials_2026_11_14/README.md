@@ -22,3 +22,7 @@ The annotation export itself is not public and is not in this repository.
    tests the whole pipeline with a fake client first). `add_claude.py NEW_TRIALS_DIR replies.jsonl` merges them and
    recomputes the comparison across all 16 systems.
 8. `digital_rule.py NEW_TRIALS_DIR` measures what the deployed tool's digital/EEG review rule adds.
+9. `compare_2025_definition.py NEW_TRIALS_DIR replies.jsonl` is the comparison reported in the paper. The newer
+   annotations label drug concentration and anti-drug antibody measures as non-biomarkers, unlike the training data,
+   so lines describing them (`drug_level.py`, decided from wording only) are set aside and every system is compared
+   on the rest. Results on all lines come from steps 6 and 7.
