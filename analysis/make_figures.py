@@ -394,7 +394,7 @@ def fig_corpus():
 
     ax = axes[0, 0]
     k = ds.has_biomarker.value_counts().reindex([0, 1])
-    bars = ax.bar(["Not biomarker", "Biomarker"], k.values, color=["#9fb7cc", "#D55E00"],
+    bars = ax.bar(["Not biomarker", "Biomarker"], k.values, color=["#B9C4CE", "#C0504D"],
                   width=0.6, edgecolor="none")
     for b, v in zip(bars, k.values):
         ax.text(b.get_x() + b.get_width() / 2, v + 25, f"{v:,}  ({100*v/len(ds):.1f}%)",
@@ -411,7 +411,7 @@ def fig_corpus():
               "Pharmacokinetic / immunogenicity": "Pharmacokinetic", "Clinical / behavioural": "Clinical"}
     c["name"] = c.Modality.map(lambda s: rename.get(s, s))
     c = c.sort_values("Biomarker")
-    ax.barh(c.name, c.Biomarker, color="#009E73", height=0.62, edgecolor="none")
+    ax.barh(c.name, c.Biomarker, color="#C0504D", height=0.62, edgecolor="none")
     for yy, v in enumerate(c.Biomarker):
         ax.text(v * 1.12, yy, f"{v}", va="center", fontsize=7.6, color=INK)
     ax.set_xscale("log")
@@ -425,7 +425,7 @@ def fig_corpus():
 
     ax = axes[1, 0]
     per = ds.groupby("NCTId").size()
-    ax.hist(per, bins=np.arange(0.5, per.max() + 2, 2), color="#56B4E9", edgecolor="white", lw=0.5)
+    ax.hist(per, bins=np.arange(0.5, per.max() + 2, 2), color="#6F8FAF", edgecolor="white", lw=0.5)
     ax.set_xlabel("Outcome measures per trial")
     ax.set_ylabel("Trials")
     ax.set_title("(c) Outcome measures per trial", loc="left")
@@ -439,15 +439,15 @@ def fig_corpus():
         from transformers import AutoTokenizer
         tok = AutoTokenizer.from_pretrained(str(TOKENIZER))
         lens = np.array([len(tok(t, add_special_tokens=True)["input_ids"]) for t in texts])
-        xlabel, limit_label = "Tokens per outcome measure", "128-token limit"
+        xlabel, limit_label = "Word pieces per outcome measure", "128-piece limit"
     except Exception as e:  # tokenizer unavailable: fall back to words
         print("tokenizer unavailable, plotting words:", e)
         lens = np.array([len(t.split()) for t in texts])
         xlabel, limit_label = "Words per outcome measure", "128 words"
     over = int((lens > 128).sum())
-    ax.hist(np.clip(lens, 0, 300), bins=np.arange(0, 305, 8), color="#E69F00", edgecolor="white", lw=0.5)
+    ax.hist(np.clip(lens, 0, 300), bins=np.arange(0, 305, 8), color="#6F8FAF", edgecolor="white", lw=0.5)
     ax.axvline(128, color=INK, lw=0.9, ls=(0, (4, 2)))
-    ax.text(133, ax.get_ylim()[1] * 0.93, f"{limit_label}\n{over:,} records ({100*over/len(lens):.1f}%)\nare truncated",
+    ax.text(138, ax.get_ylim()[1] * 0.93, f"{limit_label}:\n{over:,} outcomes ({100*over/len(lens):.1f}%)\nare shortened",
             fontsize=7.6, va="top", ha="left", color=INK, linespacing=1.3)
     ax.set_xlabel(xlabel)
     ax.set_ylabel("Outcome measures")

@@ -26,3 +26,11 @@ The annotation export itself is not public and is not in this repository.
    annotations label drug concentration and anti-drug antibody measures as non-biomarkers, unlike the training data,
    so lines describing them (`drug_level.py`, decided from wording only) are set aside and every system is compared
    on the rest. Results on all lines come from steps 6 and 7.
+10. `eligibility_cv.py RUN_DIR NEW_TRIALS_DIR OUTDIR` retrains BiomedBERT-large, SciBERT and BioLinkBERT with
+    eligibility criteria, by trial-grouped five-fold cross-validation over the 268 newer trials (drug-level lines set
+    aside), on eligibility lines alone and together with the 1,559 training outcomes, using each model's settings from
+    the main study. `--smoke` runs one fold for one epoch to test every path first. The combined models are also scored
+    on the newer outcome lines and the 341 held-out outcomes. `eligibility_cv_compare.py NEW_TRIALS_DIR OUTDIR` pairs
+    the results with the outcome-trained models on the same lines (Supplementary Table S8).
+11. `train_final_combined.py RUN_DIR NEW_TRIALS_DIR OUTDIR` trains the released model (BiomedBERT-large on all 1,559
+    training outcomes and 5,987 eligibility lines) and tests it on the 341 held-out outcomes (0 missed, 1 false positive).
